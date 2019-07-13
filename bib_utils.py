@@ -17,6 +17,18 @@ def get_bib(fname):
     with open(fname) as bibtex_file:
         parser = BibTexParser(common_strings=True)
         bib_database = bibtexparser.load(bibtex_file, parser)
+
+    # !!!Critical that we look at the values off the entries_dict, since entries (the list) contains duplicates
+    del_keys = []
+    for (k, v) in bib_database.entries_dict.items():
+        if 'numpages' in v:
+            if int(v['numpages']) < 3:
+                del_keys.append(k)
+        else:
+            print('Entry "{}" lacks a numpages field.'.format(v['title']), file=sys.stderr)
+    for k in del_keys:
+        del bib_database.entries_dict[k]
+
     return bib_database
 
 
@@ -38,7 +50,6 @@ def get_series(bib):
     Return a set of the series (or journals) present within a bibliographic database.
     '''
     # Would be a set comprehension in 3.7
-    # !!!Critical that we look at the values off the entries_dict, since entries (the list) contains duplicates
     series = set([get_series_field(entry) for entry in bib.entries_dict.values()])
     series.discard(None)
     return series
@@ -49,7 +60,7 @@ def get_venues(bib):
     Return a set of venues present within a bibliographic database.
     '''
     series = get_series(bib)
-    return set([entry.split('\'')[0].strip() for entry in series])
+    return set([entry.split('\'')[0] for entry in series])
 
 
 def merge_bibs(bib_list):
