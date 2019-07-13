@@ -8,3 +8,7 @@
 "Associative" AND "Hebb",ALL,Failed,https://dl.acm.org/results.cfm?query=(%252B"Associative" AND "Hebb")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
 "Analytical Behaviorism",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Analytical Behaviorism"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
 "Analytical Behaviorism",ALL,Success,https://dl.acm.org/results.cfm?query=(%252B"Analytical Behaviorism")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"Learning Styles",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Learning Styles"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"Learning Styles",ALL,Failed,https://dl.acm.org/results.cfm?query=(%252B"Learning Styles")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"Working memory",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Working memory"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"Working memory",ALL,Failed,https://dl.acm.org/results.cfm?query=(%252B"Working memory")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
