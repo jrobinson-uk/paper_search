@@ -20,14 +20,28 @@ def get_bib(fname):
     return bib_database
 
 
+def get_series_field(entry):
+    '''(BibEntry) -> str
+    Get the series or journal field.
+    '''
+    if 'series' in entry:
+        return entry['series']
+    elif 'journal' in entry:
+        return entry['journal']
+    else:
+        print('Entry "{}" lacks a series or a journal field'.format(entry['title']), file=sys.stderr)
+        return None
+
+
 def get_series(bib):
     '''(BibDatabase) -> Set[str]
-    Return a set of the series present within a bibliographic database.
+    Return a set of the series (or journals) present within a bibliographic database.
     '''
     # Would be a set comprehension in 3.7
     # !!!Critical that we look at the values off the entries_dict, since entries (the list) contains duplicates
-    series = [entry['series'] for entry in bib.entries_dict.values() if 'series' in entry]
-    return set(series)
+    series = set([get_series_field(entry) for entry in bib.entries_dict.values()])
+    series.discard(None)
+    return series
 
 
 def get_venues(bib):
