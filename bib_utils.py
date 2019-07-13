@@ -15,7 +15,7 @@ def get_bib(fname):
     Convert a bibliography file (in latex format) into a bibliographic database.
     '''
     with open(fname) as bibtex_file:
-        parser = BibTexParser(common_strings=False)
+        parser = BibTexParser(common_strings=True)
         bib_database = bibtexparser.load(bibtex_file, parser)
     return bib_database
 
