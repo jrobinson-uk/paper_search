@@ -25,6 +25,7 @@ def get_series(bib):
     Return a set of the series present within a bibliographic database.
     '''
     # Would be a set comprehension in 3.7
+    # !!!Critical that we look at the values off the entries_dict, since entries (the list) contains duplicates
     series = [entry['series'] for entry in bib.entries_dict.values() if 'series' in entry]
     return set(series)
 
@@ -43,6 +44,10 @@ def merge_bibs(bib_list):
     '''
     # Horrific hack. Writes the databases into strings, merges them, then reparses.
 
+
+    print('''WARNING: It is important that any analysis on this merged database operate on the entries_dict since the entries list
+contains duplicates. In addition, merging respects bib key, so duplicate entries with different keys (from different
+sources or reprints in different venues) will not be identified.''', file=sys.stderr)
     bib_strings = [bibtexparser.dumps(bib) for bib in bib_list]
     return bibtexparser.loads('\n'.join(bib_strings))
 

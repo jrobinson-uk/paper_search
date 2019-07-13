@@ -1,6 +1,6 @@
 """
 Usage:
-  merge_bibs.py <bibfile>...
+  poc.merge_bibs.py <bibfile>...
 """
 
 import bib_utils
