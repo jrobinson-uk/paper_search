@@ -1,0 +1,7 @@
+"achievement goal theory",ALL,Success,https://dl.acm.org/results.cfm?query=(%252B"achievement goal theory")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"goal theory",ALL,Success,https://dl.acm.org/results.cfm?query=(%252B"goal theory")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"affordance theory",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"affordance theory"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"affordance theory",ALL,Success,https://dl.acm.org/results.cfm?query=(%252B"affordance theory")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"Associative learning",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Associative learning"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"Associative learning",ALL,Failed,https://dl.acm.org/results.cfm?query=(%252B"Associative learning")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"Associative" AND "Hebb",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Associative" AND "Hebb"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0

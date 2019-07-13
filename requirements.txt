@@ -1,0 +1,10 @@
+bibtexparser
+mechanicalsoup
+scholarly
+
+#requests
+#selenium
+#mysql-connector-python
+#python3-dev
+#sshtunnel
+#mu-editor
