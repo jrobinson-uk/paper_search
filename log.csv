@@ -5,3 +5,6 @@
 "Associative learning",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Associative learning"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
 "Associative learning",ALL,Failed,https://dl.acm.org/results.cfm?query=(%252B"Associative learning")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
 "Associative" AND "Hebb",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Associative" AND "Hebb"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"Associative" AND "Hebb",ALL,Failed,https://dl.acm.org/results.cfm?query=(%252B"Associative" AND "Hebb")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"Analytical Behaviorism",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Analytical Behaviorism"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"Analytical Behaviorism",ALL,Success,https://dl.acm.org/results.cfm?query=(%252B"Analytical Behaviorism")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
