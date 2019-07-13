@@ -8,13 +8,13 @@ Usage:
 import bib_utils
 
 
-table_str = '''\\begin{{table}}[ht]
+table_str = '''\\begin{{table*}}[t]
 \\begin{{tabular}}{{{}}}
 {}\\\\
 {}
 \\hline
 \\end{{tabular}}
-\\end{{table}}'''
+\\end{{table*}}'''
 
 
 def make_series_dict(bib):
@@ -23,7 +23,8 @@ def make_series_dict(bib):
     '''
     series_d = {}
     for entry in bib.entries_dict.values():
-        series_d.setdefault(bib_utils.get_series_field(entry), []).append(entry)
+        if bib_utils.get_series_field(entry):
+            series_d.setdefault(bib_utils.get_series_field(entry), []).append(entry)
     return series_d
 
 
