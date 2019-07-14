@@ -34,9 +34,9 @@ if __name__ == '__main__':
     alignment = 'll'
     header = 'Theory & Search String(s)'
     body = []
-    for (theory, search_strings) in theory_d:
+    for (theory, search_strings) in theory_d.items():
         body.append('{} & {}'.format(theory, search_strings[0]))
-        for search_str in v[1:]:
+        for search_str in search_strings[1:]:
             body.append(' & {}'.format(search_str))
     body = '\\\\\n'.join(body)
 
