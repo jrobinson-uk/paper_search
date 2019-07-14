@@ -87,8 +87,10 @@ def merge_bibs(bib_list):
     print('''WARNING: It is important that any analysis on this merged database operate on the entries_dict since the entries list
 contains duplicates. In addition, merging respects bib key, so duplicate entries with different keys (from different
 sources or reprints in different venues) will not be identified.''', file=sys.stderr)
-    bib_strings = [bibtexparser.dumps(bib) for bib in bib_list]
-    return bibtexparser.loads('\n'.join(bib_strings))
+    bib_string = '\n'.join([bibtexparser.dumps(bib) for bib in bib_list])
+    if len(bib_string.strip()) > 0:
+        return bibtexparser.loads(bib_string)
+    return EmptyBib()
 
 
 if __name__ == '__main__':
