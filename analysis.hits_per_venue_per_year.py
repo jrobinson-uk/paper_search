@@ -44,8 +44,7 @@ def gen_venue_occurrence_table(bib, label):
     body_list = []
     for venue in venues:
         venue_list = []
-        related_series = sorted([series for series in series_d.keys()
-            if series == venue or ('\'' in series and venue + '\'' + series.split('\'', maxsplit=1)[1] == series)])
+        related_series = sorted([series for series in series_d.keys() if bib_utils.generate_venue(series) == venue])
 
         total_occurrences = 0
         for series in related_series[1:]:

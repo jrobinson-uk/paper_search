@@ -14,6 +14,9 @@ from bibtexparser.bparser import BibTexParser
 class EmptyBib():
     entries = []
     entries_dict = {}
+    strings = []
+    preambles = []
+    comments = []
 
 
 def get_bib(fname):
@@ -45,7 +48,7 @@ def get_bib(fname):
                 else:
                     v['numpages'] = str(length)
         if 'numpages' in v:
-            if float(v['numpages']) < 3:
+            if float(v['numpages']) < 3:    # This gets rid of short papers AND proceedings
                 del_keys.append(k)
         else:
             print('Entry "{}" lacks a numpages or pages field.'.format(v.get('title', v.get('id'))), file=sys.stderr)
@@ -78,12 +81,19 @@ def get_series(bib):
     return series
 
 
+def generate_venue(series):
+    '''(str) -> str
+    Converts a series into a venue.
+    '''
+    return ''.join([ch for ch in series if not(ch == '\'' or ch.isdigit())])
+
+
 def get_venues(bib):
     '''(BibDatabase) -> Set[str]
     Return a set of venues present within a bibliographic database.
     '''
     series = get_series(bib)
-    return set([entry.split('\'')[0] for entry in series])
+    return set([generate_venue(entry) for entry in series])
 
 
 def get_venue_counts(bib):
@@ -94,8 +104,7 @@ def get_venue_counts(bib):
     for entry in bib.entries_dict.values():
         series = get_series_field(entry)
         if series:
-            series = series.split('\'')[0]
-            venue_counts[series] = venue_counts.get(series, 0) + 1
+            venue_counts[series] = venue_counts.get(generate_venue(series), 0) + 1
     return sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
 
 
