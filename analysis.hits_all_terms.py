@@ -17,7 +17,7 @@ table_str = '''\\begin{{table*}}[t]
 {}\\\\\\hline
 {}
 \\end{{tabular}}
-\\caption{{Occurrences of papers for particular search terms}}
+\\caption{{Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers are listed.}}
 \\end{{table*}}'''
 
 
@@ -38,7 +38,7 @@ def gen_term_count_table(terms):
 
             venue_counts = bib_utils.get_venue_counts(bib)
             venue_counts = venue_counts[: min(3, len(venue_counts))]
-            top_venues = '; '.join(['{} ({})'.format(*venue) for venue in venue_counts])
+            top_venues = '; '.join(['{} ({})'.format(*venue) for venue in venue_counts if venue[1] > 5])
         except FileNotFoundError:
             occurrences = 'Running'
             top_venues = '...'
