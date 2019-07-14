@@ -1,3 +1,4 @@
+"Dual coding"
 "connectivism connnectivist"
 "constructionism"
 "constructivism"
@@ -5,7 +6,6 @@
 "conversation theory"
 "discovery learning"
 "Bruner" AND "Learning"
-"Dual coding"
 "Dual coding theory"
 "Coding theory" AND "Paivio"
 "elaboration theory"
@@ -32,34 +32,47 @@
 "Interest" AND "Kintsch"
 "Interference Theory"
 "Interference Theory" AND "Bergstrom"
-"Interference Theory" AND "Bergström"
-
-"Invitational Education" ("Invitational" AND "Purkey")
-"Latent Learning" ("Latent" AND "Tolman")
-"Learner-centered design" ("Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay"))
+"Invitational Education"
+"Invitational" AND "Purkey"
+"Latent Learning"
+"Latent" AND "Tolman"
+"Learner-centered design"
+"Learner-centered" AND "Soloway" OR "Guzdial" OR "Hay"
 "Learning styles"
-"Maslow" ("Maslow" AND "Hierarchy")
-"Mastery Learning" ("Mastery" AND "Bloom")
+"Maslow"
+"Maslow" AND "Hierarchy"
+"Mastery Learning"
+"Mastery" AND "Bloom"
 "Mental models"
-"Metacognition" ("Metacognition" AND "Flavell")
-"Mindsets" ("Mindsets" AND "Dweck")
+"Metacognition"
+"Metacognition" AND "Flavell"
+"Mindsets"
+"Mindsets" AND "Dweck"
 "Modality Principle"
-"Model of Hierarchical Complexity" "Hierarchical Complexity"
-"Operating Conditioning" ("Operant" AND "Skinner")
-"Problem-Based Learning" "Problem Based Learning" "Problem-based" "Problem based"
-("Behaviourism" AND "Staats")
+"Model of Hierarchical Complexity"
+"Hierarchical Complexity"
+"Operant Conditioning"
+"Operant" AND "Skinner"
+"Problem-Based Learning"
+"Problem Based Learning"
+"Problem-based"
+"Problem based"
+"Behaviourism" AND "Staats"
 "Rescorla-Wagner" AND "Conditioning"
-("Scaffolding" AND ("Vygotsky" OR "Bruner" OR "Miller"))
+"Scaffolding" AND ("Vygotsky" OR "Bruner" OR "Miller")
 "Self-Determination Theory"
 "Sensory theory"
 "Situated Cognition theory"
-"Situated Learning theory" ("Situated Learning theory" AND Lave)
+"Situated Learning theory"
+"Situated Learning theory" AND "Lave"
 "social development theory"
 "social learning theory"
 "split attention effect"
-piaget piagetian
+"piaget piagetian"
 "student approaches to learning"
-"subsumption theory" ("reception learning" ausubel)
+"subsumption theory"
+"reception learning" and "ausubel"
 "Transformative Learning"
-"Working Memory" "Working Memory Baddeley"
+"Working Memory"
+"Working Memory Baddeley"
 "Zone of Proximal Development"
