@@ -2,10 +2,13 @@
 Generates the number of papers per year, per venue for a set of search terms.
 
 Usage:
-  analysis.hits_per_venue_per_year.py <bibfile>...
+  analysis.hits_per_venue_per_year.py <analysis_name> <bibfile>...
 """
 
 import bib_utils
+import os
+
+OUTPUT_FOLDER = 'TABLES'
 
 
 table_str = '''\\begin{{table*}}[t]
@@ -13,6 +16,7 @@ table_str = '''\\begin{{table*}}[t]
 {}\\\\\\hline
 {}
 \\end{{tabular}}
+\\caption{{{}: Occurrences of papers naming a theory at various venues}}
 \\end{{table*}}'''
 
 
@@ -27,8 +31,8 @@ def make_series_dict(bib):
     return series_d
 
 
-def gen_venue_occurrence_table(bib):
-    '''(BibDatabase) -> None
+def gen_venue_occurrence_table(bib, label):
+    '''(BibDatabase, str) -> None
     Print a latex table that displays the number of occurrences of papers at a venue.
     '''
     format_str = 'llrr'
@@ -56,14 +60,17 @@ def gen_venue_occurrence_table(bib):
 
         body_list.extend(venue_list)
 
-    return table_str.format(format_str, header_str, '\n'.join(body_list))
+    return table_str.format(format_str, header_str, '\n'.join(body_list), label)
 
 
 if __name__ == '__main__':
     from docopt import docopt
     arguments = docopt(__doc__)
 
+    analysis_name = arguments.get('<analysis_name>')
     bibfiles = arguments.get('<bibfile>')
     bibs = [bib_utils.get_bib(bibfile) for bibfile in bibfiles]     # Burning space!
     merged_bib = bib_utils.merge_bibs(bibs)
-    print(gen_venue_occurrence_table(merged_bib))
+
+    output_fname = os.sep.join([OUTPUT_FOLDER, '{}.tex'.format(analysis_name)])
+    open(output_fname, 'w').write(gen_venue_occurrence_table(merged_bib, analysis_name.replace('_', '\\_')))
