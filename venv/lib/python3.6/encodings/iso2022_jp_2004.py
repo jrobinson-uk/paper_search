@@ -1,0 +1,1 @@
+/nix/store/wpqgah614vxww0kb1f1hjyswplj2q7d3-python3-3.6.8/lib/python3.6/encodings/iso2022_jp_2004.py
