@@ -79,7 +79,7 @@ def line_per_theory(theory, terms):
 
 def gen_term_count_table(theory_terms_d, merge):
     '''(Dict[str: str], bool) -> None
-    Print a latex table that displays the number of occurrences of papers for a specific term. Rows with the same
+    Return a latex table that displays the number of occurrences of papers for a specific term. Rows with the same
     theory are merged.
     '''
     if merge:
