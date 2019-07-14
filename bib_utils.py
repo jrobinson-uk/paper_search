@@ -6,14 +6,23 @@ Available commands: length, first, series, venues, papers
 """
 
 import sys
+import os
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
+
+
+class EmptyBib():
+    entries = []
+    entries_dict = {}
 
 
 def get_bib(fname):
     '''(file) -> BibDatabase
     Convert a bibliography file (in latex format) into a bibliographic database.
     '''
+    if os.stat(fname).st_size == 0:    # bibtexparser fails on empty bibs
+        return EmptyBib()
+
     with open(fname) as bibtex_file:
         parser = BibTexParser(common_strings=True)
         bib_database = bibtexparser.load(bibtex_file, parser)
@@ -22,10 +31,10 @@ def get_bib(fname):
     del_keys = []
     for (k, v) in bib_database.entries_dict.items():
         if 'numpages' in v:
-            if int(v['numpages']) < 3:
+            if float(v['numpages']) < 3:
                 del_keys.append(k)
         else:
-            print('Entry "{}" lacks a numpages field.'.format(v['title']), file=sys.stderr)
+            print('Entry "{}" lacks a numpages field.'.format(v.get('title', v.get('id'))), file=sys.stderr)
     for k in del_keys:
         del bib_database.entries_dict[k]
 
