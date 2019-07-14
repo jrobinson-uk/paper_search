@@ -36,9 +36,9 @@ def gen_term_count_table(terms):
             bib = bib_utils.get_bib(os.sep.join(['ALL', '{}.bib'.format(fname)]))
             occurrences = len(bib.entries_dict)
 
-            venues = bib_utils.get_venues(bib)
-            top_venues = 'TBD'
-
+            venue_counts = bib_utils.get_venue_counts(bib)
+            venue_counts = venue_counts[: min(3, len(venue_counts))]
+            top_venues = '; '.join(['{} ({})'.format(*venue) for venue in venue_counts])
         except FileNotFoundError:
             occurrences = 'Running'
             top_venues = '...'
