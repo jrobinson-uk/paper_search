@@ -30,11 +30,25 @@ def get_bib(fname):
     # !!!Critical that we look at the values off the entries_dict, since entries (the list) contains duplicates
     del_keys = []
     for (k, v) in bib_database.entries_dict.items():
+        if 'numpages' not in v:
+            if 'pages' in v:
+                pages_text = v['pages'].strip('{').strip('}')
+                first_number = pages_text.split('--')[0]
+                second_number = pages_text.split('--')[-1]
+                try:
+                    length = float(second_number) - float(first_number)
+                except ValueError:
+                    length = 0
+                    print('Warning: Page calculation failed ({} - {})'.format(second_number, first_number), file=sys.stderr)
+                if length < 0:
+                    print('Warning: Page calculation failed with negative', file=sys.stderr)
+                else:
+                    v['numpages'] = str(length)
         if 'numpages' in v:
             if float(v['numpages']) < 3:
                 del_keys.append(k)
         else:
-            print('Entry "{}" lacks a numpages field.'.format(v.get('title', v.get('id'))), file=sys.stderr)
+            print('Entry "{}" lacks a numpages or pages field.'.format(v.get('title', v.get('id'))), file=sys.stderr)
     for k in del_keys:
         del bib_database.entries_dict[k]
 
