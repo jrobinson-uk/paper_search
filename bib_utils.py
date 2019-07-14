@@ -72,6 +72,19 @@ def get_venues(bib):
     return set([entry.split('\'')[0] for entry in series])
 
 
+def get_venue_counts(bib):
+    '''(BibDatabase) -> List[(str, int)]
+    Return the list of venues present within the database, with counts of papers from the venue.
+    '''
+    venue_counts = {}
+    for entry in bib.entries_dict.values():
+        series = get_series_field(entry)
+        if series:
+            series = series.split('\'')[0]
+            venue_counts[series] = venue_counts.get(series, 0) + 1
+    return sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
+
+
 def extract_paper_list(bib):
     '''(BibDatabase) -> Set[(str, int)]
     Return a set of (paper title, pub year) tuples from a bibliographic database.
