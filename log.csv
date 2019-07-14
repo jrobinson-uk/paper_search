@@ -204,3 +204,57 @@
 "Working Memory",CSE,Success,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Working Memory"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
 109,"Working Memory Baddeley",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Working Memory Baddeley"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
 107,"Zone of Proximal Development",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"Zone of Proximal Development"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"notional machine",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"notional machine")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"notional machine",CSE,Success,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"notional machine"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"levels of abstraction",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"levels of abstraction")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+103,"levels of abstraction",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"levels of abstraction"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"threshold concepts",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"threshold concepts")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"threshold concepts",CSE,Success,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"threshold concepts"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+78,"threshold skills",CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"threshold skills")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+107,"threshold skills",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"threshold skills"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+87,"learning edge momentum",CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"learning edge momentum")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+102,"learning edge momentum",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"learning edge momentum"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+72,"proximal flow",CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"proximal flow")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+77,"proximal flow",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"proximal flow"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"defensive climate",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"defensive climate")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+61,"defensive climate",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"defensive climate"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"error quotient",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"error quotient")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+97,"error quotient",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"error quotient"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+108,"engagement theory" AND napps,CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"engagement theory" AND napps)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+104,"engagement theory" AND napps,CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"engagement theory" AND napps%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+64,"spatial skills" coding,CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"spatial skills" coding)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"spatial skills" coding,CSE,Success,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"spatial skills" coding%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"programming plans",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"programming plans")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+60,"programming plans",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"programming plans"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+PECT,CSE,Success,https://dl.acm.org/results.cfm?query=(%252BPECT)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+81,PECT,CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252BPECT%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+80,"reducing abstraction" hazzan,CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"reducing abstraction" hazzan)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"reducing abstraction" hazzan,CSE,Success,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"reducing abstraction" hazzan%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"identity formation",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"identity formation")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+81,"identity formation",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"identity formation"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"contextualized computing",CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"contextualized computing")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+88,"contextualized computing",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"contextualized computing"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+104,"innovation diffusion",CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"innovation diffusion")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+92,"innovation diffusion",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"innovation diffusion"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+74,"learning trajectories",CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"learning trajectories")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+69,"learning trajectories",CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"learning trajectories"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+"block model" schulte,CSE,Success,https://dl.acm.org/results.cfm?query=(%252B"block model" schulte)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+115,"block model" schulte,CSE,Failed,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"block model" schulte%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+106,"self-efficacy",CSE,Failed,https://dl.acm.org/results.cfm?query=(%252B"self-efficacy")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"self-efficacy",CSE,Success,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B"self-efficacy"%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+101,content.ftsec:(grit),CSE,Failed,https://dl.acm.org/results.cfm?query=(%252Bcontent.ftsec:(grit))&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+content.ftsec:(grit),CSE,Success,https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252Bcontent.ftsec:(grit)%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0
+109,content.ftsec:("theory of debugging"),CSE,Failed,https://dl.acm.org/results.cfm?query=(%252Bcontent.ftsec:("theory of debugging"))&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+95,"notional machine",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"notional machine")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"levels of abstraction",folder,Success,https://dl.acm.org/results.cfm?query=(%252B"levels of abstraction")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+101,"threshold concepts",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"threshold concepts")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"threshold skills",folder,Success,https://dl.acm.org/results.cfm?query=(%252B"threshold skills")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"learning edge momentum",folder,Success,https://dl.acm.org/results.cfm?query=(%252B"learning edge momentum")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+104,"proximal flow",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"proximal flow")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"defensive climate",folder,Success,https://dl.acm.org/results.cfm?query=(%252B"defensive climate")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+102,"error quotient",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"error quotient")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+111,"engagement theory" AND napps,folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"engagement theory" AND napps)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+99,"spatial skills" coding,folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"spatial skills" coding)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+107,"programming plans",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"programming plans")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+96,PECT,folder,Failed,https://dl.acm.org/results.cfm?query=(%252BPECT)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+117,"reducing abstraction" hazzan,folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"reducing abstraction" hazzan)&within=owners.owner=HOSTED&filtered=&dte=&bfr=

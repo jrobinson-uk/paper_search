@@ -21,7 +21,7 @@ from fake_useragent import UserAgent
 ua = UserAgent()
 
 def read_list():
-    queue = [line. rstrip('\n') for line in open("terms")].copy()
+    queue = [line. rstrip('\n') for line in open("CS_theories")].copy()
     complete = [line. rstrip('\n') for line in open("complete")].copy()
     failed = [line. rstrip('\n') for line in open("failed")].copy()
     #pprint(queue)
@@ -42,17 +42,18 @@ def single_search(term1,folder,url):
     with open("HTML/{}/{}.html".format(folder,term1),mode="wb") as f:
         f.write(response.content)
     results=re.search(b'[\d,]+<\/strong>',response.content)
+    print(results)
     sleep(randint(5,10))
     try:
         bib = b.follow_link("bibtex")
         with open(filename, mode="wb") as f:
             f.write(bib.content)
         with open("log.csv", mode="a") as f:
-            f.write("{},{},{},{}\n".format(term1,"CSE","Success",url,"\n"))
+            f.write("{},{},{},{}\n".format(term1,"folder","Success",url,"\n"))
 
     except:
         with open("log.csv", mode="a") as f:
-            f.write("{},{},{},{},{}\n".format(pause,term1,"CSE","Failed",url))
+            f.write("{},{},{},{},{}\n".format(pause,term1,"folder","Failed",url))
 
     print("pause",pause)
     sleep(pause)
@@ -100,7 +101,8 @@ pprint(complete)
 pprint(failed)
 for term_x in queue:
     print(term_x)
-    single_search(term_x,"CSE","https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B{0}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(term_x))
+    single_search(term_x,"ALL","https://dl.acm.org/results.cfm?query=(%252B{})&within=owners.owner=HOSTED&filtered=&dte=&bfr=".format(term_x))
+    #single_search(term_x,"CSE","https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B{0}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(term_x))
     #input()
 
 #acm_url_cse = "https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=%28%252B{0}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(term1)
