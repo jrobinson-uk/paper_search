@@ -40,9 +40,8 @@ def get_bib(fname):
                 second_number = pages_text.split('--')[-1]
                 try:
                     length = float(second_number) - float(first_number)
-                except ValueError:
+                except ValueError:    # Usually something like '634--'
                     length = 0
-                    print('Warning: Page calculation failed ({} - {})'.format(second_number, first_number), file=sys.stderr)
                 if length < 0:
                     print('Warning: Page calculation failed with negative', file=sys.stderr)
                 else:
