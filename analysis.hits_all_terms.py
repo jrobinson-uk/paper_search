@@ -2,7 +2,7 @@
 Generates the number of papers for all search terms.
 
 Usage:
-  analysis.hits_all_terms.py
+  analysis.hits_all_terms.py [--merge]
 """
 
 import bib_utils
@@ -22,9 +22,10 @@ table_str = '''\\begin{{table*}}[t]
 \\end{{table*}}'''
 
 
-def gen_term_count_table(theory_terms_d):
-    '''(Dict[str: str]) -> None
-    Print a latex table that displays the number of occurrences of papers for a specific term.
+def gen_term_count_table(theory_terms_d, merge):
+    '''(Dict[str: str], bool) -> None
+    Print a latex table that displays the number of occurrences of papers for a specific term. Rows with the same
+    theory are merged.
     '''
     format_str = 'p{4cm}p{6cm}rrp{3cm}'
     header_str = '& & Total & CSEd & \\\\Theory & Search Term & Occurrences & Occurrences & Main venues'
@@ -58,6 +59,7 @@ def gen_term_count_table(theory_terms_d):
 if __name__ == '__main__':
     from docopt import docopt
     arguments = docopt(__doc__)
+    merge = arguments.get('--merge', False)
 
     with open(TERMS_FILE) as f:
         theory_term_d = {}
@@ -69,4 +71,4 @@ if __name__ == '__main__':
             theory_term_d[fields[1].strip()] = fields[0].strip()
 
     output_fname = os.sep.join([OUTPUT_FOLDER, 'SUMMARY.hits_all_terms.tex'])
-    open(output_fname, 'w').write(gen_term_count_table(theory_term_d))
+    open(output_fname, 'w').write(gen_term_count_table(theory_term_d, merge))
