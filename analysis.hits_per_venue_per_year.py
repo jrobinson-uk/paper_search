@@ -8,13 +8,12 @@ Usage:
 import bib_utils
 
 
-table_str = '''\\begin{{table}}[ht]
+table_str = '''\\begin{{table*}}[t]
 \\begin{{tabular}}{{{}}}
-{}\\\\
+{}\\\\\\hline
 {}
-\\hline
 \\end{{tabular}}
-\\end{{table}}'''
+\\end{{table*}}'''
 
 
 def make_series_dict(bib):
@@ -23,7 +22,8 @@ def make_series_dict(bib):
     '''
     series_d = {}
     for entry in bib.entries_dict.values():
-        series_d.setdefault(bib_utils.get_series_field(entry), []).append(entry)
+        if bib_utils.get_series_field(entry):
+            series_d.setdefault(bib_utils.get_series_field(entry), []).append(entry)
     return series_d
 
 
@@ -40,7 +40,8 @@ def gen_venue_occurrence_table(bib):
     body_list = []
     for venue in venues:
         venue_list = []
-        related_series = sorted([series for series in series_d.keys() if series.startswith(venue)])
+        related_series = sorted([series for series in series_d.keys()
+            if series == venue or ('\'' in series and venue + '\'' + series.split('\'', maxsplit=1)[1] == series)])
 
         total_occurrences = 0
         for series in related_series[1:]:
@@ -50,7 +51,7 @@ def gen_venue_occurrence_table(bib):
         # Fenceposting -- but inserting at front to allow for rowspan
         series = related_series[0]
         total_occurrences += len(series_d[series])
-        venue_list.insert(0, '\\hline\n\\multirow{{{}}}{{*}}{{{}}} & {} & {} & \\multirow{{{}}}{{*}}{{{}}}\\\\'\
+        venue_list.insert(0, '\\multirow{{{}}}{{*}}{{{}}} & {} & {} & \\multirow{{{}}}{{*}}{{{}}}\\\\'\
           .format(len(related_series), venue, series, len(series_d[series]), len(related_series), total_occurrences))
 
         body_list.extend(venue_list)
