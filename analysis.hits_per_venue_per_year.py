@@ -15,8 +15,8 @@ table_str = '''\\begin{{table*}}[t]
 \\begin{{tabular}}{{{}}}
 {}\\\\\\hline
 {}
-\\caption{{{}: Occurrences of papers naming a theory at various venues}}
 \\end{{tabular}}
+\\caption{{{}: Occurrences of papers naming a theory at various venues}}
 \\end{{table*}}'''
 
 
@@ -73,4 +73,4 @@ if __name__ == '__main__':
     merged_bib = bib_utils.merge_bibs(bibs)
 
     output_fname = os.sep.join([OUTPUT_FOLDER, '{}.tex'.format(analysis_name)])
-    open(output_fname, 'w').write(gen_venue_occurrence_table(merged_bib, analysis_name))
+    open(output_fname, 'w').write(gen_venue_occurrence_table(merged_bib, analysis_name.replace('_', '\\_')))
