@@ -2,18 +2,27 @@
 Usage:
   bib_utils.py <command> <bibfile>
 
-Available commands: length, first, series, venues
+Available commands: length, first, series, venues, papers
 """
 
 import sys
+import os
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
+
+
+class EmptyBib():
+    entries = []
+    entries_dict = {}
 
 
 def get_bib(fname):
     '''(file) -> BibDatabase
     Convert a bibliography file (in latex format) into a bibliographic database.
     '''
+    if os.stat(fname).st_size == 0:    # bibtexparser fails on empty bibs
+        return EmptyBib()
+
     with open(fname) as bibtex_file:
         parser = BibTexParser(common_strings=True)
         bib_database = bibtexparser.load(bibtex_file, parser)
@@ -22,10 +31,10 @@ def get_bib(fname):
     del_keys = []
     for (k, v) in bib_database.entries_dict.items():
         if 'numpages' in v:
-            if int(v['numpages']) < 3:
+            if float(v['numpages']) < 3:
                 del_keys.append(k)
         else:
-            print('Entry "{}" lacks a numpages field.'.format(v['title']), file=sys.stderr)
+            print('Entry "{}" lacks a numpages field.'.format(v.get('title', v.get('id'))), file=sys.stderr)
     for k in del_keys:
         del bib_database.entries_dict[k]
 
@@ -63,18 +72,25 @@ def get_venues(bib):
     return set([entry.split('\'')[0] for entry in series])
 
 
+def extract_paper_list(bib):
+    '''(BibDatabase) -> Set[(str, int)]
+    Return a set of (paper title, pub year) tuples from a bibliographic database.
+    '''
+    return set([(v['title'], v['year']) for (k, v) in bib.entries_dict.items()])
+
+
 def merge_bibs(bib_list):
     '''(List[BibDatabase]) -> BibDatabase
     Return a new bibliographic database that combines unique elements from the list of databases.
     '''
     # Horrific hack. Writes the databases into strings, merges them, then reparses.
-
-
     print('''WARNING: It is important that any analysis on this merged database operate on the entries_dict since the entries list
 contains duplicates. In addition, merging respects bib key, so duplicate entries with different keys (from different
 sources or reprints in different venues) will not be identified.''', file=sys.stderr)
-    bib_strings = [bibtexparser.dumps(bib) for bib in bib_list]
-    return bibtexparser.loads('\n'.join(bib_strings))
+    bib_string = '\n'.join([bibtexparser.dumps(bib) for bib in bib_list])
+    if len(bib_string.strip()) > 0:
+        return bibtexparser.loads(bib_string)
+    return EmptyBib()
 
 
 if __name__ == '__main__':
@@ -88,6 +104,8 @@ if __name__ == '__main__':
         print('Total entries:', len(bib.entries_dict))
     elif command == 'first':
         print(bib.entries[0])
+    elif command == 'papers':
+        print(extract_paper_list(bib))
     elif command == 'series':
         print(get_series(bib))
     elif command == 'venues':
