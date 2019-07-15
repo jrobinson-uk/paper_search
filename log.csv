@@ -258,3 +258,18 @@ content.ftsec:(grit),CSE,Success,https://dl.acm.org/results.cfm?within=owners.ow
 107,"programming plans",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"programming plans")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
 96,PECT,folder,Failed,https://dl.acm.org/results.cfm?query=(%252BPECT)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
 117,"reducing abstraction" hazzan,folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"reducing abstraction" hazzan)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+"identity formation",folder,Success,https://dl.acm.org/results.cfm?query=(%252B"identity formation")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+73,"contextualized computing",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"contextualized computing")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+86,"innovation diffusion",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"innovation diffusion")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+92,"learning trajectories",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"learning trajectories")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+89,"block model" schulte,folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"block model" schulte)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+96,"self-efficacy",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"self-efficacy")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+90,content.ftsec:(grit),folder,Failed,https://dl.acm.org/results.cfm?query=(%252Bcontent.ftsec:(grit))&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+108,content.ftsec:("theory of debugging"),folder,Failed,https://dl.acm.org/results.cfm?query=(%252Bcontent.ftsec:("theory of debugging"))&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+70,"motivation learning",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"motivation learning")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+108,"geek gene",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"geek gene")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+85,"misconceptions",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"misconceptions")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+86,"attitudes",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"attitudes")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+105,"programming plans",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"programming plans")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+87,"debugging plans",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"debugging plans")&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+67,"model of programming errors",folder,Failed,https://dl.acm.org/results.cfm?query=(%252B"model of programming errors")&within=owners.owner=HOSTED&filtered=&dte=&bfr=

@@ -24,9 +24,6 @@ def read_list():
     queue = [line. rstrip('\n') for line in open("CS_theories")].copy()
     complete = [line. rstrip('\n') for line in open("complete")].copy()
     failed = [line. rstrip('\n') for line in open("failed")].copy()
-    #pprint(queue)
-    #pprint(complete)
-    #pprint(failed)
     return queue,complete,failed
 
 def single_search(term1,folder,url):
@@ -42,18 +39,20 @@ def single_search(term1,folder,url):
     with open("HTML/{}/{}.html".format(folder,term1),mode="wb") as f:
         f.write(response.content)
     results=re.search(b'[\d,]+<\/strong>',response.content)
-    print(results)
-    sleep(randint(5,10))
-    try:
-        bib = b.follow_link("bibtex")
-        with open(filename, mode="wb") as f:
-            f.write(bib.content)
-        with open("log.csv", mode="a") as f:
-            f.write("{},{},{},{}\n".format(term1,"folder","Success",url,"\n"))
+    if results==None:
+        failed.append(term1)
+    else:
+        sleep(randint(5,10))
+        try:
+            bib = b.follow_link("bibtex")
+            with open(filename, mode="wb") as f:
+                f.write(bib.content)
+            with open("log.csv", mode="a") as f:
+                f.write("{},{},{},{}\n".format(term1,"folder","Success",url,"\n"))
 
-    except:
-        with open("log.csv", mode="a") as f:
-            f.write("{},{},{},{},{}\n".format(pause,term1,"folder","Failed",url))
+        except:
+            with open("log.csv", mode="a") as f:
+                f.write("{},{},{},{},{}\n".format(pause,term1,"folder","Failed",url))
 
     print("pause",pause)
     sleep(pause)

@@ -1,4 +1,4 @@
-queue = [line. rstrip('\n') for line in open("terms")].copy()
+queue = [line. rstrip('\n') for line in open("theories-terms.csv")].copy()
 with open("bibs.html",mode="w") as f:
     f.write("<html><table>")
     for term in queue:

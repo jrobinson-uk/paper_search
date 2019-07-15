@@ -3,7 +3,7 @@ from time import sleep
 from random import randint
 
 papers = [
-"Achievement motivation: Conceptions of ability, subjective experience, task choice, and performance.,Nicholls, John G",
+#"Achievement motivation: Conceptions of ability, subjective experience, task choice, and performance.,Nicholls, John G",
 "The theory of affordances,Gibson, James J",
 "The organization of behavior. A neuropsychological theory,Hebb, DO",
 "Learning and teaching styles in engineering education,Felder, Richard M and Silverman, Linda K and others",
@@ -26,12 +26,8 @@ for paper in papers:
     search_query = scholarly.search_pubs_query(paper)
     pub=next(search_query)
     cited = [citation.bib for citation in pub.get_citedby()]
-    print(cited)
-    quit()
-        #with open (paper,mode="w") as f:
-            #cite = str(cited[
-        #    f.write(str(next(cited)))
-         #   f.write("\n\n")
-          #  input("Waiting...")
-           # sleep(randint(30,60))
-
+#    print(cited)
+    with open (paper,mode="w") as f:
+        f.write(str(cited))
+        input("Waiting...")
+        sleep(randint(900,1800))
