@@ -125,6 +125,7 @@ def merge_bibs(bib_list):
     Return a new bibliographic database that combines unique elements from the list of databases.
     '''
     # Horrific hack. Writes the databases into strings, merges them, then reparses.
+    bib_string = '\n'.join([bibtexparser.dumps(bib) for bib in bib_list])
     if len(bib_string.strip()) > 0:
         return bibtexparser.loads(bib_string)
     return EmptyBib()

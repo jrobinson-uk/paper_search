@@ -2,7 +2,7 @@
 Generates the 2-d matrix of theories and identifies when a paper references both.
 
 Usage:
-  analysis.crosstab.py
+  analysis.crosstab.py <type>
 """
 
 import bib_utils
@@ -23,8 +23,8 @@ table_str = '''\\begin{{table*}}[t]
 \\end{{table*}}'''
 
 
-def gen_crosstab(theory_terms_d):
-    '''(Dict[str: str]) -> str
+def gen_crosstab(theory_terms_d, typ):
+    '''(Dict[str: str], str) -> str
     Return a latex table that represents the crosstab of theories.
     '''
 
@@ -32,7 +32,7 @@ def gen_crosstab(theory_terms_d):
     counter = 1
     for (theory, terms) in theory_terms_d.items():
         try:
-            bibs = [bib_utils.get_bib(os.sep.join(['ALL', '{},{}.bib'.format(theory, term)])) for term in terms]     # Burning space!
+            bibs = [bib_utils.get_bib(os.sep.join([typ, '{},{}.bib'.format(theory, term)])) for term in terms]     # Burning space!
             bib = bib_utils.merge_bibs(bibs)
             venues = bib_utils.get_venues(bib)   # Just in case we want venues later
             papers = bib_utils.extract_paper_list(bib)
@@ -63,6 +63,7 @@ def gen_crosstab(theory_terms_d):
 if __name__ == '__main__':
     from docopt import docopt
     arguments = docopt(__doc__)
+    typ = arguments.get('<type>')
 
     with open(TERMS_FILE) as f:
         theory_term_d = {}
@@ -73,5 +74,5 @@ if __name__ == '__main__':
                 continue
             theory_term_d.setdefault(fields[0], []).append(fields[1])
 
-    output_fname = os.sep.join([OUTPUT_FOLDER, 'SUMMARY.crosstab.tex'])
-    open(output_fname, 'w').write(gen_crosstab(theory_term_d))
+    output_fname = os.sep.join([OUTPUT_FOLDER, 'SUMMARY.{}-crosstab.tex'.format(typ)])
+    open(output_fname, 'w').write(gen_crosstab(theory_term_d, typ))

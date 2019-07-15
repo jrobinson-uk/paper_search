@@ -11,6 +11,7 @@ import sys
 
 OUTPUT_FOLDER = 'TABLES'
 TERMS_FILE = 'theories-terms.csv'
+MAX_LENGTH = 60
 
 
 table_str = '''\\begin{{table*}}[t]
@@ -18,8 +19,9 @@ table_str = '''\\begin{{table*}}[t]
 {}\\\\\\hline
 {}
 \\end{{tabular}}
-\\caption{{Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers are listed.}}
+\\caption{{{}}}
 \\end{{table*}}'''
+caption_text = 'Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers are listed.'
 
 
 def line_per_search(theory, terms):
@@ -95,8 +97,10 @@ def gen_term_count_table(theory_terms_d, merge):
         else: # not merged ...
             body_list.extend(line_per_search(theory, terms))
 
-    return table_str.format(format_str, header_str, '\n'.join(body_list)).replace('_', '\\_')
-
+    tables = []
+    for i in range(0, len(body_list), MAX_LENGTH):
+        tables.append(table_str.format(format_str, header_str, '\n'.join(body_list[i: i + MAX_LENGTH]), caption_text).replace('_', '\\_'))
+    return '\n\n'.join(tables)
 
 if __name__ == '__main__':
     from docopt import docopt

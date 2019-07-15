@@ -16,6 +16,7 @@ table_str = '''\\begin{{table*}}[t]
 \\end{{tabular}}
 \\caption{{Search terms utilized to find uses of each theory.}}
 \\end{{table*}}'''
+MAX_LENGTH = 60
 
 
 if __name__ == '__main__':
@@ -38,7 +39,8 @@ if __name__ == '__main__':
         body.append('{} & {}'.format(theory, search_strings[0]))
         for search_str in search_strings[1:]:
             body.append(' & {}'.format(search_str))
-    body = '\\\\\n'.join(body)
 
-    open(os.sep.join([OUTPUT_FOLDER, 'search_terms.tex']), 'w')\
-      .write(table_str.format(alignment, header, body))
+    tables = []
+    for i in range(0, len(body), MAX_LENGTH):
+        tables.append(table_str.format(alignment, header, '\\\\\n'.join(body[i: i + MAX_LENGTH])).replace('_', '\\_'))
+    open(os.sep.join([OUTPUT_FOLDER, 'search_terms.tex']), 'w').write('\n\n'.join(tables))
