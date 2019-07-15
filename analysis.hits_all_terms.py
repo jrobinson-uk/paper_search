@@ -28,10 +28,8 @@ def line_per_search(theory, terms):
     '''
     body_list = []
     for term in terms:
-        fname = term.strip('"')     # For compatibility with search.py's output files
-
         try:
-            bib = bib_utils.get_bib(os.sep.join(['ALL', '{}.bib'.format(fname)]))
+            bib = bib_utils.get_bib(os.sep.join(['ALL', '{},{}.bib'.format(theory, term)]))
             occurrences = len(bib.entries_dict)
 
             venue_counts = bib_utils.get_venue_counts(bib)
@@ -42,7 +40,7 @@ def line_per_search(theory, terms):
             top_venues = '...'
 
         try:
-            bib = bib_utils.get_bib(os.sep.join(['CSE', '{}.bib'.format(fname)]))
+            bib = bib_utils.get_bib(os.sep.join(['CSE', '{},{}.bib'.format(theory, term)]))
             cs_occurrences = len(bib.entries_dict)
         except FileNotFoundError:
             cs_occurrences = 'Running'
@@ -56,7 +54,7 @@ def line_per_theory(theory, terms):
     Generate a row of data for the theory. Return a string containing that data.
     '''
     try:
-        bibs = [bib_utils.get_bib(os.sep.join(['ALL', '{}.bib'.format(term.strip('"'))])) for term in terms]     # Burning space!
+        bibs = [bib_utils.get_bib(os.sep.join(['ALL', '{},{}.bib'.format(theory, term)])) for term in terms]     # Burning space!
         bib = bib_utils.merge_bibs(bibs)
         occurrences = len(bib.entries_dict)
 
@@ -68,7 +66,7 @@ def line_per_theory(theory, terms):
         top_venues = '...'
 
     try:
-        bibs = [bib_utils.get_bib(os.sep.join(['CSE', '{}.bib'.format(term.strip('"'))])) for term in terms]
+        bibs = [bib_utils.get_bib(os.sep.join(['CSE', '{},{}.bib'.format(theory, term)])) for term in terms]
         bib = bib_utils.merge_bibs(bibs)
         cs_occurrences = len(bib.entries_dict)
     except FileNotFoundError:
