@@ -20,3 +20,5 @@ if __name__ == '__main__':
     venues = bib_utils.get_venues(merged_bib)
     print(venues)
     print('Total venues:', len(venues))
+    print('Total papers:', len(merged_bib.entries_dict))
+    print('Total searches:', len(bibfiles))
