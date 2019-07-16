@@ -50,9 +50,10 @@ def single_search(term1,folder,url):
             f.write("{}.{},{},{}\n".format(datetime.now(),term1,results,url))
         sleep(randint(5,10))
         try:
-            bib = b.follow_link("bibtex")
             with open(filename, mode="wb") as f:
-                f.write(bib.content)
+                if results > 0:
+                    bib = b.follow_link("bibtex")
+                    f.write(bib.content)
 
         except:
             with open("log.csv", mode="a") as f:
@@ -73,7 +74,7 @@ for search in list(set(queue)-set(complete)):
 #with open("log.csv", mode="w") as f:
     #f.write("Result,Term,URL\n")
 for term in queue:
-    print(term)
+    #print(term)
     terms = term.split(",")
     #print(terms)
     #print(type(terms))
