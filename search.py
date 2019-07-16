@@ -88,7 +88,7 @@ for term in queue:
         url2 ="https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=(%252B{}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(urllib.parse.quote(terms[1]))
         #print(url1)
         #print(url2)
-        status1 = True#single_search(term,"ALL",url1)
+        status1 = single_search(term,"ALL",url1)
         status2 = single_search(term,"CSE",url2)
         print(status1,status2)
         if status1 and status2:                           #  https://dl.acm.org/results.cfm?query=(%252B%22{}%22)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
