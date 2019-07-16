@@ -1,5 +1,0 @@
-docopts
-bibtexparser
-mechanicalsoup
-scholarly
-fake_useragent
