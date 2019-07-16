@@ -11,6 +11,7 @@ import sys
 
 OUTPUT_FOLDER = 'TABLES'
 TERMS_FILE = 'theories-terms.csv'
+MAX_LENGTH = 60
 
 
 table_str = '''\\begin{{table*}}[t]
@@ -18,8 +19,9 @@ table_str = '''\\begin{{table*}}[t]
 {}\\\\\\hline
 {}
 \\end{{tabular}}
-\\caption{{Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers are listed.}}
+\\caption{{{}}}
 \\end{{table*}}'''
+caption_text = 'Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers are listed.'
 
 
 def line_per_search(theory, terms):
@@ -28,10 +30,8 @@ def line_per_search(theory, terms):
     '''
     body_list = []
     for term in terms:
-        fname = term.strip('"')     # For compatibility with search.py's output files
-
         try:
-            bib = bib_utils.get_bib(os.sep.join(['ALL', '{}.bib'.format(fname)]))
+            bib = bib_utils.get_bib(os.sep.join(['ALL', '{},{}.bib'.format(theory, term)]))
             occurrences = len(bib.entries_dict)
 
             venue_counts = bib_utils.get_venue_counts(bib)
@@ -42,7 +42,7 @@ def line_per_search(theory, terms):
             top_venues = '...'
 
         try:
-            bib = bib_utils.get_bib(os.sep.join(['CSE', '{}.bib'.format(fname)]))
+            bib = bib_utils.get_bib(os.sep.join(['CSE', '{},{}.bib'.format(theory, term)]))
             cs_occurrences = len(bib.entries_dict)
         except FileNotFoundError:
             cs_occurrences = 'Running'
@@ -56,7 +56,7 @@ def line_per_theory(theory, terms):
     Generate a row of data for the theory. Return a string containing that data.
     '''
     try:
-        bibs = [bib_utils.get_bib(os.sep.join(['ALL', '{}.bib'.format(term.strip('"'))])) for term in terms]     # Burning space!
+        bibs = [bib_utils.get_bib(os.sep.join(['ALL', '{},{}.bib'.format(theory, term)])) for term in terms]     # Burning space!
         bib = bib_utils.merge_bibs(bibs)
         occurrences = len(bib.entries_dict)
 
@@ -68,7 +68,7 @@ def line_per_theory(theory, terms):
         top_venues = '...'
 
     try:
-        bibs = [bib_utils.get_bib(os.sep.join(['CSE', '{}.bib'.format(term.strip('"'))])) for term in terms]
+        bibs = [bib_utils.get_bib(os.sep.join(['CSE', '{},{}.bib'.format(theory, term)])) for term in terms]
         bib = bib_utils.merge_bibs(bibs)
         cs_occurrences = len(bib.entries_dict)
     except FileNotFoundError:
@@ -97,8 +97,10 @@ def gen_term_count_table(theory_terms_d, merge):
         else: # not merged ...
             body_list.extend(line_per_search(theory, terms))
 
-    return table_str.format(format_str, header_str, '\n'.join(body_list)).replace('_', '\\_')
-
+    tables = []
+    for i in range(0, len(body_list), MAX_LENGTH):
+        tables.append(table_str.format(format_str, header_str, '\n'.join(body_list[i: i + MAX_LENGTH]), caption_text).replace('_', '\\_'))
+    return '\n\n'.join(tables)
 
 if __name__ == '__main__':
     from docopt import docopt
