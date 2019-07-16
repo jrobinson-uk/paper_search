@@ -1,6 +1,6 @@
 """
 Usage:
-  bib_utils.py <command> <bibfile>
+  bib_utils.py <command> <bibfile> [--verbose]
 
 Available commands: length, first, series, venues, papers
 """
@@ -25,7 +25,7 @@ class EmptyBib():
     comments = []
 
 
-def get_bib(fname):
+def get_bib(fname, verbose=False):
     '''(file) -> BibDatabase
     Convert a bibliography file (in latex format) into a bibliographic database.
     '''
@@ -49,14 +49,16 @@ def get_bib(fname):
                 except ValueError:    # Usually something like '634--'
                     length = 0
                 if length < 0:
-                    print('Warning: Page calculation failed with negative', file=sys.stderr)
+                    if verbose:
+                        print('Warning: Page calculation failed with negative', file=sys.stderr)
                 else:
                     v['numpages'] = str(length)
         if 'numpages' in v:
             if float(v['numpages']) < 3:    # This gets rid of short papers AND proceedings
                 del_keys.append(k)
         else:
-            print('Entry "{}" lacks a numpages or pages field.'.format(v.get('title', v.get('id'))), file=sys.stderr)
+            if verbose:
+                print('Entry "{}" lacks a numpages or pages field.'.format(v.get('title', v.get('id'))), file=sys.stderr)
     for k in del_keys:
         del bib_database.entries_dict[k]
 
@@ -117,7 +119,7 @@ def extract_paper_list(bib):
     '''(BibDatabase) -> Set[(str, int)]
     Return a set of (paper title, pub year) tuples from a bibliographic database.
     '''
-    return set([(v['title'], v['year']) for (k, v) in bib.entries_dict.items()])
+    return set([(v.get('title', v.get('id')), v['year']) for (k, v) in bib.entries_dict.items()])
 
 
 def merge_bibs(bib_list):
@@ -137,6 +139,7 @@ if __name__ == '__main__':
 
     command = arguments.get('<command>')
     bib = get_bib(arguments.get('<bibfile>'))
+    verbose = arguments.get('--verbose', False)
 
     if command == 'length':
         print('Total entries:', len(bib.entries_dict))
