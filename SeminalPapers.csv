@@ -1,4 +1,4 @@
-TOTAL 144,TOTAL 32 THEORIES,,TOTAL -57 TO GO,,
+TOTAL 144,TOTAL 31 THEORIES,,TOTAL -58 TO GO,,
 ,INCLUDE/EXCLUDE,,Most cited paper (EXCLUDED IF EXCLUDED),One of the initial papers,Overview / history paper
 Achievement Goal Theory,INCLUDE,"title={Achievement motivation: Conceptions of ability, subjective experience, task choice, and performance.}","Achievement motivation: Conceptions of ability, subjective experience, task choice, and performance. (5275 citations.)
 
@@ -695,7 +695,7 @@ Split Attention Effect,#N/A,title={A split-attention effect in multimedia learni
   year={1998},
   publisher={American Psychological Association}
 }",,
-Stage Theory of Cognitive Development,#N/A,title={1952. The Origins of Intelligence in Children},"16058 citatations
+Stage Theory of Cognitive Development,#N/A,title={The Origins of Intelligence in Children},"16058 citatations
 @book{piaget1952origins,
   title={The origins of intelligence in children},
   author={Piaget, Jean and Cook, Margaret},
@@ -704,7 +704,7 @@ Stage Theory of Cognitive Development,#N/A,title={1952. The Origins of Intellige
   year={1952},
   publisher={International Universities Press New York}
 }","@misc{piaget19361952,
-  title={1952. The Origins of Intelligence in Children},
+  title={The Origins of Intelligence in Children},
   author={Piaget, Jean},
   year={1936},
   publisher={International Universities Press, New York}
@@ -1747,7 +1747,7 @@ Engagement Taxonomy,#N/A,title={Exploring the role of visualization and engageme
   year={2002},
   organization={ACM}
 }",,
-"spatial reasoning skills (someone please check this one, I'm not sure I'm pulling in the correct reference here as it is not CS specific)",INCLUDE,title={Spatial learning and reasoning skill},"155 citations
+Spatial Reasoning Skills,#N/A,title={Spatial learning and reasoning skill},"155 citations
 
 @incollection{thorndyke1983spatial,
   title={Spatial learning and reasoning skill},

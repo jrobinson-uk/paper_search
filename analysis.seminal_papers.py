@@ -9,14 +9,15 @@ import os
 import csv
 
 OUTPUT_FOLDER = 'TABLES'
-title_ind = 0
-test_ind = 6
-venues = ['TOCE', 'Koli', 'ICER', 'SIGCSE', 'ITiCSE', 'ACE']
-counts_inds = [9, 11, 13, 15, 17, 19]
-total_ind = 20
+title_ind = 3
+test_ind = 7
+venues = ['TOCE', 'CE', 'ICER', 'SIGCSE', 'ITiCSE', 'Koli', 'ACE']
+counts_inds = [10, 12, 16, 18, 20, 14, 22]
+total_ind = 23
 
 theory_ind = 0
 theory_title_ind = 2
+citation_ind = 3
 
 table_str = '''\\begin{{table*}}[t]
 \\begin{{tabular}}{{{}}}
@@ -39,17 +40,28 @@ if __name__ == '__main__':
         reader = csv.reader(f, delimiter=',', quotechar='"')
 
         theory_d = {}
+        citations_d = {}
+        citation_text = []
         for fields in reader:
             title = fields[theory_title_ind]
-            title = title[title.find('{') + 1: title.find('}')]
+            title = title[title.find('{') + 1: title.rfind('}')]
             theory_d[title] = fields[theory_ind]
+
+            citation_field = fields[citation_ind]
+            if '@' in citation_field:
+                citation_field = citation_field[citation_field.find('@'):].strip()
+                citation_text.append(citation_field)
+                citation = citation_text[-1].split(',')[0]
+                citations_d[title] = citation[citation.find('{') + 1:]
+    open(os.sep.join([OUTPUT_FOLDER, 'seminal.bib']), 'w').write('\n'.join(citation_text))
+
 
     # Emitting a line for each paper
     fname = arguments.get('<citations.csv>')
     with open(fname) as f:
         reader = csv.reader(f, delimiter=',', quotechar='"')
 
-        alignment = 'p{{3cm}}p{{7cm}}{}l'.format('l' * len(counts_inds))
+        alignment = 'p{{3cm}}p{{6cm}}{}l'.format('l' * len(counts_inds))
         header = next(reader)
         header_str = '&'.join(['Theory', 'Paper'] + venues + ['Total'])
 
@@ -58,8 +70,7 @@ if __name__ == '__main__':
             if fields[test_ind]:
                 counts_str = ' & '.join([fields[ind] for ind in counts_inds])
                 title = fields[title_ind]
-                title = title[title.find('{') + 1: title.rfind('}')]
-                body.append('{} & \\textit{{{}}} & {} & {}\\\\'.format(theory_d.get(title, '???'), title.strip('.'), counts_str, fields[total_ind]))
+                body.append('{} & \\textit{{{}}}~\\cite{{{}}} & {} & {}\\\\'.format(theory_d.get(title, '???'), title.strip('.'), citations_d.get(title, '???'), counts_str, fields[total_ind]))
         body_str = '\n'.join(body)
 
 
