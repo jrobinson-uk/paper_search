@@ -21,7 +21,7 @@ table_str = '''\\begin{{table*}}[t]
 \\end{{tabular}}
 \\caption{{{}}}
 \\end{{table*}}'''
-caption_text = 'Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers are listed.'
+caption_text = 'Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers with a computing education CSS are listed.'
 
 
 def line_per_search(theory, terms):
@@ -55,24 +55,27 @@ def line_per_theory(theory, terms):
     '''(str, List[str]) -> str
     Generate a row of data for the theory. Return a string containing that data.
     '''
-    try:
-        bibs = [bib_utils.get_bib(os.sep.join(['ALL', '{},{}.bib'.format(theory, term)])) for term in terms]     # Burning space!
-        bib = bib_utils.merge_bibs(bibs)
-        occurrences = len(bib.entries_dict)
+    bibs = []
+    for term in terms:
+        try:
+            bibs.append(bib_utils.get_bib(os.sep.join(['ALL', '{},{}.bib'.format(theory, term)])))
+        except FileNotFoundError:
+            pass
+    bib = bib_utils.merge_bibs(bibs)
+    occurrences = len(bib.entries_dict)
 
-        venue_counts = bib_utils.get_venue_counts(bib)
-        venue_counts = venue_counts[: min(3, len(venue_counts))]
-        top_venues = '; '.join(['{} ({})'.format(*venue) for venue in venue_counts if venue[1] > 5])
-    except FileNotFoundError:
-        occurrences = 'Running'
-        top_venues = '...'
+    bibs = []
+    for term in terms:
+        try:
+            bibs.append(bib_utils.get_bib(os.sep.join(['CSE', '{},{}.bib'.format(theory, term)])))
+        except FileNotFoundError:
+            pass
+    bib = bib_utils.merge_bibs(bibs)
+    cs_occurrences = len(bib.entries_dict)
 
-    try:
-        bibs = [bib_utils.get_bib(os.sep.join(['CSE', '{},{}.bib'.format(theory, term)])) for term in terms]
-        bib = bib_utils.merge_bibs(bibs)
-        cs_occurrences = len(bib.entries_dict)
-    except FileNotFoundError:
-        cs_occurrences = 'Running'
+    venue_counts = bib_utils.get_venue_counts(bib)
+    venue_counts = venue_counts[: min(3, len(venue_counts))]
+    top_venues = '; '.join(['{} ({})'.format(*venue) for venue in venue_counts if venue[1] > 3])
 
     return '{} & {} & {} & {} \\\\'.format(theory, occurrences, cs_occurrences, top_venues)
 
