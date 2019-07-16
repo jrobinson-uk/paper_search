@@ -12,8 +12,10 @@ import glob
 import urllib.parse
 
 existing = glob.glob("*/*.bib")
+with open("files_captured",mode="w") as f:
+    for file in existing:
+        f.write("{}\n".format(str(file)))
 
-#input()
 from datetime import date,datetime
 from re import sub
 from time import sleep
@@ -28,7 +30,7 @@ def read_list():
     return queue,complete,failed
 
 def single_search(term1,folder,url):
-    pause = randint(60,120)
+    pause = randint(30,60)
     b = mechanicalsoup.StatefulBrowser(soup_config={'features':'lxml'},raise_on_404=False,user_agent=ua.random,)
     print(term1)
     print(url)
@@ -45,17 +47,20 @@ def single_search(term1,folder,url):
         status = False
     else:
         status=True
-        results = results.group(0).decode("utf-8")[:-9]
+        results = int(results.group(0).decode("utf-8")[:-9].replace(',', ''))
         with open("log.csv", mode="a") as f:
             f.write("{}.{},{},{}\n".format(datetime.now(),term1,results,url))
         sleep(randint(5,10))
         try:
             with open(filename, mode="wb") as f:
+                print("{} open...".format(filename))
                 if results > 0:
                     bib = b.follow_link("bibtex")
                     f.write(bib.content)
+                    print("...bibtex written.")
 
         except:
+
             with open("log.csv", mode="a") as f:
                 f.write("{},{},{},{}\n".format(datetime.now(),term1,"FAIL",url))
 
@@ -83,7 +88,7 @@ for term in queue:
         url2 ="https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=(%252B{}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(urllib.parse.quote(terms[1]))
         #print(url1)
         #print(url2)
-        status1 = single_search(term,"ALL",url1)
+        status1 = True#single_search(term,"ALL",url1)
         status2 = single_search(term,"CSE",url2)
         print(status1,status2)
         if status1 and status2:                           #  https://dl.acm.org/results.cfm?query=(%252B%22{}%22)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
