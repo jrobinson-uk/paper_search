@@ -92,7 +92,7 @@ def generate_venue(series):
     '''(str) -> str
     Converts a series into a venue.
     '''
-    return ''.join([ch for ch in series if not(ch == '\'' or ch.isdigit())])
+    return ''.join([ch for ch in series if not(ch == '\'' or ch.isdigit())]).strip()
 
 
 def get_venues(bib):

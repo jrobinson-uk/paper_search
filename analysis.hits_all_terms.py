@@ -21,7 +21,7 @@ table_str = '''\\begin{{table*}}[t]
 \\end{{tabular}}
 \\caption{{{}}}
 \\end{{table*}}'''
-caption_text = 'Occurrences of papers for particular search terms. For each search term, the top 3 venues with at least 5 papers with a computing education CSS are listed.'
+caption_text = 'Occurrences of papers for particular search terms. For each search term, the top three venues with at least four papers with a computing education CSS are listed.'
 
 
 def line_per_search(theory, terms):
