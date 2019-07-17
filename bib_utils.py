@@ -109,8 +109,9 @@ def get_venue_counts(bib):
     '''
     venue_counts = {}
     for entry in bib.entries_dict.values():
-        venue = generate_venue(get_series_field(entry))
-        if venue:
+        series = get_series_field(entry)
+        if series:
+            venue = generate_venue(series)
             venue_counts[venue] = venue_counts.get(venue, 0) + 1
     return sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
 
