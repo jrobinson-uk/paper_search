@@ -19,6 +19,8 @@ theory_ind = 0
 theory_title_ind = 2
 citation_ind = 3
 
+count_limit = 10
+
 table_str = '''\\begin{{table*}}[t]
 \\begin{{tabular}}{{{}}}
 {}\\\\\\hline
@@ -66,9 +68,13 @@ if __name__ == '__main__':
         header_str = '&'.join(['Theory', 'Paper'] + venues + ['Total'])
 
         body = []
+        cited_count = 0
         for fields in reader:
             if fields[test_ind]:
-                counts_str = ' & '.join([fields[ind] for ind in counts_inds])
+                counts = [fields[ind] for ind in counts_inds]
+                int_counts = [int(count) for count in counts]
+                counts_str = ' & '.join(counts)
+                cited_count = cited_count + 1 if sum(int_counts) > count_limit else cited_count
                 title = fields[title_ind]
                 body.append('{} & \\textit{{{}}}~\\cite{{{}}} & {} & {}\\\\'.format(theory_d.get(title, '???'), title.strip('.'), citations_d.get(title, '???'), counts_str, fields[total_ind]))
         body_str = '\n'.join(body)
@@ -76,3 +82,4 @@ if __name__ == '__main__':
 
     table = table_str.format(alignment, header_str, body_str)
     open(os.sep.join([OUTPUT_FOLDER, 'SUMMARY.seminal_papers.tex']), 'w').write(table)
+    print(cited_count, 'papers were cited at least {} times'.format(count_limit))

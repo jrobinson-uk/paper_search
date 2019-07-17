@@ -74,6 +74,7 @@ def line_per_theory(theory, terms):
     cs_occurrences = len(bib.entries_dict)
 
     venue_counts = bib_utils.get_venue_counts(bib)
+    print(theory, venue_counts)
     venue_counts = venue_counts[: min(3, len(venue_counts))]
     top_venues = '; '.join(['{} ({})'.format(*venue) for venue in venue_counts if venue[1] > 3])
 
