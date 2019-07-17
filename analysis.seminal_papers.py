@@ -11,9 +11,9 @@ import csv
 OUTPUT_FOLDER = 'TABLES'
 title_ind = 3
 test_ind = 7
-venues = ['TOCE', 'CE', 'ICER', 'SIGCSE', 'ITiCSE', 'Koli', 'ACE']
-counts_inds = [10, 12, 16, 18, 20, 14, 22]
-total_ind = 23
+venues = ['TOCE', 'CE', 'SIGCSE Bull', 'ICER', 'SIGCSE', 'ITiCSE', 'Koli', 'ACE']
+counts_inds = [10, 12, 14, 18, 20, 22, 16, 24]
+total_ind = 25
 
 theory_ind = 0
 theory_title_ind = 2
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     with open(fname) as f:
         reader = csv.reader(f, delimiter=',', quotechar='"')
 
-        alignment = 'p{{3cm}}p{{6cm}}{}l'.format('l' * len(counts_inds))
+        alignment = 'p{{3cm}}p{{5cm}}{}l'.format('l' * len(counts_inds))
         header = next(reader)
         header_str = '&'.join(['Theory', 'Paper'] + venues + ['Total'])
 
