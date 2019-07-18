@@ -16,7 +16,6 @@ CSE/Interference Theory (Bergström),"Interference Theory".bib
 CSE/model of programming errors,"model of programming errors".bib
 CSE/Learner-Centered Design,"Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay").bib
 CSE/Sensory Theory,"Sensory theory".bib
-CSE/Learning Styles,"Learning Styles".bib
 CSE/Metacognition,"Metacognition".bib
 CSE/Chunking - Working Memory,"Chunking" AND "memory".bib
 CSE/innovation diffusion,"innovation diffusion".bib
@@ -64,7 +63,6 @@ CSE/threshold skills,"threshold skills".bib
 CSE/Operant Conditioning,"Operant Conditioning".bib
 CSE/Situated Learning,"Situated Learning".bib
 CSE/proximal flow,"proximal flow".bib
-CSE/Learning Styles,"Learning styles".bib
 CSE/attitudes,"attitudes".bib
 CSE/Expertise Theory,"Expertise theory".bib
 CSE/Social Learning Theory,"social learning theory".bib
@@ -91,7 +89,7 @@ CSE/grit theory,"grit".bib
 CSE/Problem-Based Learning (PBL),"Problem-Based Learning".bib
 CSE/Associative learning (Hebb),"Associative learning".bib
 CSE/programming plans,"programming plans".bib
-CSE/Communities of Practice,"Communities of Practice".bib
+CSE/Self-Determination Theory,"Self-Determination Theory".bib
 CSE/Stage Theory of Cognitive Development,"piagetian".bib
 CSE/Instructivism,"Instructionism".bib
 CSE/Model of Hierarchical Complexity,"Hierarchical Complexity".bib
@@ -201,6 +199,7 @@ FULL-ALL/Problem-Based Learning (PBL),"Problem-Based Learning".bib
 FULL-ALL/Associative learning (Hebb),"Associative learning".bib
 FULL-ALL/programming plans,"programming plans".bib
 FULL-ALL/Communities of Practice,"Communities of Practice".bib
+FULL-ALL/Self-Determination Theory,"Self-Determination Theory".bib
 FULL-ALL/Stage Theory of Cognitive Development,"piagetian".bib
 FULL-ALL/Instructivism,"Instructionism".bib
 FULL-ALL/Model of Hierarchical Complexity,"Hierarchical Complexity".bib
@@ -233,7 +232,6 @@ ALL/Interference Theory (Bergström),"Interference Theory".bib
 ALL/model of programming errors,"model of programming errors".bib
 ALL/Learner-Centered Design,"Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay").bib
 ALL/Sensory Theory,"Sensory theory".bib
-ALL/Learning Styles,"Learning Styles".bib
 ALL/Metacognition,"Metacognition".bib
 ALL/Chunking - Working Memory,"Chunking" AND "memory".bib
 ALL/innovation diffusion,"innovation diffusion".bib
@@ -281,7 +279,6 @@ ALL/threshold skills,"threshold skills".bib
 ALL/Operant Conditioning,"Operant Conditioning".bib
 ALL/Situated Learning,"Situated Learning".bib
 ALL/proximal flow,"proximal flow".bib
-ALL/Learning Styles,"Learning styles".bib
 ALL/attitudes,"attitudes".bib
 ALL/Expertise Theory,"Expertise theory".bib
 ALL/Social Learning Theory,"social learning theory".bib
@@ -308,7 +305,6 @@ ALL/grit theory,"grit".bib
 ALL/Problem-Based Learning (PBL),"Problem-Based Learning".bib
 ALL/Associative learning (Hebb),"Associative learning".bib
 ALL/programming plans,"programming plans".bib
-ALL/Communities of Practice,"Communities of Practice".bib
 ALL/Self-Determination Theory,"Self-Determination Theory".bib
 ALL/Stage Theory of Cognitive Development,"piagetian".bib
 ALL/Instructivism,"Instructionism".bib

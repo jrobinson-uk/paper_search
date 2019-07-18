@@ -92,7 +92,7 @@ def generate_venue(series):
     '''(str) -> str
     Converts a series into a venue.
     '''
-    return ''.join([ch for ch in series if not(ch == '\'' or ch.isdigit())])
+    return ''.join([ch for ch in series if not(ch == '\'' or ch.isdigit())]).strip()
 
 
 def get_venues(bib):
@@ -111,7 +111,8 @@ def get_venue_counts(bib):
     for entry in bib.entries_dict.values():
         series = get_series_field(entry)
         if series:
-            venue_counts[series] = venue_counts.get(generate_venue(series), 0) + 1
+            venue = generate_venue(series)
+            venue_counts[venue] = venue_counts.get(venue, 0) + 1
     return sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
 
 

@@ -15,11 +15,14 @@ TERMS_FILE = 'theories-terms.csv'
 
 
 table_str = '''\\begin{{table*}}[t]
+\\centering
+\\tiny
+\\setlength\\tabcolsep{{1.5 pt}}
 \\begin{{tabular}}{{{}}}
 {}\\\\\\hline
 {}
 \\end{{tabular}}
-\\caption{{Cross-tab of theories, identifying when a paper references two theories.}}
+\\caption{{Cross-tab of theories, identifying when a paper references two theories. Only theories with at least one point of intersection are listed.}}
 \\end{{table*}}'''
 
 
@@ -29,34 +32,50 @@ def gen_crosstab(theory_terms_d, typ):
     '''
 
     theory_bibs_d = OrderedDict()
-    counter = 1
     for (theory, terms) in theory_terms_d.items():
-        try:
-            bibs = [bib_utils.get_bib(os.sep.join([typ, '{},{}.bib'.format(theory, term)])) for term in terms]     # Burning space!
-            bib = bib_utils.merge_bibs(bibs)
-            venues = bib_utils.get_venues(bib)   # Just in case we want venues later
-            papers = bib_utils.extract_paper_list(bib)
+        bibs = []
+        for term in terms:
+            try:
+                bibs.append(bib_utils.get_bib(os.sep.join([typ, '{},{}.bib'.format(theory, term)])))
+            except FileNotFoundError:
+                pass
+        bib = bib_utils.merge_bibs(bibs)
+        venues = bib_utils.get_venues(bib)   # Just in case we want venues later
+        papers = bib_utils.extract_paper_list(bib)
 
-            theory_bibs_d[theory] = (counter, papers, venues)
-            counter += 1
-        except FileNotFoundError:
-            theory_bibs_d[theory] = None
-
-    format_str = 'l' * counter
-    header = 'Theory (id) & {}'.format('&'.join([str(i) for i in range(1, counter)]))
+        theory_bibs_d[theory] = (papers, venues)
 
     body = []
+    counter = 1
+    to_remove = []
     for (theory, data) in theory_bibs_d.items():
-        if data:
-            row = []
-            papers = data[1]
-            for (theory_compare, comp_data) in theory_bibs_d.items():
-                if comp_data:
-                    row.append(len(papers.intersection(comp_data[1])))
-            row_no_zero = [str(item) if item > 0 else '' for item in row]
-            row_no_zero[data[0] - 1] = '-'
-            body.append('{} ({}) & {}\\\\'.format(theory, data[0], '&'.join(row_no_zero)))
+        row = [theory]
+        papers = data[0]
+        any_data = False
+        for (theory_compare, comp_data) in theory_bibs_d.items():
+            if theory != theory_compare:
+                intersection = len(papers.intersection(comp_data[0]))
+                if intersection > 0:
+                    any_data = True
+                    row.append(str(intersection))
+                else:
+                    row.append('')
+            else:
+                row.append('-')
+        if not any_data:
+            to_remove.append(counter)
+        counter += 1
+        body.append(row)
 
+    # Removing any rows with no data
+    for index in to_remove[::-1]:
+        for row in body:
+            row.pop(index)
+        body.pop(index - 1)
+
+    format_str = 'l' * (len(body) + 1)
+    header = 'Theory (id) & {}'.format('&'.join([str(i + 1) for i in range(len(body))]))
+    body = ['{} ({}) & {}\\\\'.format(row[0], count + 1, '&'.join(row[1:])) for (count, row) in enumerate(body)]
     return table_str.format(format_str, header, '\n'.join(body))
 
 
