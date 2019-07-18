@@ -6,7 +6,7 @@ _cf_ajaxscriptsrc="/cf_scripts/scripts/ajax";
 _cf_jsonprefix='//';
 _cf_websocket_port=0;
 _cf_flash_policy_port=0;
-_cf_clientid='BA83A02B4495C457CB91E361C7D8CCD0';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
+_cf_clientid='39BF92A33EC4648C24655E941632CD8E';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/ajax/package/cfajax.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/cfform.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/masks.js"></script>
@@ -72,7 +72,7 @@ _cf_clientid='BA83A02B4495C457CB91E361C7D8CCD0';/* ]]> */</script><script type="
 	animation-delay: 1s;
 }
   --></style>
-<title>Results ACM DL :&nbsp;( &quot;Classical conditioning&quot;)  AND acmdlCCS:( &quot;Computing Education&quot;)</title>
+<title>Results ACM DL :&nbsp;content.ftsec:( &quot;Classical conditioning&quot;)  AND acmdlCCS:( &quot;Computing Education&quot;)</title>
 <style type="text/css"><!--
     body {margin-left: 0em; margin-top: 0}
     a:link {text-decoration: underline; 	Color: #1d4d0f;}
@@ -308,19 +308,25 @@ _cf_clientid='BA83A02B4495C457CB91E361C7D8CCD0';/* ]]> */</script><script type="
 	ColdFusion.Ajax.importTag('CFTEXTAREA');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
+	_cf_bind_init_20735864830428663=function()
+	{
+		ColdFusion.Bind.register([],{'bindTo':'Events','bindExpr':['upcomingconfs.cfm?ids=2019-219520,2019-220320,2019-318220,2019-318640,2019-612620,2019-710020,2019-87880']},ColdFusion.Bind.urlBindHandler,true);
+	};ColdFusion.Event.registerOnLoad(_cf_bind_init_20735864830428663);
+/* ]]> */</script>
+<script type="text/javascript">/* <![CDATA[ */
 	ColdFusion.Ajax.importTag('CFWINDOW');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_4097193874282136=function()
+	Ext.onReady(function(){var _cf_window_init_20735864830428665=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window4097193874282135', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_4097193874282136);});
+		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window20735864830428664', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_20735864830428665);});
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_4097193874282138=function()
+	Ext.onReady(function(){var _cf_window_init_20735864830428667=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window4097193874282137', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_4097193874282138);});
+		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window20735864830428666', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_20735864830428667);});
 /* ]]> */</script>
 </head>
 <body style="text-align:center; font-size: 100%" onLoad="window.focus();">
@@ -407,7 +413,7 @@ We're upgrading the ACM DL, and would like your input.&nbsp;&nbsp;Please sign up
 <form name="qiksearch" action="/results.cfm" onsubmit='encodeInput(this)'>
 <input type="hidden" name="within" value="owners.owner=HOSTED">
 <input type="hidden" name="srt" value="_score">
-<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="(+&quot;Classical conditioning&quot;)  AND acmdlCCS:(+&quot;Computing Education&quot;)" /></label>&nbsp;
+<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="content.ftsec:(+&quot;Classical conditioning&quot;)  AND acmdlCCS:(+&quot;Computing Education&quot;)" /></label>&nbsp;
 <input style="vertical-align:top;" type="image" alt="Search" name="Go" src="/images/search_small.jpg" />
 </span>
 </form>
@@ -750,11 +756,11 @@ function toggle(theagg) {
 
 
 function sortres(howsort) {
-	window.location = "results.cfm?query=%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
 }
 
 function submitrange(theyear) {
-	window.location = "results.cfm?query=%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
 }
 
 function updateTextInput(val) {
@@ -765,18 +771,392 @@ function updateTextInput(val) {
 		
 </script>
 <div id="resultstats">
-<div>Searched for <em>(+&quot;Classical conditioning&quot;) AND acmdlCCS:(+&quot;Computing Education&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
-<div> Searched The ACM Full-Text Collection: <span class="rectots">562,333 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,858,546 records</span>]
+<div>Searched for <em>content.ftsec:(+&quot;Classical conditioning&quot;) AND acmdlCCS:(+&quot;Computing Education&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
+<div> Searched The ACM Full-Text Collection: <span class="rectots">562,642 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,860,493 records</span>]
 <a href="javascript:ColdFusion.Window.show('theexplaination');ColdFusion.navigate('explain.cfm?expid=10','theexplaination');" title="Help: Search The ACM Full-Text Collection or The ACM Guide to Computing Literature"><img src="images/help.jpg" width="20" height="18" alt="Help: ACM vs. Guide" border="0" hspace="0" style="vertical-align:text-bottom;"></a>
 </div>
 <div id="resfound">
-<div id="searchtots"><strong>0</strong> results found</div>
+<div id="searchtots"><strong>4</strong> results found</div>
+<span id="searchtools">Export Results:
+<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=bibtex">bibtex</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=endnote">endnote</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=acmref">acmref</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=csv">csv</a>
+</span>
 </div>
 </div>
 <hr />
-<div class="problem">
-Nothing found
+<div id="aggs">
+<div>
+<div class="aggHead">Refine by People</div>
+<div>
+<a title="show/hide" class="showhide" id="Names_link" href="javascript: void(0);" onclick="toggle('Names');">Names&nbsp;<img src="gifs/arrow-right.gif" id="Names_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
+<ul id="Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Hauser%2C%20Sabine&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hauser, Sabine&nbsp;(1)</a></li>
+
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Huang%2C%20Chen%2DWei&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Huang, Chen-Wei&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Lin%2C%20Wen%2DChieh&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Lin, Wen-Chieh&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Rummel%2C%20Nikol&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Rummel, Nikol&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Spada%2C%20Hans&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Spada, Hans&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Sung%2C%20Ching%2DYing&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Sung, Ching-Ying&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Van%20Dyke%2C%20Carolynn&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Van Dyke, Carolynn&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Wahl%2C%20Harald&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Wahl, Harald&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Wang%2C%20Hao%2DChuan&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Wang, Hao-Chuan&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Winiwarter%2C%20Werner&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Winiwarter, Werner&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Institutions_link" href="javascript: void(0);" onclick="toggle('Institutions');">Institutions&nbsp;<img src="gifs/arrow-right.gif" id="Institutions_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Institutions_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Lafayette%20College&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Lafayette College&nbsp;(1)</a></li>
+ <li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=National%20Chiao%20Tung%20University%20Taiwan&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">National Chiao Tung University Taiwan&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=National%20Tsing%20Hua%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">National Tsing Hua University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Applied%20Sciences%20Technikum%20Wien&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Applied Sciences Technikum Wien&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Freiburg&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Freiburg&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Vienna&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Vienna&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Authors_link" href="javascript: void(0);" onclick="toggle('Authors');">Authors&nbsp;<img src="gifs/arrow-right.gif" id="Authors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Authors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hauser%2C%20Sabine&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hauser, Sabine&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Huang%2C%20Chen%2DWei&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Huang, Chen-Wei&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Lin%2C%20Wen%2DChieh&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Lin, Wen-Chieh&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Rummel%2C%20Nikol&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Rummel, Nikol&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Spada%2C%20Hans&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Spada, Hans&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Sung%2C%20Ching%2DYing&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Sung, Ching-Ying&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Van%20Dyke%2C%20Carolynn&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Van Dyke, Carolynn&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Wahl%2C%20Harald&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Wahl, Harald&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Wang%2C%20Hao%2DChuan&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Wang, Hao-Chuan&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Winiwarter%2C%20Werner&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Winiwarter, Werner&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publications</div>
+<div>
+<a title="show/hide" class="showhide" id="Publication_Names_link" href="javascript: void(0);" onclick="toggle('Publication_Names');">Publication Names&nbsp;<img src="gifs/arrow-right.gif" id="Publication_Names_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publication_Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20SIGCSE%20Bulletin&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM SIGCSE Bulletin&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=CSCL%2707%3A%20Proceedings%20of%20the%208th%20iternational%20conference%20on%20Computer%20supported%20collaborative%20learning&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CSCL'07: Proceedings of the 8th iternational conference on Computer supported collaborative learning&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=Chinese%20CHI%202017%3A%20Proceedings%20of%20the%20Fifth%20International%20Symposium%20of%20Chinese%20CHI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Chinese CHI 2017: Proceedings of the Fifth International Symposium of Chinese CHI&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=iiWAS%20%2711%3A%20Proceedings%20of%20the%2013th%20International%20Conference%20on%20Information%20Integration%20and%20Web%2Dbased%20Applications%20and%20Services&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">iiWAS '11: Proceedings of the 13th International Conference on Information Integration and Web-based Applications and Services&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="ACM_Publications_link" href="javascript: void(0);" onclick="toggle('ACM_Publications');">ACM Publications&nbsp;<img src="gifs/arrow-right.gif" id="ACM_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="ACM_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmPubGroups%2EacmPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmPubGroups%2EacmPubGroup=Newsletter&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Newsletter&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="All_Publications_link" href="javascript: void(0);" onclick="toggle('All_Publications');">All Publications&nbsp;<img src="gifs/arrow-right.gif" id="All_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="All_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=allPubGroups%2EallPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=allPubGroups%2EallPubGroup=Periodical&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Periodical&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Content_Formats_link" href="javascript: void(0);" onclick="toggle('Content_Formats');">Content Formats&nbsp;<img src="gifs/arrow-right.gif" id="Content_Formats_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Content_Formats_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=resources%2Eft%2EresourceFormat=PDF&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">PDF&nbsp;(4)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Publishers_link" href="javascript: void(0);" onclick="toggle('Publishers');">Publishers&nbsp;<img src="gifs/arrow-right.gif" id="Publishers_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publishers_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublisherName%2Eraw=ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublisherName%2Eraw=International%20Society%20of%20the%20Learning%20Sciences&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">International Society of the Learning Sciences&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Conferences</div>
+<div>
+<a title="show/hide" class="showhide" id="Sponsors_link" href="javascript: void(0);" onclick="toggle('Sponsors');">Sponsors&nbsp;<img src="gifs/arrow-right.gif" id="Sponsors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Sponsors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=Huawei%20Technologies%20Co%2E%20Ltd%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Huawei Technologies Co. Ltd.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=ICACHI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICACHI&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGCHI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCHI&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Events_link" href="javascript: void(0);" onclick="toggle('Events');">Events&nbsp;<img src="gifs/arrow-right.gif" id="Events_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Events_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=Chinese%20CHI%202017&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Chinese CHI 2017&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=MoMM%20%2711&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">MoMM '11&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Proceeding_Series_link" href="javascript: void(0);" onclick="toggle('Proceeding_Series');">Proceeding Series&nbsp;<img src="gifs/arrow-right.gif" id="Proceeding_Series_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Proceeding_Series_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=AICPS&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">AICPS&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Classical%20conditioning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=CSCL&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CSCL&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publication Year</div>
+<canvas id="canvas" height="250"></canvas>
+<script>
+          var theChartData = {
+              labels : [1988,2007,2011,2017],
+              datasets : [
+                  {
+                      label: "Years",
+                      fillColor : "rgba(220,220,220,0.2)",
+                      stSrokeColor : "rgba(220,220,220,1)",
+                      pointColor : "rgba(220,220,220,1)",
+                      pointStrokeColor : "#fff",
+                      pointHighlightFill : "#fff",
+                      pointHighlightStroke : "rgba(220,220,220,1)",
+                      data : [1,1,1,1]
+                  },
+              ]
+          }
+  
+      window.onload = function(){
+          var ctx = document.getElementById("canvas").getContext("2d");
+          window.myChart = new Chart(ctx).Line(theChartData, {
+			  scaleShowLabels : false,
+			  responsive: true,
+             
+              
+          });
+      }
+      </script>
+<label for="yearSlide">Published Since</label>
+<output for="yearSlide" id="whichYear">1988</output>
+<input style="padding-top:10px; width:175px;" type="range" min="1988" max="2017" value="1988" id="yearSlide" oninput="outputUpdate(value)" onmouseup="submitrange(value)">
+<datalist id="yearVals">
+<option>thelabels</option>
+</datalist>
+<script>
+      
+      function outputUpdate(yr) {
+      
+      document.querySelector('#whichYear').value = yr;
+      
+      }
+      
+      </script>
+</div>
+<div id="Events"></div>
+</div>
+<div id="results">
+<div class="pagerange">
+Result 1 &ndash; 4 of 4
+</div>
+<div id="resultmenu">
+<div id="sortmenu">
+Sort by:
+<select name="selsort" onchange="sortres(this.options[this.selectedIndex].value);">
+<option value="_score">relevance</option>
+<option value="publicationDate">publication date</option>
+<option value="citedCount">citation count</option>
+<option value="download6Weeks">downloads (6 Weeks)</option>
+<option value="download12Months">downloads (12 months)</option>
+<option value="downloadAll">downloads (overall)</option>
+</select>
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+1
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3080634" target="_self">Questionization of Peer-Generated Comments for Supporting Online Video-based Learning</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=99658706861">Ching-Ying Sung</a>,
+<a href="author_page.cfm?id=81553656356">Hao-Chuan Wang</a>,
+<a href="author_page.cfm?id=99659180402">Chen-Wei Huang</a>,
+<a href="author_page.cfm?id=81100221687">Wen-Chieh Lin</a>
+</div>
+<div class="source">
+<span class="publicationDate">June 2017</span>
+<span style="padding-left:10px">Chinese CHI 2017: Proceedings of the Fifth International Symposium of Chinese CHI</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 1</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;3</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;35</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;76</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3080634&ftid=1882967&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Questions are an important trigger of learning as well as social interaction, and question asking is a common technique that teachers and practitioners use in classrooms for motivating and engaging students. In the context of online video-based learning such as MOOCs, however, there remains limited understanding around whether questions benefit ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+MOOCs, Qustionization, Time-ahchored comments
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3080634');">result highlights</a>]</div>
+<div class="highlights" id="high3080634" style="display:none">
+<strong>Full Text</strong>:<br />
+... comments will lead to self-questioning comments. For example, “I think <em>classical</em> <em>conditioning</em> ... is scaring” may be transformed as “Do I think that <em>classical</em> <em>conditioning</em> is scaring?&quot; which is a problematic, incomprehensible question. Therefore, only ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+2
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=51601" target="_self">Binary jargon: the metaphoric language of computing</a>
+</div>
+
+<div class="authors">
+<a href="author_page.cfm?id=81332533181">Carolynn Van Dyke</a>
+</div>
+<div class="source">
+<span class="publicationDate">September 1988</span>
+<span style="padding-left:10px">ACM SIGCSE Bulletin: Volume 20 Issue 3, Sept. 1988</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 1</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;4</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;138</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=51601&ftid=263809&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high51601');">result highlights</a>]</div>
+<div class="highlights" id="high51601" style="display:none">
+<strong>Full Text</strong>:<br />
+... nstem, Central core (of brain) ,Cerebral hemispheres, Chronologica lage (CA), <em>Classical</em> <em>conditioning</em> ,Cognitive dissonance, Colorblindness, Complex cell, Conditione dstimulus (CS), Conscience, Counter ... <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+3
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1599717" target="_self">How does net-based interdisciplinary collaboration change with growing domain expertise?</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81316490681">Nikol Rummel</a>,
+<a href="author_page.cfm?id=81316488943">Sabine Hauser</a>,
+<a href="author_page.cfm?id=81442609387">Hans Spada</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 2007</span>
+<span style="padding-left:10px">CSCL'07: Proceedings of the 8th iternational conference on Computer supported collaborative learning</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;International Society of the Learning Sciences
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;5</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;38</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1599717&ftid=680049&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This study examined how growing domain expertise influences net-based interdisciplinary collaboration of persons with medical and psychological background. We compared the quality of the collaborative process and the joint solution of interdisciplinary dyads of different expertise levels (advanced students, trainees, and experts) working on a patient case. To assess the ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1599717');">result highlights</a>]</div>
+<div class="highlights" id="high1599717" style="display:none">
+<strong>Full Text</strong>:<br />
+... parts: (1) A knowledge test measuring basic psychological knowledge (e.g. <em>classic</em> <em>conditioning</em>) ), the application of the basics to clinical psychology (e.g. ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+4
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2095622" target="_self">The intelligent integrated computer-assisted language learning (iiCALL) environment: work in progress</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81484654882">Harald Wahl</a>,
+<a href="author_page.cfm?id=81100231083">Werner Winiwarter</a>
+</div>
+<div class="source">
+<span class="publicationDate">December 2011</span>
+<span style="padding-left:10px">iiWAS '11: Proceedings of the 13th International Conference on Information Integration and Web-based Applications and Services</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 5</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;4</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;11</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;163</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2095622&ftid=1083780&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+The Intelligent Integrated Computer-Assisted Language Learning (iiCALL) environment is a Web-based platform that provides language learning being integrated in common working environments like Web browsers, Email clients, or mobile devices. It applies Natural Language Processing (NLP) technologies, and it uses Semantic Web technologies for context-related language learning. Individual learners prefer ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+integrated e-learning, semantic web technologies, computer-assisted language learning, learning of foreign languages, learning types, natural language processing
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2095622');">result highlights</a>]</div>
+<div class="highlights" id="high2095622" style="display:none">
+<strong>Full Text</strong>:<br />
+... famous behaviorism researcher is the American psychologist Watson who observed <em>classical</em> <em>conditioning</em> on Permission to make digital or hard copies of all ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="pagerange">
+Result 1 &ndash; 4 of 4
+</div>
+</div>
+<br clear="all" />
 </div>
 <br clear="all" />
 <div class="footerbody" align="center">
@@ -792,10 +1172,10 @@ window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/23
 /*]]>{/literal}*/</script>
 
 </div>
-<div id="cf_window4097193874282135" class="x-hidden">
+<div id="cf_window20735864830428664" class="x-hidden">
 <div id="theexplaination-body" class="" style="text-align:left;height:100%;">
 </div>
-</div> <div id="cf_window4097193874282137" class="x-hidden">
+</div> <div id="cf_window20735864830428666" class="x-hidden">
 <div id="theformats-body" class="" style="text-align:left;height:100%;">
 </div>
 </div>

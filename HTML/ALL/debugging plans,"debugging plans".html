@@ -6,7 +6,7 @@ _cf_ajaxscriptsrc="/cf_scripts/scripts/ajax";
 _cf_jsonprefix='//';
 _cf_websocket_port=0;
 _cf_flash_policy_port=0;
-_cf_clientid='67CBAB7AB3B23939114242E0E397679A';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
+_cf_clientid='0B257FAD8DAF1C768038CC27DA0BC666';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/ajax/package/cfajax.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/cfform.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/masks.js"></script>
@@ -72,7 +72,7 @@ _cf_clientid='67CBAB7AB3B23939114242E0E397679A';/* ]]> */</script><script type="
 	animation-delay: 1s;
 }
   --></style>
-<title>Results ACM DL :&nbsp;( &quot;debugging plans&quot;)</title>
+<title>Results ACM DL :&nbsp;content.ftsec:( &quot;debugging plans&quot;)</title>
 <style type="text/css"><!--
     body {margin-left: 0em; margin-top: 0}
     a:link {text-decoration: underline; 	Color: #1d4d0f;}
@@ -308,19 +308,25 @@ _cf_clientid='67CBAB7AB3B23939114242E0E397679A';/* ]]> */</script><script type="
 	ColdFusion.Ajax.importTag('CFTEXTAREA');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
+	_cf_bind_init_28340518158899820=function()
+	{
+		ColdFusion.Bind.register([],{'bindTo':'Events','bindExpr':['upcomingconfs.cfm?ids=2017-118340,2017-33402,2017-37680,2017-53400,2018-34402,2018-54400,2019-35607,2019-55400,2020-36607,2020-65307,2021-65307,2022-65307']},ColdFusion.Bind.urlBindHandler,true);
+	};ColdFusion.Event.registerOnLoad(_cf_bind_init_28340518158899820);
+/* ]]> */</script>
+<script type="text/javascript">/* <![CDATA[ */
 	ColdFusion.Ajax.importTag('CFWINDOW');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_28219175469301128=function()
+	Ext.onReady(function(){var _cf_window_init_28340518158899822=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window28219175469301127', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_28219175469301128);});
+		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window28340518158899821', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_28340518158899822);});
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_28219175469301130=function()
+	Ext.onReady(function(){var _cf_window_init_28340518158899824=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window28219175469301129', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_28219175469301130);});
+		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window28340518158899823', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_28340518158899824);});
 /* ]]> */</script>
 </head>
 <body style="text-align:center; font-size: 100%" onLoad="window.focus();">
@@ -407,7 +413,7 @@ We're upgrading the ACM DL, and would like your input.&nbsp;&nbsp;Please sign up
 <form name="qiksearch" action="/results.cfm" onsubmit='encodeInput(this)'>
 <input type="hidden" name="within" value="owners.owner=HOSTED">
 <input type="hidden" name="srt" value="_score">
-<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="(+&quot;debugging plans&quot;)" /></label>&nbsp;
+<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="content.ftsec:(+&quot;debugging plans&quot;)" /></label>&nbsp;
 <input style="vertical-align:top;" type="image" alt="Search" name="Go" src="/images/search_small.jpg" />
 </span>
 </form>
@@ -750,11 +756,11 @@ function toggle(theagg) {
 
 
 function sortres(howsort) {
-	window.location = "results.cfm?query=%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
 }
 
 function submitrange(theyear) {
-	window.location = "results.cfm?query=%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
 }
 
 function updateTextInput(val) {
@@ -765,18 +771,1037 @@ function updateTextInput(val) {
 		
 </script>
 <div id="resultstats">
-<div>Searched for <em>(+&quot;debugging plans&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=%28%252B%22debugging%20plans%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=%28%252B%22debugging%20plans%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
-<div> Searched The ACM Full-Text Collection: <span class="rectots">562,333 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=%28%252B%22debugging%20plans%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,858,546 records</span>]
+<div>Searched for <em>content.ftsec:(+&quot;debugging plans&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
+<div> Searched The ACM Full-Text Collection: <span class="rectots">562,643 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,860,494 records</span>]
 <a href="javascript:ColdFusion.Window.show('theexplaination');ColdFusion.navigate('explain.cfm?expid=10','theexplaination');" title="Help: Search The ACM Full-Text Collection or The ACM Guide to Computing Literature"><img src="images/help.jpg" width="20" height="18" alt="Help: ACM vs. Guide" border="0" hspace="0" style="vertical-align:text-bottom;"></a>
 </div>
 <div id="resfound">
-<div id="searchtots"><strong>0</strong> results found</div>
+<div id="searchtots"><strong>17</strong> results found</div>
+<span id="searchtools">Export Results:
+<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=bibtex">bibtex</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=endnote">endnote</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=acmref">acmref</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=csv">csv</a>
+</span>
 </div>
 </div>
 <hr />
-<div class="problem">
-Nothing found
+<div id="aggs">
+<div>
+<div class="aggHead">Refine by People</div>
+<div>
+<a title="show/hide" class="showhide" id="Names_link" href="javascript: void(0);" onclick="toggle('Names');">Names&nbsp;<img src="gifs/arrow-right.gif" id="Names_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
+<ul id="Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Ashenhurst%2C%20R%2E%20L%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ashenhurst, R. L.&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Litman%2C%20Diane%20J%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Litman, Diane J.&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Adams%2C%20Bram&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Adams, Bram&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Allen%2C%20James%20F%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Allen, James F.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=American%20Journal%20of%20Computational%20Linguistics%20Staff&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">American Journal of Computational Linguistics Staff&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Atchison%2C%20William%20F%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Atchison, William F.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Bauer%2C%20Michael%20A%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Bauer, Michael A.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Birnbaum%2C%20Lawrence&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Birnbaum, Lawrence&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Childers%2C%20Bruce&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Childers, Bruce&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Collins%2C%20Gregg&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Collins, Gregg&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Conte%2C%20Samuel%20D%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Conte, Samuel D.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Couger%2C%20J%2E%20Daniel&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Couger, J. Daniel&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Finnigan%2C%20Pat%20J%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Finnigan, Pat J.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Freed%2C%20Michael&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Freed, Michael&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Gass%2C%20Saul%20I%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gass, Saul I.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Gosalia%2C%20Ashit&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gosalia, Ashit&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Hamblen%2C%20John%20W%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hamblen, John W.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Hoffman%2C%20Karla%20L%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hoffman, Karla L.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Hong%2C%20James%20W%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hong, James W.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPersonsSearchDspName=Hull%2C%20Thomas%20E%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hull, Thomas E.&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Institutions_link" href="javascript: void(0);" onclick="toggle('Institutions');">Institutions&nbsp;<img src="gifs/arrow-right.gif" id="Institutions_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Institutions_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20Maryland&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Maryland&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20Rochester&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Rochester&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=ENSIAS%2DMohammed%20V%20University%20in%20Rabat&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ENSIAS-Mohammed V University in Rabat&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=Furman%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Furman University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=Georgia%20Institute%20of%20Technology&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Georgia Institute of Technology&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=IBM%20Toronto%20Software%20Lab&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IBM Toronto Software Lab&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=Microsoft%20Corporation&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Microsoft Corporation&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=National%20Institute%20of%20Standards%20and%20Technology&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">National Institute of Standards and Technology&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=Nokia%20Bell%20Labs&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Nokia Bell Labs&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=Polytechnic%20School%20of%20Montreal&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Polytechnic School of Montreal&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=Purdue%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Purdue University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=Stanford%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Stanford University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=The%20University%20of%20Western%20Ontario&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">The University of Western Ontario&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20Michigan%20Ann%20Arbor&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University Michigan Ann Arbor&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20California%2C%20Los%20Angeles&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of California, Los Angeles&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20Chicago&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Chicago&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20Kentucky&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Kentucky&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20Texas%20System&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Texas System&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20Toronto&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Toronto&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlInstName=University%20of%20Utah&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Utah&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Authors_link" href="javascript: void(0);" onclick="toggle('Authors');">Authors&nbsp;<img src="gifs/arrow-right.gif" id="Authors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Authors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Litman%2C%20Diane%20J%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Litman, Diane J.&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Adams%2C%20Bram&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Adams, Bram&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Allen%2C%20James%20F%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Allen, James F.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=American%20Journal%20of%20Computational%20Linguistics%20Staff&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">American Journal of Computational Linguistics Staff&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Ashenhurst%2C%20R%2E%20L%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ashenhurst, R. L.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Atchison%2C%20William%20F%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Atchison, William F.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Bauer%2C%20Michael%20A%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Bauer, Michael A.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Birnbaum%2C%20Lawrence&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Birnbaum, Lawrence&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Childers%2C%20Bruce&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Childers, Bruce&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Collins%2C%20Gregg&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Collins, Gregg&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Conte%2C%20Samuel%20D%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Conte, Samuel D.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Couger%2C%20J%2E%20Daniel&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Couger, J. Daniel&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Finnigan%2C%20Pat%20J%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Finnigan, Pat J.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Freed%2C%20Michael&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Freed, Michael&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Gass%2C%20Saul%20I%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gass, Saul I.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Gosalia%2C%20Ashit&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gosalia, Ashit&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hamblen%2C%20John%20W%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hamblen, John W.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hoffman%2C%20Karla%20L%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hoffman, Karla L.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hong%2C%20James%20W%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hong, James W.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hull%2C%20Thomas%20E%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hull, Thomas E.&nbsp;(1)</a></li>
+ </ul>
+<div>
+<a title="show/hide" class="showhide" id="Editors_link" href="javascript: void(0);" onclick="toggle('Editors');">Editors&nbsp;<img src="gifs/arrow-right.gif" id="Editors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Editors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=persons%2Eeditors%2EsearchDspName=Ashenhurst%2C%20R%2E%20L%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ashenhurst, R. L.&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publications</div>
+<div>
+<a title="show/hide" class="showhide" id="Publication_Names_link" href="javascript: void(0);" onclick="toggle('Publication_Names');">Publication Names&nbsp;<img src="gifs/arrow-right.gif" id="Publication_Names_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publication_Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20SIGART%20Bulletin&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM SIGART Bulletin&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=Communications%20of%20the%20ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Communications of the ACM&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=ACL%20%2784%2FCOLING%20%2784%3A%20Proceedings%20of%20the%2010th%20International%20Conference%20on%20Computational%20Linguistics%20and%2022nd%20annual%20meeting%20on%20Association%20for%20Computational%20Linguistics&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACL '84/COLING '84: Proceedings of the 10th International Conference on Computational Linguistics and 22nd annual meeting on Association for Computational Linguistics&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=ACL%20%2786%3A%20Proceedings%20of%20the%2024th%20annual%20meeting%20on%20Association%20for%20Computational%20Linguistics&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACL '86: Proceedings of the 24th annual meeting on Association for Computational Linguistics&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20Curricula%20Recommendations%20for%20Information%20Systems&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM Curricula Recommendations for Information Systems&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20Recommended%20Curricula%20for%20Computer%20Science%20and%20Information%20Processing%20Programs%20in%20Colleges%20and%20Universities%2C%201968%2D1981&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM Recommended Curricula for Computer Science and Information Processing Programs in Colleges and Universities, 1968-1981&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20SIGCSE%20Bulletin&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM SIGCSE Bulletin&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=CASCON%20%2793%3A%20Proceedings%20of%20the%201993%20conference%20of%20the%20Centre%20for%20Advanced%20Studies%20on%20Collaborative%20research%3A%20software%20engineering%20%2D%20Volume%201&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CASCON '93: Proceedings of the 1993 conference of the Centre for Advanced Studies on Collaborative research: software engineering - Volume 1&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=CGO%20%2709%3A%20Proceedings%20of%20the%207th%20annual%20IEEE%2FACM%20International%20Symposium%20on%20Code%20Generation%20and%20Optimization&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CGO '09: Proceedings of the 7th annual IEEE/ACM International Symposium on Code Generation and Optimization&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=CSED%20%2716%3A%20Proceedings%20of%20the%20International%20Workshop%20on%20Continuous%20Software%20Evolution%20and%20Delivery&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CSED '16: Proceedings of the International Workshop on Continuous Software Evolution and Delivery&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=Computational%20Linguistics&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Computational Linguistics&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=DBTest%20%2708%3A%20Proceedings%20of%20the%201st%20international%20workshop%20on%20Testing%20database%20systems&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">DBTest '08: Proceedings of the 1st international workshop on Testing database systems&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=ITiCSE%20%2719%3A%20Proceedings%20of%20the%202019%20ACM%20Conference%20on%20Innovation%20and%20Technology%20in%20Computer%20Science%20Education&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '19: Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublicationTitle%2Eraw=SIGCSE%20%2776%3A%20Proceedings%20of%20the%20sixth%20SIGCSE%20technical%20symposium%20on%20Computer%20science%20education&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE '76: Proceedings of the sixth SIGCSE technical symposium on Computer science education&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="ACM_Publications_link" href="javascript: void(0);" onclick="toggle('ACM_Publications');">ACM Publications&nbsp;<img src="gifs/arrow-right.gif" id="ACM_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="ACM_Publications_list" style="display:none">
+ <li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmPubGroups%2EacmPubGroup=Newsletter&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Newsletter&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmPubGroups%2EacmPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmPubGroups%2EacmPubGroup=Magazine&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Magazine&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmPubGroups%2EacmPubGroup=Technical%20Report&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Technical Report&nbsp;(2)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="All_Publications_link" href="javascript: void(0);" onclick="toggle('All_Publications');">All Publications&nbsp;<img src="gifs/arrow-right.gif" id="All_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="All_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=allPubGroups%2EallPubGroup=Periodical&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Periodical&nbsp;(8)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=allPubGroups%2EallPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(8)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=allPubGroups%2EallPubGroup=Technical%26nbsp%3BReport&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Technical&nbsp;Report&nbsp;(2)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Content_Formats_link" href="javascript: void(0);" onclick="toggle('Content_Formats');">Content Formats&nbsp;<img src="gifs/arrow-right.gif" id="Content_Formats_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Content_Formats_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=resources%2Eft%2EresourceFormat=PDF&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">PDF&nbsp;(17)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Publishers_link" href="javascript: void(0);" onclick="toggle('Publishers');">Publishers&nbsp;<img src="gifs/arrow-right.gif" id="Publishers_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publishers_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublisherName%2Eraw=ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM&nbsp;(12)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublisherName%2Eraw=Association%20for%20Computational%20Linguistics&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Association for Computational Linguistics&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublisherName%2Eraw=IBM%20Press&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IBM Press&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublisherName%2Eraw=IEEE%20Computer%20Society&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IEEE Computer Society&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlPublisherName%2Eraw=MIT%20Press&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">MIT Press&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Conferences</div>
+<div>
+<a title="show/hide" class="showhide" id="Sponsors_link" href="javascript: void(0);" onclick="toggle('Sponsors');">Sponsors&nbsp;<img src="gifs/arrow-right.gif" id="Sponsors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Sponsors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=SIGAI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGAI&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=SIGCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=IEEE%2DCS%5CDATC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IEEE-CS\DATC&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=NRC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">NRC&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=SIGMICRO&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGMICRO&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=SIGMOD&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGMOD&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=SIGPLAN&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGPLAN&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=SIGSOFT&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGSOFT&nbsp;(1)</a></li>
+
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=sponsors%2EsponsorAbbr=TCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">TCSE&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Events_link" href="javascript: void(0);" onclick="toggle('Events');">Events&nbsp;<img src="gifs/arrow-right.gif" id="Events_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Events_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlConferenceAcronym=CGO%20%2709&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CGO '09&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlConferenceAcronym=ICSE%20%2716&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICSE '16&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlConferenceAcronym=ITiCSE%20%2719&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '19&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=acmdlConferenceAcronym=SIGMOD%2FPODS%20%2708&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGMOD/PODS '08&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Proceeding_Series_link" href="javascript: void(0);" onclick="toggle('Proceeding_Series');">Proceeding Series&nbsp;<img src="gifs/arrow-right.gif" id="Proceeding_Series_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Proceeding_Series_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=ACL&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACL&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=ACM%20Curricula&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM Curricula&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=CASCON&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CASCON&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=CGO&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CGO&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=ICSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICSE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=ITiCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=SIGCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22debugging%20plans%22%29&filtered=series%2EseriesAbbr=SIGMOD&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGMOD&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publication Year</div>
+<canvas id="canvas" height="250"></canvas>
+<script>
+          var theChartData = {
+              labels : ['1970s','1980s','1990s','2000s','2010s'],
+              datasets : [
+                  {
+                      label: "Years",
+                      fillColor : "rgba(220,220,220,0.2)",
+                      stSrokeColor : "rgba(220,220,220,1)",
+                      pointColor : "rgba(220,220,220,1)",
+                      pointStrokeColor : "#fff",
+                      pointHighlightFill : "#fff",
+                      pointHighlightStroke : "rgba(220,220,220,1)",
+                      data : [3,7,3,2,2]
+                  },
+              ]
+          }
+  
+      window.onload = function(){
+          var ctx = document.getElementById("canvas").getContext("2d");
+          window.myChart = new Chart(ctx).Line(theChartData, {
+			  scaleShowLabels : false,
+			  responsive: true,
+             
+              
+          });
+      }
+      </script>
+<label for="yearSlide">Published Since</label>
+<output for="yearSlide" id="whichYear">1972</output>
+<input style="padding-top:10px; width:175px;" type="range" min="1972" max="2019" value="1972" id="yearSlide" oninput="outputUpdate(value)" onmouseup="submitrange(value)">
+<datalist id="yearVals">
+<option>thelabels</option>
+</datalist>
+<script>
+      
+      function outputUpdate(yr) {
+      
+      document.querySelector('#whichYear').value = yr;
+      
+      }
+      
+      </script>
+</div>
+<div id="Events"></div>
+</div>
+<div id="results">
+<div class="pagerange">
+Result 1 &ndash; 17 of 17
+</div>
+<div id="resultmenu">
+<div id="sortmenu">
+Sort by:
+<select name="selsort" onchange="sortres(this.options[this.selectedIndex].value);">
+<option value="_score">relevance</option>
+<option value="publicationDate">publication date</option>
+<option value="citedCount">citation count</option>
+<option value="download6Weeks">downloads (6 Weeks)</option>
+<option value="download12Months">downloads (12 months)</option>
+<option value="downloadAll">downloads (overall)</option>
+</select>
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+1
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1545077" target="_self">Transparent Debugging of Dynamically Optimized Code</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100380104">Naveen Kumar</a>,
+<a href="author_page.cfm?id=81100389729">Bruce Childers</a>,
+<a href="author_page.cfm?id=81452611636">Mary Lou Soffa</a>
+</div>
+<div class="source">
+<span class="publicationDate">March 2009</span>
+<span style="padding-left:10px">CGO '09: Proceedings of the 7th annual IEEE/ACM International Symposium on Code Generation and Optimization</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;IEEE Computer Society
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 1</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;1</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;6</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;237</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1545077&ftid=643217&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Debugging programs at the source level is essential in the software development cycle. With the growing importance of dynamic optimization, there is a clear need for debugging support in the presence of runtime code transformation. This paper presents a framework, called DeDoc, and lightweight techniques that allow debugging at the ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+Dynamic optimization, software dynamic translation, debugging, binary translation
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1545077');">result highlights</a>]</div>
+<div class="highlights" id="high1545077" style="display:none">
+<strong>Full Text</strong>:<br />
+... generate debug information. Debug infor-mation consists of debug mappings and <em>debug</em> <em>plans</em>. . Adebug mapping relates code or data value locations in ... location with a data value storage locationand other code locations. <em>Debug</em> <em>plans</em> guide the extractionof runtime variable values that are not reportable ... <br /> ... location of the ld instruction), a debugplan is generated. The <em>debug</em> <em>plan</em> specifies that when execu-tion reaches 0x100d4, the debug engine should ... execution is continued, instructionsare replayed in the expected order. The <em>debug</em> <em>plan</em> for thisscenario is:Debug Plan: &lt;0x100d4, %o5, {0x100dc}&gt;A <em>debug</em> <em>plan</em> includes a late point, a data value storagelocation, and a ... <br /> ... a breakpoint is inserted at a code cachelocation with a <em>debug</em> <em>plan</em>, , the breakpoint manager deter-mines the associated late point and ... useby other components. The information stored in the DIRincludes mappings, <em>debug</em> <em>plans</em>, , values extracted by the RIGand a list of live ... with an average of 62%. Column 4 shows the numberof <em>debug</em> <em>plans</em> generated by the planner, which ranges from110 to 2439, with ... <br /> ... breakpoints inserted per user-visible breakpoint.These breakpoints were inserted due to <em>debug</em> <em>plans</em> andduplicate instructions. The third column shows the percent-age of breakpoints ... 6 shows the average of roll-ahead inevery benchmark due to <em>debug</em> <em>plans</em>. . The roll-ahead lengthTable 5: Effect of dynamic optimization on ... Effect of dynamic optimization on reportability of valuesBenchmark traces duplicate <em>debug</em> <em>plans</em> moved deleted non-reportablemcf 165 64 % 134 2.2 % 0.6 ... measured the performance and memory impact ofgenerating DeDoc’s mappings and <em>debug</em> <em>plans</em>. . Figure 7(a)shows the slowdowns in DeDoc for the experimental ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+2
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1060705" target="_self">Book review: Case-Based Planning: Viewing Planning as a Memory Task by Krlstian J. Hammond (Academic Press, 1989)</a>
+</div>
+<div class="source">
+<span class="publicationDate">November 1990</span>
+<span style="padding-left:10px">ACM SIGART Bulletin: Volume 2 Issue 1, Jan. 1991</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;3</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;234</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1060705&ftid=307829&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Much of the research at the Yale AI Lab relates to the investigation of memory. Learning and reminding form the basis of case-based reasoning in general and case-based planning (CBP) in particular. By remembering past successes and failures in planning, a planner may reduce much of its work to retrieving ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1060705');">result highlights</a>]</div>
+<div class="highlights" id="high1060705" style="display:none">
+<strong>Full Text</strong>:<br />
+... and learning systems. Case-based planning differs greatly from the Create- and-<em>Debug</em> <em>planning</em> methods of STRIPS, HACKER, NOAH and PANDORA. Rather than creating ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+3
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=980554" target="_self">A plan recognition model for clarification subdialogues</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=99659429737">Diane J. Litman</a>,
+<a href="author_page.cfm?id=81100653470">James F. Allen</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 1984</span>
+<span style="padding-left:10px">ACL '84/COLING '84: Proceedings of the 10th International Conference on Computational Linguistics and 22nd annual meeting on Association for Computational Linguistics</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;Association for Computational Linguistics
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 15</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;6</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;23</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;178</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=980554&ftid=320576&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+One of the promising approaches to analyzing task-oriented dialogues has involved modeling the plans of the speakers in the task domain. In general, these models work well as long as the topic follows the task structure closely, but they have difficulty in accounting for clarification subdialogues and topic change. We ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high980554');">result highlights</a>]</div>
+<div class="highlights" id="high980554" style="display:none">
+<strong>Full Text</strong>:<br />
+... about plans, or metaplans, deal with specifying parts of plans, <em>debugging</em> <em>plans</em>, , abandoning plans, etc. To talk about the structure of ... <br /> ... speech acts. There are obviously many more metaplans concerning plan <em>debugging</em>, , <em>plan</em> specification, etc. Also, as discussed later, many conventional indirect speech ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+4
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=804768" target="_self">Computer science: An essential course for the liberal arts</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100488937">T. Ray Nanney</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 1976</span>
+<span style="padding-left:10px">SIGCSE '76: Proceedings of the sixth SIGCSE technical symposium on Computer science education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 3</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;8</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;162</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=804768&ftid=60910&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+There is a wide divergence of opinion as to the appropriate content for an introductory computer science course. Approaches to teaching the subject range from &ldquo;computer appreciation&rdquo; presentations to rigorous courses for computer science majors. This paper presents the thesis that computer science has reached a level of maturity which ...
+</div>
+<div class="pubother">
+Also published in:<br />
+July 1976&nbsp;
+ACM SIGCSE Bulletin - Proceedings of the 6th SIGCSE symposium on Computer science education: Volume 8 Issue 3, July 1976
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high804768');">result highlights</a>]</div>
+<div class="highlights" id="high804768" style="display:none">
+<strong>Full Text</strong>:<br />
+... program. Other powerful ideas are con- veniently introduced here including <em>debugging</em>, , <em>planning</em>, , procedure, subprocedure, naming, state, local variables, and global variables. ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+5
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1385282" target="_self">Automatic plan choice validation using performance statistics</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81421599559">Ashit Gosalia</a>,
+<a href="author_page.cfm?id=81332537763">Xin (Shin) Zhang</a>
+</div>
+<div class="source">
+<span class="publicationDate">June 2008</span>
+<span style="padding-left:10px">DBTest '08: Proceedings of the 1st international workshop on Testing database systems</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;2</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;195</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1385282&type=pdf&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+The query optimizer models data distribution and access paths to make the optimal plan choice for a given query. Sometimes the plan selection is poor because of modeling limitations, outdated statistics, incorrect optimization heuristics, etc. Hence it is useful to examine the plan choice made by the optimizer from an ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+XML, optimizer, performance statistics, performance test, data warehousing, query plan
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1385282');">result highlights</a>]</div>
+<div class="highlights" id="high1385282" style="display:none">
+<strong>Full Text</strong>:<br />
+... the plan is a parallel plan. Another strategy used to <em>debug</em> <em>plan</em> performance is to contrast against a plan that was previously ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+6
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=122354" target="_self">Model-based integration of planning and learning</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81452615674">Gregg Collins</a>,
+<a href="author_page.cfm?id=81350597590">Lawrence Birnbaum</a>,
+<a href="author_page.cfm?id=81100498224">Bruce Krulwich</a>,
+<a href="author_page.cfm?id=81100402556">Michael Freed</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 1991</span>
+<span style="padding-left:10px">ACM SIGART Bulletin: Volume 2 Issue 4, Aug. 1991</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;1</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;2</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;99</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=122354&ftid=316910&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+The goal of our research is to construct an integrated model of planning and learning that can account for the acquisition of new planning knowledge. Our approach involves the use of model-based reasoning. In this approach, the system monitors its performance by comparing it with expectations derived from a model ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high122354');">result highlights</a>]</div>
+<div class="highlights" id="high122354" style="display:none">
+<strong>Full Text</strong>:<br />
+... University Press, Cambridge, England. Simmons, R. 1988. A theory of <em>debugging</em> <em>plans</em> and in- terpretations. Proceedings of the 1988 AAA1 Conference, St. ... <br />
+<br />
+<strong>References</strong>:<br />
+Simmons, R. 1988. A theory of <em>debugging</em> <em>plans</em> and interpretations. <i>Proceedings of the 1988 AAAI Conference,</i> St. Paul, MN, pp. 94--99. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+7
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=358792" target="_self">Documentation for a model: a hierarchical approach</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100635393">Saul I. Gass</a>,
+<a href="author_page.cfm?id=81100537858">Karla L. Hoffman</a>,
+<a href="author_page.cfm?id=81100096039">Richard H. F. Jackson</a>,
+<a href="author_page.cfm?id=81100452661">Lambert S. Joel</a>,
+<a href="author_page.cfm?id=81100465394">Patsy B. Saunders</a>
+</div>
+<div class="source">
+<span class="publicationDate">November 1981</span>
+<span style="padding-left:10px">Communications of the ACM: Volume 24 Issue 11, Nov. 1981</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 5</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;3</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;8</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;303</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=358792&ftid=45691&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+A set of documents and their organization according to functional requirements in order to produce information that will facilitate the use of models are described. The authors discuss the role of models in the policy process and of documentation in the assessment of such models.
+</div>
+<div class="kw">
+<b>Keywords</b>:
+model documentation, policy model utility, model evaluation and assessment
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high358792');">result highlights</a>]</div>
+<div class="highlights" id="high358792" style="display:none">
+<strong>Full Text</strong>:<br />
+... the ACM November 1981 Volume 24 Number 11 clude software <em>debugging</em> <em>plans</em> and results, procedures for training model users, and other reports ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+8
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2896957" target="_self">Who needs release and devops engineers, and why?</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81464672101">Noureddine Kerzazi</a>,
+<a href="author_page.cfm?id=81310485522">Bram Adams</a>
+</div>
+<div class="source">
+<span class="publicationDate">May 2016</span>
+<span style="padding-left:10px">CSED '16: Proceedings of the International Workshop on Continuous Software Evolution and Delivery</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 1</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;9</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;61</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;327</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2896957&ftid=1764892&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+The recent surge in interest in continuous delivery has opened up the job market for release and DevOps engineers. However, despite an increasing number of conferences and publications on continuous delivery, smaller companies and start-ups still have a hard time determining the core tasks their future release and DevOps engineers ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+devops, release engineer, empirical study, job description
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2896957');">result highlights</a>]</div>
+<div class="highlights" id="high2896957" style="display:none">
+<strong>Full Text</strong>:<br />
+... test-specific responsibilities,software testers must also perform many other duties suchas <em>debugging</em>, , <em>planning</em>, , maintenance, management, and col-laboration with others roles.Penners et al. ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+9
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=981161" target="_self">Linguistic coherence: a plan-based alternative</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100165668">Diane J. Litman</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 1986</span>
+<span style="padding-left:10px">ACL '86: Proceedings of the 24th annual meeting on Association for Computational Linguistics</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;Association for Computational Linguistics
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 9</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;13</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;280</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=981161&ftid=925161&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+To fully understand a sequence of utterances, one must be able to infer implicit relationships between the utterances. Although the identification of sets of utterance relationships forms the basis for many theories of discourse, the formalization and recognition of such relationships has proven to be an extremely difficult computational task.This ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high981161');">result highlights</a>]</div>
+<div class="highlights" id="high981161" style="display:none">
+<strong>Full Text</strong>:<br />
+... utterance and represent plan introduction, plan execution, plan specification, plan <em>debugging</em>, , <em>plan</em> abandonment, and so on. indepen- dently of any domain. Although ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+10
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=962292" target="_self">An integrated distributed systems management architecture</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100160493">Michael A. Bauer</a>,
+<a href="author_page.cfm?id=81100556866">Pat J. Finnigan</a>,
+<a href="author_page.cfm?id=81452594550">James W. Hong</a>,
+<a href="author_page.cfm?id=81100117471">Jan K. Pachl</a>,
+<a href="author_page.cfm?id=81100589494">Toby J. Teorey</a>
+</div>
+<div class="source">
+<span class="publicationDate">October 1993</span>
+<span style="padding-left:10px">CASCON '93: Proceedings of the 1993 conference of the Centre for Advanced Studies on Collaborative research: software engineering - Volume 1</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;IBM Press
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 2</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;3</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;634</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=962292&ftid=237881&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+As distributed systems get larger and more complex, there is an urgent need to manage their components in order to ensure reliable and efficient operations. Managing distributed systems entails monitoring the activities of their components and controlling their behavior as needed. This paper examines the requirements of managing distributed systems ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high962292');">result highlights</a>]</div>
+<div class="highlights" id="high962292" style="display:none">
+<strong>Full Text</strong>:<br />
+... scenarios wit hmanagement capabilities as a means of examin-ing and <em>debugging</em> <em>planned</em> network enhancements .Auxiliary systems can use the network databas eservices ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+11
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3319746" target="_self">An Exploration of Novice Programmers' Comprehension of Conditionals in Imperative and Functional Programming</a>
+</div>
+<div class="authors">
+Claudio Mirolo, Cruz Izu
+</div>
+<div class="source">
+<span class="publicationDate">July 2019</span>
+<span style="padding-left:10px">ITiCSE '19: Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;16</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;16</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;16</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3319746&ftid=2070440&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Students of introductory programming courses are expected to develop higher-order thinking skills to inspect, understand and modify code. However, although novices can correctly write small programs, they appear to lack a more abstract, comprehensive grasp of basic constructs, such as conceiving the overall effect of alternative conditional flows. This work ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+cs1, imperative vs. functional programming, program comprehension, reversibility, solo taxonomy
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3319746');">result highlights</a>]</div>
+<div class="highlights" id="high3319746" style="display:none">
+<strong>Full Text</strong>:<br />
+... only decide on reversibility, but also develop anddocument testing and <em>debugging</em> <em>plans</em>. .6 CONCLUSIONSTo contribute new insights into program comprehension, we haveinvestigated ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+12
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1056318" target="_self">Reflections on building two Go programs</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100285920">Bruce Wilcox</a>
+</div>
+<div class="source">
+<span class="publicationDate">October 1985</span>
+<span style="padding-left:10px">ACM SIGART Bulletin: Issue 94, October 1985</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 4</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;6</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;373</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1056318&ftid=310893&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+From 1972 to 1979 I co-designed and built what became the world's strongest computer Go program, the Reitman-Wilcox Go Program [1]. It took 7 person-years, 8K lines of LISP, 3 megabytes of memory, and an IBM mainframe. Recently I constructed a similar program, called NEMESIS...the Go Master (tm). It has ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1056318');">result highlights</a>]</div>
+<div class="highlights" id="high1056318" style="display:none">
+<strong>Full Text</strong>:<br />
+... changes in this turn and discard the local plan structure. <em>Debugging</em> <em>plans</em> created in this way should be easy, since all prior ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+13
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=362554" target="_self">Curriculum recommendations for undergraduate programs in information systems</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100190876">J. Daniel Couger</a>
+</div>
+<div class="source">
+<span class="publicationDate">December 1973</span>
+<span style="padding-left:10px">Communications of the ACM: Volume 16 Issue 12, Dec. 1973</span>
+</div>
+ <div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 54</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;12</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;1,023</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=362554&ftid=43944&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="kw">
+<b>Keywords</b>:
+systems design, systems analysis, education, information analysis, information systems, management systems, undergraduate curricula
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high362554');">result highlights</a>]</div>
+<div class="highlights" id="high362554" style="display:none">
+<strong>Full Text</strong>:<br />
+... management systems. 5. System implementation (10%) Levels of testing and <em>debugging</em>: : <em>planning</em> and executing con- version; management of programming, testing, and installation. ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+14
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=972909" target="_self">Abstracts of current literature</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81548003584"> American Journal of Computational Linguistics Staff</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 1981</span>
+<span style="padding-left:10px">Computational Linguistics: Volume 7 Issue 3, July-September 1981</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;MIT Press
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;1</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;127</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=972909&ftid=252258&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high972909');">result highlights</a>]</div>
+<div class="highlights" id="high972909" style="display:none">
+<strong>Full Text</strong>:<br />
+... plans and world knowledge) is used to infer goals and <em>debug</em> <em>plans</em>; ; and (5) planning knowledge should be equally available for ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+15
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=361320" target="_self">Curriculum recommendations for graduate professional programs in information systems</a>
+</div>
+<div class="source">
+<span class="publicationDate">May 1972</span>
+<span style="padding-left:10px">Communications of the ACM: Volume 15 Issue 5, May 1972</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 85</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;3</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;23</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;2,245</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=361320&ftid=48392&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="kw">
+<b>Keywords</b>:
+education, information analysis, information systems development, management information systems, management systems, system design, systems analysis
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high361320');">result highlights</a>]</div>
+<div class="highlights" id="high361320" style="display:none">
+<strong>Full Text</strong>:<br />
+... ma- terial. 6. System implementation (10%) Levels of testing and <em>debugging</em>; ; <em>planning</em> and executing conver- sion; management of programming, testing, and installation. ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+16
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2594496" target="_self">ACM Recommended Curricula for Computer Science and Information Processing Programs in Colleges and Universities, 1968-1981</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100638384">William F. Atchison</a>,
+<a href="author_page.cfm?id=81100635423">Samuel D. Conte</a>,
+<a href="author_page.cfm?id=81100048575">John W. Hamblen</a>,
+<a href="author_page.cfm?id=81332505380">Thomas E. Hull</a>,
+<a href="author_page.cfm?id=81100190306">Thomas A. Keenan</a>,
+<a href="author_page.cfm?id=81100659088">William B. Kehl</a>,
+<a href="author_page.cfm?id=81100557865">Edward J. McCluskey</a>,
+<a href="author_page.cfm?id=81100113539">Silvio O. Navarro</a>,
+<a href="author_page.cfm?id=81100662362">Werner C. Rheinboldt</a>,
+<a href="author_page.cfm?id=81100387240">Earl J. Schweppe</a>,
+<a href="author_page.cfm?id=81100631472">William Viavant</a>,
+<a href="author_page.cfm?id=81537108256">David M. Young, Jr.</a>
+</div>
+<div class="source">
+<span class="publicationDate">January 1981</span>
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;5</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;16</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2594496&ftid=1439049&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+When we enter the twenty-first century, computers will have influenced our lives more than any other technology known to civilization. The need for knowledge about computers, computer technology, and the theoretical aspects of computers has grown exponentially. Since its founding in 1947, the Association for Computing Machinery has attempted to ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2594496');">result highlights</a>]</div>
+<div class="highlights" id="high2594496" style="display:none">
+<strong>Full Text</strong>:<br />
+... course ma-terial. 6. System implementation (10%) Levels of testing and <em>debugging</em>: : <em>planning</em> and executing conver-sion: management of programming, testing, and installation. Coordi-nation ... <br /> ... management systems. 5. System implementation (10%) Levels of testing and <em>debugging</em>: : <em>planning</em> and executing con-version; management of programming, testing, and installation. Coordination ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+17
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2594501" target="_self">ACM Curricula Recommendations for Information Systems</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100049612">R. L. Ashenhurst</a>
+</div>
+<div class="source">
+<span class="publicationDate">January 1983</span>
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;2</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;41</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2594501&ftid=1439052&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This report contains curriculum recommendations prepared by the ACM Curriculum Committee on Computer Education for Management.
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2594501');">result highlights</a>]</div>
+<div class="highlights" id="high2594501" style="display:none">
+<strong>Full Text</strong>:<br />
+... course ma-terial. 6. System implementation (10%) Levels of testing and <em>debugging</em>: : <em>planning</em> and executing conver-sion: management of programming, testing, and installation. Coordi-nation ... <br /> ... management systems. 5. System implementation (10%) Levels of testing and <em>debugging</em>: : <em>planning</em> and executing con-version; management of programming, testing, and installation. Coordination ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="pagerange">
+Result 1 &ndash; 17 of 17
+</div>
+</div>
+<br clear="all" />
 </div>
 <br clear="all" />
 <div class="footerbody" align="center">
@@ -792,10 +1817,10 @@ window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/23
 /*]]>{/literal}*/</script>
 
 </div>
-<div id="cf_window28219175469301127" class="x-hidden">
+<div id="cf_window28340518158899821" class="x-hidden">
 <div id="theexplaination-body" class="" style="text-align:left;height:100%;">
 </div>
-</div> <div id="cf_window28219175469301129" class="x-hidden">
+</div> <div id="cf_window28340518158899823" class="x-hidden">
 <div id="theformats-body" class="" style="text-align:left;height:100%;">
 </div>
 </div>

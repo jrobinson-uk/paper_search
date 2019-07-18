@@ -6,7 +6,7 @@ _cf_ajaxscriptsrc="/cf_scripts/scripts/ajax";
 _cf_jsonprefix='//';
 _cf_websocket_port=0;
 _cf_flash_policy_port=0;
-_cf_clientid='8007A83709097C05EA04306FF88DECF6';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
+_cf_clientid='C5A87D69D05EE5EE67BFF5F35E8CDEE1';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/ajax/package/cfajax.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/cfform.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/masks.js"></script>
@@ -72,7 +72,7 @@ _cf_clientid='8007A83709097C05EA04306FF88DECF6';/* ]]> */</script><script type="
 	animation-delay: 1s;
 }
   --></style>
-<title>Results ACM DL :&nbsp;( &quot;Behaviourism&quot; AND &quot;Staats&quot;)  AND acmdlCCS:( &quot;Computing Education&quot;)</title>
+<title>Results ACM DL :&nbsp;content.ftsec:( &quot;Behaviourism&quot; AND &quot;Staats&quot;)  AND acmdlCCS:( &quot;Computing Education&quot;)</title>
 <style type="text/css"><!--
     body {margin-left: 0em; margin-top: 0}
     a:link {text-decoration: underline; 	Color: #1d4d0f;}
@@ -311,16 +311,16 @@ _cf_clientid='8007A83709097C05EA04306FF88DECF6';/* ]]> */</script><script type="
 	ColdFusion.Ajax.importTag('CFWINDOW');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_20631692430351779=function()
+	Ext.onReady(function(){var _cf_window_init_4219161645822749=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window20631692430351778', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_20631692430351779);});
+		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window4219161645822748', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_4219161645822749);});
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_20631692430351781=function()
+	Ext.onReady(function(){var _cf_window_init_4219161645822751=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window20631692430351780', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_20631692430351781);});
+		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window4219161645822750', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_4219161645822751);});
 /* ]]> */</script>
 </head>
 <body style="text-align:center; font-size: 100%" onLoad="window.focus();">
@@ -407,7 +407,7 @@ We're upgrading the ACM DL, and would like your input.&nbsp;&nbsp;Please sign up
 <form name="qiksearch" action="/results.cfm" onsubmit='encodeInput(this)'>
 <input type="hidden" name="within" value="owners.owner=HOSTED">
 <input type="hidden" name="srt" value="_score">
-<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="(+&quot;Behaviourism&quot; AND &quot;Staats&quot;)  AND acmdlCCS:(+&quot;Computing Education&quot;)" /></label>&nbsp;
+<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="content.ftsec:(+&quot;Behaviourism&quot; AND &quot;Staats&quot;)  AND acmdlCCS:(+&quot;Computing Education&quot;)" /></label>&nbsp;
 <input style="vertical-align:top;" type="image" alt="Search" name="Go" src="/images/search_small.jpg" />
 </span>
 </form>
@@ -750,11 +750,11 @@ function toggle(theagg) {
 
 
 function sortres(howsort) {
-	window.location = "results.cfm?query=%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
 }
 
 function submitrange(theyear) {
-	window.location = "results.cfm?query=%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
 }
 
 function updateTextInput(val) {
@@ -765,18 +765,188 @@ function updateTextInput(val) {
 		
 </script>
 <div id="resultstats">
-<div>Searched for <em>(+&quot;Behaviourism&quot; AND &quot;Staats&quot;) AND acmdlCCS:(+&quot;Computing Education&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
-<div> Searched The ACM Full-Text Collection: <span class="rectots">562,333 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,858,546 records</span>]
+<div>Searched for <em>content.ftsec:(+&quot;Behaviourism&quot; AND &quot;Staats&quot;) AND acmdlCCS:(+&quot;Computing Education&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
+<div> Searched The ACM Full-Text Collection: <span class="rectots">562,563 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,859,661 records</span>]
 <a href="javascript:ColdFusion.Window.show('theexplaination');ColdFusion.navigate('explain.cfm?expid=10','theexplaination');" title="Help: Search The ACM Full-Text Collection or The ACM Guide to Computing Literature"><img src="images/help.jpg" width="20" height="18" alt="Help: ACM vs. Guide" border="0" hspace="0" style="vertical-align:text-bottom;"></a>
 </div>
 <div id="resfound">
-<div id="searchtots"><strong>0</strong> results found</div>
+<div id="searchtots"><strong>1</strong> results found</div>
+<span id="searchtools">Export Results:
+<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=bibtex">bibtex</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=endnote">endnote</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=acmref">acmref</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=csv">csv</a>
+</span>
 </div>
 </div>
 <hr />
-<div class="problem">
-Nothing found
+<div id="aggs">
+<div>
+<div class="aggHead">Refine by People</div>
+<div>
+<a title="show/hide" class="showhide" id="Names_link" href="javascript: void(0);" onclick="toggle('Names');">Names&nbsp;<img src="gifs/arrow-right.gif" id="Names_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
+<ul id="Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Benac%20Earle%2C%20Clara&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Benac Earle, Clara&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Fredlund%2C%20Lars%2D%26%23197%3Bke&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Fredlund, Lars-&#197;ke&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Hughes%2C%20John&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hughes, John&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Institutions_link" href="javascript: void(0);" onclick="toggle('Institutions');">Institutions&nbsp;<img src="gifs/arrow-right.gif" id="Institutions_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Institutions_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Chalmers%20University%20of%20Technology&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Chalmers University of Technology&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Technical%20University%20of%20Madrid&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Technical University of Madrid&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Authors_link" href="javascript: void(0);" onclick="toggle('Authors');">Authors&nbsp;<img src="gifs/arrow-right.gif" id="Authors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Authors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Benac%20Earle%2C%20Clara&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Benac Earle, Clara&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Fredlund%2C%20Lars%2D%26%23197%3Bke&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Fredlund, Lars-&#197;ke&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hughes%2C%20John&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hughes, John&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publications</div>
+<div>
+<a title="show/hide" class="showhide" id="Publication_Names_link" href="javascript: void(0);" onclick="toggle('Publication_Names');">Publication Names&nbsp;<img src="gifs/arrow-right.gif" id="Publication_Names_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publication_Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ITiCSE%20%2716%3A%20Proceedings%20of%20the%202016%20ACM%20Conference%20on%20Innovation%20and%20Technology%20in%20Computer%20Science%20Education&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '16: Proceedings of the 2016 ACM Conference on Innovation and Technology in Computer Science Education&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="ACM_Publications_link" href="javascript: void(0);" onclick="toggle('ACM_Publications');">ACM Publications&nbsp;<img src="gifs/arrow-right.gif" id="ACM_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="ACM_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmPubGroups%2EacmPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="All_Publications_link" href="javascript: void(0);" onclick="toggle('All_Publications');">All Publications&nbsp;<img src="gifs/arrow-right.gif" id="All_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="All_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=allPubGroups%2EallPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Content_Formats_link" href="javascript: void(0);" onclick="toggle('Content_Formats');">Content Formats&nbsp;<img src="gifs/arrow-right.gif" id="Content_Formats_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Content_Formats_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=resources%2Eft%2EresourceFormat=PDF&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">PDF&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Publishers_link" href="javascript: void(0);" onclick="toggle('Publishers');">Publishers&nbsp;<img src="gifs/arrow-right.gif" id="Publishers_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publishers_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublisherName%2Eraw=ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Conferences</div>
+<div>
+<a title="show/hide" class="showhide" id="Sponsors_link" href="javascript: void(0);" onclick="toggle('Sponsors');">Sponsors&nbsp;<img src="gifs/arrow-right.gif" id="Sponsors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Sponsors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=Bilkent%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Bilkent University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Events_link" href="javascript: void(0);" onclick="toggle('Events');">Events&nbsp;<img src="gifs/arrow-right.gif" id="Events_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Events_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ITiCSE%20%2716&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '16&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Proceeding_Series_link" href="javascript: void(0);" onclick="toggle('Proceeding_Series');">Proceeding Series&nbsp;<img src="gifs/arrow-right.gif" id="Proceeding_Series_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Proceeding_Series_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Behaviourism%22%20AND%20%22Staats%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=ITiCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE&nbsp;(1)</a></li>
+</ul>
+</div>
+</div>
+<div id="results">
+<div class="pagerange">
+Result 1 &ndash; 1 of 1
+</div>
+<div id="resultmenu">
+<div id="sortmenu">
+Sort by:
+<select name="selsort" onchange="sortres(this.options[this.selectedIndex].value);">
+<option value="_score">relevance</option>
+<option value="publicationDate">publication date</option>
+<option value="citedCount">citation count</option>
+<option value="download6Weeks">downloads (6 Weeks)</option>
+<option value="download12Months">downloads (12 months)</option>
+<option value="downloadAll">downloads (overall)</option>
+</select>
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+1
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2899443" target="_self">Automatic Grading of Programming Exercises using Property-Based Testing</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81418596632">Clara Benac Earle</a>,
+<a href="author_page.cfm?id=81100403481">Lars-&#197;ke Fredlund</a>,
+<a href="author_page.cfm?id=81100166325">John Hughes</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 2016</span>
+<span style="padding-left:10px">ITiCSE '16: Proceedings of the 2016 ACM Conference on Innovation and Technology in Computer Science Education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 3</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;6</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;73</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;260</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2899443&ftid=1756019&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+We present a framework for automatic grading of programming exercises using property-based testing, a form of model-based black-box testing. Models are developed to assess both the functional behaviour of programs and their algorithmic complexity. From the functional correctness model a large number of test cases are derived automatically. Executing them ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+automated assessment, testing, java
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2899443');">result highlights</a>]</div>
+<div class="highlights" id="high2899443" style="display:none">
+<strong>Full Text</strong>:<br />
+... programs.J. Educ. Resour. Comput., 3(3), Sept. 2003.[7] G. Gay, M. <em>Staats</em>, , M. W. Whalen, and M. P. E.Heimdahl. The risks ... programming assignments. InProceedings of the 10th Koli Calling InternationalConference on <em>Computing</em> <em>Education</em> Research, 2010.[9] D. Insa and J. Silva. Semi-automatic assessment ofunrestrained ... <br /> ... model-based black-box testing. Models are developed to assessboth the functional <em>behaviour</em> of programs and their algo-rithmic complexity. From the functional correctness ... of the array). However, such mod-els do not specify the <em>behaviour</em> of the program, but ratherguide the testing process into computing ... Thus, Sect. 3.1 describes howtesting is used to evaluate functional <em>behaviour</em> (i.e., findbugs), leading to a ranking of different implementations withregards ... <br /> ... correctimplementation of interfaces, etc.). In our framework, thefocus is on <em>behavioural</em> properties of the code. Web-CAT [6]is a very interesting testing ... <br /> ... builds a state machinethat serves as a model of the <em>behaviour</em> of the API, and isused to generate the sequences of ... <br /> ... that nothing is computed.We could compute the best and worst <em>behaviour</em> for correctcomputations only (using the functional correctness modeltoo), but it ... would then be omitted are exactly the ones with theworst-case <em>behaviour</em>. . So we decided not to do this, andto use ... <br /> ... concerns, but in this course the focus is mainlyon penalising <em>behavioural</em> defects of the program, rather thanstructural ones. The only exception ... <br />
+ <br />
+<strong>Abstract</strong>:<br />
+... black-box testing. Models are developed to assess both the functional <em>behaviour</em> of programs and their algorithmic complexity. From the functional correctness ... <br />
+<br />
+<strong>References</strong>:<br />
+P. Ihantola, T. Ahoniemi, V. Karavirta, and O. Sepp&#228;l&#228;. Review of recent systems for automatic assessment of programming assignments. In Proceedings of the 10th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research, 2010. <br /> G. Gay, M. <em>Staats</em>, M. W. Whalen, and M. P. E. Heimdahl. The risks of coverage-directed test case generation. IEEE Trans. Software Eng., 2015. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="pagerange">
+Result 1 &ndash; 1 of 1
+</div>
+</div>
+<br clear="all" />
 </div>
 <br clear="all" />
 <div class="footerbody" align="center">
@@ -792,10 +962,10 @@ window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/23
 /*]]>{/literal}*/</script>
 
 </div>
-<div id="cf_window20631692430351778" class="x-hidden">
+<div id="cf_window4219161645822748" class="x-hidden">
 <div id="theexplaination-body" class="" style="text-align:left;height:100%;">
 </div>
-</div> <div id="cf_window20631692430351780" class="x-hidden">
+</div> <div id="cf_window4219161645822750" class="x-hidden">
 <div id="theformats-body" class="" style="text-align:left;height:100%;">
 </div>
 </div>

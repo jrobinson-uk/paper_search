@@ -4,7 +4,6 @@ CSE/Affordance Theory,"affordance theory".bib
 CSE/Mental models,"Mental models".bib
 CSE/Constructionism,"constructionism".bib
 CSE/notional machine,"notional machine".bib
-CSE/theory of debugging,content.ftsec:("theory of debugging").bib
 CSE/threshold concepts,"threshold concepts".bib
 CSE/PECT (seiter),"PECT".bib
 CSE/Subsumption Theory (Reception Learning),"reception learning" and "ausubel".bib
@@ -12,6 +11,7 @@ CSE/Gestalt Theory,"Gestalt Theory".bib
 CSE/Latent Learning,"Latent Learning".bib
 CSE/Stage Theory of Cognitive Development,"Stage Theory of Cognitive Development".bib
 CSE/programming gene,"geek gene".bib
+CSE/levels of abstraction,"levels of abstraction".bib
 CSE/Interference Theory (Bergström),"Interference Theory".bib
 CSE/model of programming errors,"model of programming errors".bib
 CSE/Learner-Centered Design,"Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay").bib
@@ -57,6 +57,7 @@ CSE/Interest (Kintsch),"Interest theory".bib
 CSE/Analytical Behaviorism,"Analytical Behaviorism".bib
 CSE/Invitational Education,"Invitational Education".bib
 CSE/Interest (Kintsch),"Interest" AND "Kintsch".bib
+CSE/theory of debugging,"theory of debugging".bib
 CSE/Classical Conditioning (Rescorla-Wagner),"Rescorla-Wagner" AND "Conditioning".bib
 CSE/Instrumental conditioning,"Instrumental Conditioning".bib
 CSE/threshold skills,"threshold skills".bib
@@ -70,7 +71,6 @@ CSE/Social Learning Theory,"social learning theory".bib
 CSE/engagement taxonomy (napps),"engagement theory" AND "napps".bib
 CSE/Information Processing Theory,"Information Processing Theory".bib
 CSE/Connectionism,"Connectionism".bib
-CSE/grit theory,"content.ftsec:(grit)".bib
 CSE/Elaboration Theory,"elaboration theory".bib
 CSE/learning trajectories,"learning trajectories".bib
 CSE/Discovery Learning,"discovery learning".bib
@@ -85,14 +85,13 @@ CSE/Learner-Centered Design,"Learner-centered design".bib
 CSE/reducing abstraction (hazzan),"reducing abstraction" +"hazzan".bib
 CSE/Cognitive Theory of Multimedia Learning,"Cognitive theory of multimedia learning".bib
 CSE/Approaches to Learning (deep vs. surface),"student approaches to learning".bib
-CSE/Communities of Practice,"Communities" NEAR "Practice".bib
 CSE/Cognitive Apprenticeship,"Cognitive Apprenticeship".bib
 CSE/Achievement Goal Theory,"goal theory".bib
+CSE/grit theory,"grit".bib
 CSE/Problem-Based Learning (PBL),"Problem-Based Learning".bib
 CSE/Associative learning (Hebb),"Associative learning".bib
 CSE/programming plans,"programming plans".bib
 CSE/Communities of Practice,"Communities of Practice".bib
-CSE/Self-Determination Theory,"Self-Determination Theory".bib
 CSE/Stage Theory of Cognitive Development,"piagetian".bib
 CSE/Instructivism,"Instructionism".bib
 CSE/Model of Hierarchical Complexity,"Hierarchical Complexity".bib
@@ -107,13 +106,121 @@ CSE/Associative learning (Hebb),"Associative" AND "Hebb".bib
 CSE/debugging plans,"debugging plans".bib
 CSE/Flow (Csikszentmihalyi),"Flow" AND "Csikszentmihalyi".bib
 CSE/Transformative Learning,"Transformative Learning".bib
+TABLES/seminal.bib
+FULL-ALL/motivation theories,"motivation learning".bib
+FULL-ALL/Chunking - Working Memory,"Working memory".bib
+FULL-ALL/Affordance Theory,"affordance theory".bib
+FULL-ALL/Mental models,"Mental models".bib
+FULL-ALL/Constructionism,"constructionism".bib
+FULL-ALL/notional machine,"notional machine".bib
+FULL-ALL/threshold concepts,"threshold concepts".bib
+FULL-ALL/PECT (seiter),"PECT".bib
+FULL-ALL/Subsumption Theory (Reception Learning),"reception learning" and "ausubel".bib
+FULL-ALL/Gestalt Theory,"Gestalt Theory".bib
+FULL-ALL/Latent Learning,"Latent Learning".bib
+FULL-ALL/Stage Theory of Cognitive Development,"Stage Theory of Cognitive Development".bib
+FULL-ALL/programming gene,"geek gene".bib
+FULL-ALL/levels of abstraction,"levels of abstraction".bib
+FULL-ALL/Interference Theory (Bergström),"Interference Theory".bib
+FULL-ALL/model of programming errors,"model of programming errors".bib
+FULL-ALL/Learner-Centered Design,"Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay").bib
+FULL-ALL/Sensory Theory,"Sensory theory".bib
+FULL-ALL/Learning Styles,"Learning Styles".bib
+FULL-ALL/Metacognition,"Metacognition".bib
+FULL-ALL/Chunking - Working Memory,"Chunking" AND "memory".bib
+FULL-ALL/innovation diffusion,"innovation diffusion".bib
+FULL-ALL/Constructivism,"constructivism".bib
+FULL-ALL/Experiential Learning,"experiential learning".bib
+FULL-ALL/Mindsets,"Mindsets".bib
+FULL-ALL/Cognitive Load Theory,"Cognitive load theory".bib
+FULL-ALL/Conditions of Learning,"Conditions of Learning".bib
+FULL-ALL/errors and misconceptions,"misconceptions".bib
+FULL-ALL/Psychological Behaviorism,"Behaviourism" AND "Staats".bib
+FULL-ALL/Scaffolding (Vygotsky Bruner Miller),"Scaffolding" AND ("Vygotsky" OR "Bruner" OR "Miller").bib
+FULL-ALL/Mastery Learning,"Mastery Learning".bib
+FULL-ALL/Stage Theory of Cognitive Development,"piaget's".bib
+FULL-ALL/Stage Theory of Cognitive Development,"piaget".bib
+FULL-ALL/spatial reasoning skills,"spatial skills" AND +"coding".bib
+FULL-ALL/Expectancy theory,"Expectancy theory".bib
+FULL-ALL/Dual Coding Theory,"Dual coding".bib
+FULL-ALL/Modality Principle,"Modality Principle".bib
+FULL-ALL/Zone of Proximal Development,"ZPD".bib
+FULL-ALL/Problem-Based Learning (PBL),"Problem Based Learning".bib
+FULL-ALL/self-efficacy theory,"self-efficacy".bib
+FULL-ALL/Conversation Theory,"conversation theory".bib
+FULL-ALL/Classical Conditioning (Pavlov),"Classical conditioning".bib
+FULL-ALL/schema theory,"programming plans".bib
+FULL-ALL/Maslow's Hierarchy of Needs (Maslow),"Maslow" AND "Hierarchy".bib
+FULL-ALL/contextualized computing,"contextualized computing".bib
+FULL-ALL/Split Attention Effect,"split attention effect".bib
+FULL-ALL/learning edge momentum,"learning edge momentum".bib
+FULL-ALL/Connectivism,"connnectivist".bib
+FULL-ALL/identity formation,"identity formation".bib
+FULL-ALL/Instructivism,"Instructivism".bib
+FULL-ALL/Psychological Behaviorism,"Psychological Behaviourism".bib
+FULL-ALL/Zone of Proximal Development,"Zone of Proximal Development".bib
+FULL-ALL/defensive climate,"defensive climate".bib
+FULL-ALL/Emotional Intelligence,"Emotional intelligence".bib
+FULL-ALL/Experiential Learning,"experiential" AND "Kolb".bib
+FULL-ALL/Interest (Kintsch),"Interest theory".bib
+FULL-ALL/Analytical Behaviorism,"Analytical Behaviorism".bib
+FULL-ALL/Invitational Education,"Invitational Education".bib
+FULL-ALL/Interest (Kintsch),"Interest" AND "Kintsch".bib
+FULL-ALL/theory of debugging,"theory of debugging".bib
+FULL-ALL/Classical Conditioning (Rescorla-Wagner),"Rescorla-Wagner" AND "Conditioning".bib
+FULL-ALL/Instrumental conditioning,"Instrumental Conditioning".bib
+FULL-ALL/threshold skills,"threshold skills".bib
+FULL-ALL/Operant Conditioning,"Operant Conditioning".bib
+FULL-ALL/Situated Learning,"Situated Learning".bib
+FULL-ALL/proximal flow,"proximal flow".bib
+FULL-ALL/Learning Styles,"Learning styles".bib
+FULL-ALL/attitudes,"attitudes".bib
+FULL-ALL/Expertise Theory,"Expertise theory".bib
+FULL-ALL/Social Learning Theory,"social learning theory".bib
+FULL-ALL/engagement taxonomy (napps),"engagement theory" AND "napps".bib
+FULL-ALL/Information Processing Theory,"Information Processing Theory".bib
+FULL-ALL/Connectionism,"Connectionism".bib
+FULL-ALL/Elaboration Theory,"elaboration theory".bib
+FULL-ALL/learning trajectories,"learning trajectories".bib
+FULL-ALL/Discovery Learning,"discovery learning".bib
+FULL-ALL/block model (schulte),"block model" +"schulte".bib
+FULL-ALL/EQ,"error quotient".bib
+FULL-ALL/Functional Context Theory,"Functional context theory".bib
+FULL-ALL/Situated Cognition,"Situated Cognition".bib
+FULL-ALL/Social Development Theory,"social development theory".bib
+FULL-ALL/Conversation Theory,"conversation learning".bib
+FULL-ALL/Flow (Csikszentmihalyi),"Flow" AND "theory".bib
+FULL-ALL/Learner-Centered Design,"Learner-centered design".bib
+FULL-ALL/reducing abstraction (hazzan),"reducing abstraction" +"hazzan".bib
+FULL-ALL/Cognitive Theory of Multimedia Learning,"Cognitive theory of multimedia learning".bib
+FULL-ALL/Approaches to Learning (deep vs. surface),"student approaches to learning".bib
+FULL-ALL/Cognitive Apprenticeship,"Cognitive Apprenticeship".bib
+FULL-ALL/Achievement Goal Theory,"goal theory".bib
+FULL-ALL/grit theory,"grit".bib
+FULL-ALL/Problem-Based Learning (PBL),"Problem-Based Learning".bib
+FULL-ALL/Associative learning (Hebb),"Associative learning".bib
+FULL-ALL/programming plans,"programming plans".bib
+FULL-ALL/Communities of Practice,"Communities of Practice".bib
+FULL-ALL/Stage Theory of Cognitive Development,"piagetian".bib
+FULL-ALL/Instructivism,"Instructionism".bib
+FULL-ALL/Model of Hierarchical Complexity,"Hierarchical Complexity".bib
+FULL-ALL/Dual Coding Theory,"Coding theory" AND "Paivio".bib
+FULL-ALL/Classical Conditioning (Pavlov),"Pavlovian conditioning".bib
+FULL-ALL/Dual Coding Theory,"Dual coding theory".bib
+FULL-ALL/Cognitivism,"Cognitivism".bib
+FULL-ALL/Subsumption Theory (Reception Learning),"subsumption theory".bib
+FULL-ALL/Connectivism,"connectivism".bib
+FULL-ALL/Mastery Learning,"Mastery" AND "Bloom".bib
+FULL-ALL/Associative learning (Hebb),"Associative" AND "Hebb".bib
+FULL-ALL/debugging plans,"debugging plans".bib
+FULL-ALL/Flow (Csikszentmihalyi),"Flow" AND "Csikszentmihalyi".bib
+FULL-ALL/Transformative Learning,"Transformative Learning".bib
 ALL/motivation theories,"motivation learning".bib
 ALL/Chunking - Working Memory,"Working memory".bib
 ALL/Affordance Theory,"affordance theory".bib
 ALL/Mental models,"Mental models".bib
 ALL/Constructionism,"constructionism".bib
 ALL/notional machine,"notional machine".bib
-ALL/theory of debugging,content.ftsec:("theory of debugging").bib
 ALL/threshold concepts,"threshold concepts".bib
 ALL/PECT (seiter),"PECT".bib
 ALL/Subsumption Theory (Reception Learning),"reception learning" and "ausubel".bib
@@ -167,6 +274,7 @@ ALL/Interest (Kintsch),"Interest theory".bib
 ALL/Analytical Behaviorism,"Analytical Behaviorism".bib
 ALL/Invitational Education,"Invitational Education".bib
 ALL/Interest (Kintsch),"Interest" AND "Kintsch".bib
+ALL/theory of debugging,"theory of debugging".bib
 ALL/Classical Conditioning (Rescorla-Wagner),"Rescorla-Wagner" AND "Conditioning".bib
 ALL/Instrumental conditioning,"Instrumental Conditioning".bib
 ALL/threshold skills,"threshold skills".bib
@@ -180,7 +288,6 @@ ALL/Social Learning Theory,"social learning theory".bib
 ALL/engagement taxonomy (napps),"engagement theory" AND "napps".bib
 ALL/Information Processing Theory,"Information Processing Theory".bib
 ALL/Connectionism,"Connectionism".bib
-ALL/grit theory,"content.ftsec:(grit)".bib
 ALL/Elaboration Theory,"elaboration theory".bib
 ALL/learning trajectories,"learning trajectories".bib
 ALL/Discovery Learning,"discovery learning".bib
@@ -195,9 +302,9 @@ ALL/Learner-Centered Design,"Learner-centered design".bib
 ALL/reducing abstraction (hazzan),"reducing abstraction" +"hazzan".bib
 ALL/Cognitive Theory of Multimedia Learning,"Cognitive theory of multimedia learning".bib
 ALL/Approaches to Learning (deep vs. surface),"student approaches to learning".bib
-ALL/Communities of Practice,"Communities" NEAR "Practice".bib
 ALL/Cognitive Apprenticeship,"Cognitive Apprenticeship".bib
 ALL/Achievement Goal Theory,"goal theory".bib
+ALL/grit theory,"grit".bib
 ALL/Problem-Based Learning (PBL),"Problem-Based Learning".bib
 ALL/Associative learning (Hebb),"Associative learning".bib
 ALL/programming plans,"programming plans".bib
@@ -217,3 +324,112 @@ ALL/Associative learning (Hebb),"Associative" AND "Hebb".bib
 ALL/debugging plans,"debugging plans".bib
 ALL/Flow (Csikszentmihalyi),"Flow" AND "Csikszentmihalyi".bib
 ALL/Transformative Learning,"Transformative Learning".bib
+FULL-CSE/motivation theories,"motivation learning".bib
+FULL-CSE/Chunking - Working Memory,"Working memory".bib
+FULL-CSE/Affordance Theory,"affordance theory".bib
+FULL-CSE/Mental models,"Mental models".bib
+FULL-CSE/Constructionism,"constructionism".bib
+FULL-CSE/notional machine,"notional machine".bib
+FULL-CSE/threshold concepts,"threshold concepts".bib
+FULL-CSE/PECT (seiter),"PECT".bib
+FULL-CSE/Subsumption Theory (Reception Learning),"reception learning" and "ausubel".bib
+FULL-CSE/Gestalt Theory,"Gestalt Theory".bib
+FULL-CSE/Latent Learning,"Latent Learning".bib
+FULL-CSE/Stage Theory of Cognitive Development,"Stage Theory of Cognitive Development".bib
+FULL-CSE/programming gene,"geek gene".bib
+FULL-CSE/levels of abstraction,"levels of abstraction".bib
+FULL-CSE/Interference Theory (Bergström),"Interference Theory".bib
+FULL-CSE/model of programming errors,"model of programming errors".bib
+FULL-CSE/Learner-Centered Design,"Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay").bib
+FULL-CSE/Sensory Theory,"Sensory theory".bib
+FULL-CSE/Learning Styles,"Learning Styles".bib
+FULL-CSE/Metacognition,"Metacognition".bib
+FULL-CSE/Chunking - Working Memory,"Chunking" AND "memory".bib
+FULL-CSE/innovation diffusion,"innovation diffusion".bib
+FULL-CSE/Constructivism,"constructivism".bib
+FULL-CSE/Experiential Learning,"experiential learning".bib
+FULL-CSE/Mindsets,"Mindsets".bib
+FULL-CSE/Cognitive Load Theory,"Cognitive load theory".bib
+FULL-CSE/Conditions of Learning,"Conditions of Learning".bib
+FULL-CSE/errors and misconceptions,"misconceptions".bib
+FULL-CSE/Psychological Behaviorism,"Behaviourism" AND "Staats".bib
+FULL-CSE/Scaffolding (Vygotsky Bruner Miller),"Scaffolding" AND ("Vygotsky" OR "Bruner" OR "Miller").bib
+FULL-CSE/Mastery Learning,"Mastery Learning".bib
+FULL-CSE/Stage Theory of Cognitive Development,"piaget's".bib
+FULL-CSE/Stage Theory of Cognitive Development,"piaget".bib
+FULL-CSE/spatial reasoning skills,"spatial skills" AND +"coding".bib
+FULL-CSE/Expectancy theory,"Expectancy theory".bib
+FULL-CSE/Dual Coding Theory,"Dual coding".bib
+FULL-CSE/Modality Principle,"Modality Principle".bib
+FULL-CSE/Zone of Proximal Development,"ZPD".bib
+FULL-CSE/Problem-Based Learning (PBL),"Problem Based Learning".bib
+FULL-CSE/self-efficacy theory,"self-efficacy".bib
+FULL-CSE/Conversation Theory,"conversation theory".bib
+FULL-CSE/Classical Conditioning (Pavlov),"Classical conditioning".bib
+FULL-CSE/schema theory,"programming plans".bib
+FULL-CSE/Maslow's Hierarchy of Needs (Maslow),"Maslow" AND "Hierarchy".bib
+FULL-CSE/contextualized computing,"contextualized computing".bib
+FULL-CSE/Split Attention Effect,"split attention effect".bib
+FULL-CSE/learning edge momentum,"learning edge momentum".bib
+FULL-CSE/Connectivism,"connnectivist".bib
+FULL-CSE/identity formation,"identity formation".bib
+FULL-CSE/Instructivism,"Instructivism".bib
+FULL-CSE/Psychological Behaviorism,"Psychological Behaviourism".bib
+FULL-CSE/Zone of Proximal Development,"Zone of Proximal Development".bib
+FULL-CSE/defensive climate,"defensive climate".bib
+FULL-CSE/Emotional Intelligence,"Emotional intelligence".bib
+FULL-CSE/Experiential Learning,"experiential" AND "Kolb".bib
+FULL-CSE/Interest (Kintsch),"Interest theory".bib
+FULL-CSE/Analytical Behaviorism,"Analytical Behaviorism".bib
+FULL-CSE/Invitational Education,"Invitational Education".bib
+FULL-CSE/Interest (Kintsch),"Interest" AND "Kintsch".bib
+FULL-CSE/theory of debugging,"theory of debugging".bib
+FULL-CSE/Classical Conditioning (Rescorla-Wagner),"Rescorla-Wagner" AND "Conditioning".bib
+FULL-CSE/Instrumental conditioning,"Instrumental Conditioning".bib
+FULL-CSE/threshold skills,"threshold skills".bib
+FULL-CSE/Operant Conditioning,"Operant Conditioning".bib
+FULL-CSE/Situated Learning,"Situated Learning".bib
+FULL-CSE/proximal flow,"proximal flow".bib
+FULL-CSE/Learning Styles,"Learning styles".bib
+FULL-CSE/attitudes,"attitudes".bib
+FULL-CSE/Expertise Theory,"Expertise theory".bib
+FULL-CSE/Social Learning Theory,"social learning theory".bib
+FULL-CSE/engagement taxonomy (napps),"engagement theory" AND "napps".bib
+FULL-CSE/Information Processing Theory,"Information Processing Theory".bib
+FULL-CSE/Connectionism,"Connectionism".bib
+FULL-CSE/Elaboration Theory,"elaboration theory".bib
+FULL-CSE/learning trajectories,"learning trajectories".bib
+FULL-CSE/Discovery Learning,"discovery learning".bib
+FULL-CSE/block model (schulte),"block model" +"schulte".bib
+FULL-CSE/EQ,"error quotient".bib
+FULL-CSE/Functional Context Theory,"Functional context theory".bib
+FULL-CSE/Situated Cognition,"Situated Cognition".bib
+FULL-CSE/Social Development Theory,"social development theory".bib
+FULL-CSE/Conversation Theory,"conversation learning".bib
+FULL-CSE/Flow (Csikszentmihalyi),"Flow" AND "theory".bib
+FULL-CSE/Learner-Centered Design,"Learner-centered design".bib
+FULL-CSE/reducing abstraction (hazzan),"reducing abstraction" +"hazzan".bib
+FULL-CSE/Cognitive Theory of Multimedia Learning,"Cognitive theory of multimedia learning".bib
+FULL-CSE/Approaches to Learning (deep vs. surface),"student approaches to learning".bib
+FULL-CSE/Cognitive Apprenticeship,"Cognitive Apprenticeship".bib
+FULL-CSE/Achievement Goal Theory,"goal theory".bib
+FULL-CSE/grit theory,"grit".bib
+FULL-CSE/Problem-Based Learning (PBL),"Problem-Based Learning".bib
+FULL-CSE/Associative learning (Hebb),"Associative learning".bib
+FULL-CSE/programming plans,"programming plans".bib
+FULL-CSE/Communities of Practice,"Communities of Practice".bib
+FULL-CSE/Self-Determination Theory,"Self-Determination Theory".bib
+FULL-CSE/Stage Theory of Cognitive Development,"piagetian".bib
+FULL-CSE/Instructivism,"Instructionism".bib
+FULL-CSE/Model of Hierarchical Complexity,"Hierarchical Complexity".bib
+FULL-CSE/Dual Coding Theory,"Coding theory" AND "Paivio".bib
+FULL-CSE/Classical Conditioning (Pavlov),"Pavlovian conditioning".bib
+FULL-CSE/Dual Coding Theory,"Dual coding theory".bib
+FULL-CSE/Cognitivism,"Cognitivism".bib
+FULL-CSE/Subsumption Theory (Reception Learning),"subsumption theory".bib
+FULL-CSE/Connectivism,"connectivism".bib
+FULL-CSE/Mastery Learning,"Mastery" AND "Bloom".bib
+FULL-CSE/Associative learning (Hebb),"Associative" AND "Hebb".bib
+FULL-CSE/debugging plans,"debugging plans".bib
+FULL-CSE/Flow (Csikszentmihalyi),"Flow" AND "Csikszentmihalyi".bib
+FULL-CSE/Transformative Learning,"Transformative Learning".bib

@@ -33,7 +33,7 @@ def single_search(term1,folder,url):
     pause = randint(30,60)
     b = mechanicalsoup.StatefulBrowser(soup_config={'features':'lxml'},raise_on_404=False,user_agent=ua.random,)
     print(term1)
-    print(url)
+    #print(url)
     results = 0
     filename="{}/{}.bib".format(folder,term1)
     #print("searching {}".format(folder))
@@ -42,7 +42,7 @@ def single_search(term1,folder,url):
     with open("HTML/{}/{}.html".format(folder,term1),mode="wb") as f:
         f.write(response.content)
     results=re.search(b'[\d,]+<\/strong>',response.content)
-    print(results)
+    #print(results)
     if results==None:
         status = False
     else:
@@ -53,18 +53,18 @@ def single_search(term1,folder,url):
         sleep(randint(5,10))
         try:
             with open(filename, mode="wb") as f:
-                print("{} open...".format(filename))
+#                print("{} open...".format(filename))
                 if results > 0:
                     bib = b.follow_link("bibtex")
                     f.write(bib.content)
-                    print("...bibtex written.")
+#                    print("...bibtex written.")
 
         except:
 
             with open("log.csv", mode="a") as f:
                 f.write("{},{},{},{}\n".format(datetime.now(),term1,"FAIL",url))
 
-    print("pause",pause)
+#    print("pause",pause)
     sleep(pause)
     return status
 
@@ -73,8 +73,8 @@ queue,complete,failed = read_list()
 print("{} in search queue".format(len(queue)))
 print("{} already complete".format(len(complete)))
 print("OUTSTANDING SEARCHS")
-for search in list(set(queue)-set(complete)):
-    print(search)
+#for search in list(set(queue)-set(complete)):
+#    print(len(search))
 #pprint(failed)
 #with open("log.csv", mode="w") as f:
     #f.write("Result,Term,URL\n")
@@ -84,14 +84,20 @@ for term in queue:
     #print(terms)
     #print(type(terms))
     if term not in complete:
-        url1 ="https://dl.acm.org/results.cfm?query=(%252B{})&within=owners.owner=HOSTED&filtered=&dte=&bfr=".format(urllib.parse.quote(terms[1]))
-        url2 ="https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=(%252B{}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(urllib.parse.quote(terms[1]))
+        url1 ="https://dl.acm.org/results.cfm?query=content.ftsec:(%252B{})&within=owners.owner=HOSTED&filtered=&dte=&bfr=".format(urllib.parse.quote(terms[1]))
+        url2 ="https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=content.ftsec:(%252B{}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(urllib.parse.quote(terms[1]))
+        url3 ="https://dl.acm.org/results.cfm?query=(%252B{})&within=owners.owner=HOSTED&filtered=&dte=&bfr=".format(urllib.parse.quote(terms[1]))
+        url4 ="https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query=(%252B{}%29++AND+acmdlCCS%3A%28%252B%22Computing+Education%22%29&Go.x=0&Go.y=0".format(urllib.parse.quote(terms[1]))
         #print(url1)
         #print(url2)
-        status1 = single_search(term,"ALL",url1)
-        status2 = single_search(term,"CSE",url2)
-        print(status1,status2)
-        if status1 and status2:                           #  https://dl.acm.org/results.cfm?query=(%252B%22{}%22)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
+        status1 = single_search(term,"FULL-ALL",url1)
+        status2 = single_search(term,"FULL-CSE",url2)
+        status3 = single_search(term,"ALL",url1)
+        status4 = single_search(term,"CSE",url2)
+
+
+#        print(status1,status2)
+        if status1 and status2 and status3 and status4:                           #  https://dl.acm.org/results.cfm?query=(%252B%22{}%22)&within=owners.owner=HOSTED&filtered=&dte=&bfr=
             complete.append(term)
             with open ("complete",mode="w") as f:
                 for term in complete:

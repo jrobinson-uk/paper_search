@@ -6,7 +6,7 @@ _cf_ajaxscriptsrc="/cf_scripts/scripts/ajax";
 _cf_jsonprefix='//';
 _cf_websocket_port=0;
 _cf_flash_policy_port=0;
-_cf_clientid='B1C3E9D6D995310851727E2E02EBD3EF';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
+_cf_clientid='8E187D754237268B61526EA75AB0AC46';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/ajax/package/cfajax.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/cfform.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/masks.js"></script>
@@ -72,7 +72,7 @@ _cf_clientid='B1C3E9D6D995310851727E2E02EBD3EF';/* ]]> */</script><script type="
 	animation-delay: 1s;
 }
   --></style>
-<title>Results ACM DL :&nbsp;( &quot;Expertise theory&quot;)</title>
+<title>Results ACM DL :&nbsp;content.ftsec:( &quot;Expertise theory&quot;)</title>
 <style type="text/css"><!--
     body {margin-left: 0em; margin-top: 0}
     a:link {text-decoration: underline; 	Color: #1d4d0f;}
@@ -308,19 +308,25 @@ _cf_clientid='B1C3E9D6D995310851727E2E02EBD3EF';/* ]]> */</script><script type="
 	ColdFusion.Ajax.importTag('CFTEXTAREA');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
+	_cf_bind_init_20741144296398212=function()
+	{
+		ColdFusion.Bind.register([],{'bindTo':'Events','bindExpr':['upcomingconfs.cfm?ids=2019-35607,2020-36607']},ColdFusion.Bind.urlBindHandler,true);
+	};ColdFusion.Event.registerOnLoad(_cf_bind_init_20741144296398212);
+/* ]]> */</script>
+<script type="text/javascript">/* <![CDATA[ */
 	ColdFusion.Ajax.importTag('CFWINDOW');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_4099868229996659=function()
+	Ext.onReady(function(){var _cf_window_init_20741144296398214=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window4099868229996658', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_4099868229996659);});
+		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window20741144296398213', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_20741144296398214);});
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_4099868229996661=function()
+	Ext.onReady(function(){var _cf_window_init_20741144296398216=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window4099868229996660', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_4099868229996661);});
+		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window20741144296398215', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_20741144296398216);});
 /* ]]> */</script>
 </head>
 <body style="text-align:center; font-size: 100%" onLoad="window.focus();">
@@ -407,7 +413,7 @@ We're upgrading the ACM DL, and would like your input.&nbsp;&nbsp;Please sign up
 <form name="qiksearch" action="/results.cfm" onsubmit='encodeInput(this)'>
 <input type="hidden" name="within" value="owners.owner=HOSTED">
 <input type="hidden" name="srt" value="_score">
-<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="(+&quot;Expertise theory&quot;)" /></label>&nbsp;
+<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="content.ftsec:(+&quot;Expertise theory&quot;)" /></label>&nbsp;
 <input style="vertical-align:top;" type="image" alt="Search" name="Go" src="/images/search_small.jpg" />
 </span>
 </form>
@@ -750,11 +756,11 @@ function toggle(theagg) {
 
 
 function sortres(howsort) {
-	window.location = "results.cfm?query=%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
 }
 
 function submitrange(theyear) {
-	window.location = "results.cfm?query=%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
 }
 
 function updateTextInput(val) {
@@ -764,19 +770,461 @@ function updateTextInput(val) {
 
 		
 </script>
+
 <div id="resultstats">
-<div>Searched for <em>(+&quot;Expertise theory&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=%28%252B%22Expertise%20theory%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=%28%252B%22Expertise%20theory%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
-<div> Searched The ACM Full-Text Collection: <span class="rectots">562,333 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=%28%252B%22Expertise%20theory%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,858,546 records</span>]
+<div>Searched for <em>content.ftsec:(+&quot;Expertise theory&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
+<div> Searched The ACM Full-Text Collection: <span class="rectots">562,642 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,860,493 records</span>]
 <a href="javascript:ColdFusion.Window.show('theexplaination');ColdFusion.navigate('explain.cfm?expid=10','theexplaination');" title="Help: Search The ACM Full-Text Collection or The ACM Guide to Computing Literature"><img src="images/help.jpg" width="20" height="18" alt="Help: ACM vs. Guide" border="0" hspace="0" style="vertical-align:text-bottom;"></a>
 </div>
 <div id="resfound">
-<div id="searchtots"><strong>0</strong> results found</div>
+<div id="searchtots"><strong>5</strong> results found</div>
+<span id="searchtools">Export Results:
+<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=bibtex">bibtex</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=endnote">endnote</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=acmref">acmref</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=csv">csv</a>
+</span>
 </div>
 </div>
 <hr />
-<div class="problem">
-Nothing found
+<div id="aggs">
+<div>
+<div class="aggHead">Refine by People</div>
+<div>
+<a title="show/hide" class="showhide" id="Names_link" href="javascript: void(0);" onclick="toggle('Names');">Names&nbsp;<img src="gifs/arrow-right.gif" id="Names_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
+<ul id="Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Baltes%2C%20Sebastian&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Baltes, Sebastian&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Chen%2C%20Hui&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Chen, Hui&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Ciborowska%2C%20Agnieszka&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ciborowska, Agnieszka&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Crk%2C%20Igor&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Crk, Igor&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Damevski%2C%20Kostadin&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Damevski, Kostadin&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Diehl%2C%20Stephan&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Diehl, Stephan&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Gemballa%2C%20Sven&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gemballa, Sven&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Gerjets%2C%20Peter&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gerjets, Peter&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Hay%2C%20Kenneth%20E%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hay, Kenneth E.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Jarodzka%2C%20Halszka&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Jarodzka, Halszka&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Kim%2C%20Beaumie&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Kim, Beaumie&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Kluthe%2C%20Timothy&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Kluthe, Timothy&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Scheiter%2C%20Katharina&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Scheiter, Katharina&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPersonsSearchDspName=Stefik%2C%20Andreas&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Stefik, Andreas&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Institutions_link" href="javascript: void(0);" onclick="toggle('Institutions');">Institutions&nbsp;<img src="gifs/arrow-right.gif" id="Institutions_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Institutions_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlInstName=Knowledge%20Media%20Research%20Center&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Knowledge Media Research Center&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlInstName=Southern%20Illinois%20University%20at%20Edwardsville&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Southern Illinois University at Edwardsville&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlInstName=The%20University%20of%20Georgia&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">The University of Georgia&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlInstName=University%20of%20Nevada%2C%20Las%20Vegas&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Nevada, Las Vegas&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlInstName=University%20of%20Trier&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Trier&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlInstName=University%20of%20Tubingen&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Tubingen&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlInstName=Wheeling%20Jesuit%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Wheeling Jesuit University&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Authors_link" href="javascript: void(0);" onclick="toggle('Authors');">Authors&nbsp;<img src="gifs/arrow-right.gif" id="Authors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Authors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Baltes%2C%20Sebastian&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Baltes, Sebastian&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Chen%2C%20Hui&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Chen, Hui&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Ciborowska%2C%20Agnieszka&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ciborowska, Agnieszka&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Crk%2C%20Igor&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Crk, Igor&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Damevski%2C%20Kostadin&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Damevski, Kostadin&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Diehl%2C%20Stephan&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Diehl, Stephan&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Gemballa%2C%20Sven&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gemballa, Sven&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Gerjets%2C%20Peter&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Gerjets, Peter&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hay%2C%20Kenneth%20E%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hay, Kenneth E.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Jarodzka%2C%20Halszka&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Jarodzka, Halszka&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Kim%2C%20Beaumie&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Kim, Beaumie&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Kluthe%2C%20Timothy&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Kluthe, Timothy&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Scheiter%2C%20Katharina&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Scheiter, Katharina&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=persons%2Eauthors%2EsearchDspName=Stefik%2C%20Andreas&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Stefik, Andreas&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publications</div>
+<div>
+<a title="show/hide" class="showhide" id="Publication_Names_link" href="javascript: void(0);" onclick="toggle('Publication_Names');">Publication Names&nbsp;<img src="gifs/arrow-right.gif" id="Publication_Names_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publication_Names_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20Transactions%20on%20Computer%2DHuman%20Interaction%20%28TOCHI%29&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM Transactions on Computer-Human Interaction (TOCHI)&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPublicationTitle%2Eraw=CSCL%20%2705%3A%20Proceedings%20of%20th%202005%20conference%20on%20Computer%20support%20for%20collaborative%20learning%3A%20learning%202005%3A%20the%20next%2010%20years%21&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CSCL '05: Proceedings of th 2005 conference on Computer support for collaborative learning: learning 2005: the next 10 years!&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPublicationTitle%2Eraw=ESEC%2FFSE%202018%3A%20Proceedings%20of%20the%202018%2026th%20ACM%20Joint%20Meeting%20on%20European%20Software%20Engineering%20Conference%20and%20Symposium%20on%20the%20Foundations%20of%20Software%20Engineering&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ESEC/FSE 2018: Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPublicationTitle%2Eraw=ICLS%2708%3A%20Proceedings%20of%20the%208th%20international%20conference%20on%20International%20conference%20for%20the%20learning%20sciences%20%2D%20Volume%201&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICLS'08: Proceedings of the 8th international conference on International conference for the learning sciences - Volume 1&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPublicationTitle%2Eraw=ITiCSE%20%2719%3A%20Proceedings%20of%20the%202019%20ACM%20Conference%20on%20Innovation%20and%20Technology%20in%20Computer%20Science%20Education&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '19: Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="ACM_Publications_link" href="javascript: void(0);" onclick="toggle('ACM_Publications');">ACM Publications&nbsp;<img src="gifs/arrow-right.gif" id="ACM_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="ACM_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmPubGroups%2EacmPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmPubGroups%2EacmPubGroup=Journal&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Journal&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="All_Publications_link" href="javascript: void(0);" onclick="toggle('All_Publications');">All Publications&nbsp;<img src="gifs/arrow-right.gif" id="All_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="All_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=allPubGroups%2EallPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=allPubGroups%2EallPubGroup=Periodical&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Periodical&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Content_Formats_link" href="javascript: void(0);" onclick="toggle('Content_Formats');">Content Formats&nbsp;<img src="gifs/arrow-right.gif" id="Content_Formats_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Content_Formats_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=resources%2Eft%2EresourceFormat=PDF&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">PDF&nbsp;(5)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Publishers_link" href="javascript: void(0);" onclick="toggle('Publishers');">Publishers&nbsp;<img src="gifs/arrow-right.gif" id="Publishers_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Publishers_list" style="display:none">
+
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPublisherName%2Eraw=ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlPublisherName%2Eraw=International%20Society%20of%20the%20Learning%20Sciences&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">International Society of the Learning Sciences&nbsp;(2)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Conferences</div>
+<div>
+<a title="show/hide" class="showhide" id="Sponsors_link" href="javascript: void(0);" onclick="toggle('Sponsors');">Sponsors&nbsp;<img src="gifs/arrow-right.gif" id="Sponsors_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Sponsors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=sponsors%2EsponsorAbbr=SIGCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=sponsors%2EsponsorAbbr=SIGSOFT&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGSOFT&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Events_link" href="javascript: void(0);" onclick="toggle('Events');">Events&nbsp;<img src="gifs/arrow-right.gif" id="Events_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Events_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlConferenceAcronym=ESEC%2FFSE%20%2718&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ESEC/FSE '18&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=acmdlConferenceAcronym=ITiCSE%20%2719&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '19&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Proceeding_Series_link" href="javascript: void(0);" onclick="toggle('Proceeding_Series');">Proceeding Series&nbsp;<img src="gifs/arrow-right.gif" id="Proceeding_Series_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Proceeding_Series_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=series%2EseriesAbbr=CSCL&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CSCL&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=series%2EseriesAbbr=ESEC%2FFSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ESEC/FSE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=series%2EseriesAbbr=ICLS&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICLS&nbsp;(1)</a></li>
+
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Expertise%20theory%22%29&filtered=series%2EseriesAbbr=ITiCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publication Year</div>
+<canvas id="canvas" height="250"></canvas>
+<script>
+          var theChartData = {
+              labels : [2005,2008,2015,2018,2019],
+              datasets : [
+                  {
+                      label: "Years",
+                      fillColor : "rgba(220,220,220,0.2)",
+                      stSrokeColor : "rgba(220,220,220,1)",
+                      pointColor : "rgba(220,220,220,1)",
+                      pointStrokeColor : "#fff",
+                      pointHighlightFill : "#fff",
+                      pointHighlightStroke : "rgba(220,220,220,1)",
+                      data : [1,1,1,1,1]
+                  },
+              ]
+          }
+  
+      window.onload = function(){
+          var ctx = document.getElementById("canvas").getContext("2d");
+          window.myChart = new Chart(ctx).Line(theChartData, {
+			  scaleShowLabels : false,
+			  responsive: true,
+             
+              
+          });
+      }
+      </script>
+<label for="yearSlide">Published Since</label>
+<output for="yearSlide" id="whichYear">2005</output>
+<input style="padding-top:10px; width:175px;" type="range" min="2005" max="2019" value="2005" id="yearSlide" oninput="outputUpdate(value)" onmouseup="submitrange(value)">
+<datalist id="yearVals">
+<option>thelabels</option>
+</datalist>
+<script>
+      
+      function outputUpdate(yr) {
+      
+      document.querySelector('#whichYear').value = yr;
+      
+      }
+      
+      </script>
+</div>
+<div id="Events"></div>
+</div>
+<div id="results">
+<div class="pagerange">
+Result 1 &ndash; 5 of 5
+</div>
+<div id="resultmenu">
+<div id="sortmenu">
+Sort by:
+<select name="selsort" onchange="sortres(this.options[this.selectedIndex].value);">
+<option value="_score">relevance</option>
+<option value="publicationDate">publication date</option>
+<option value="citedCount">citation count</option>
+<option value="download6Weeks">downloads (6 Weeks)</option>
+<option value="download12Months">downloads (12 months)</option>
+<option value="downloadAll">downloads (overall)</option>
+</select>
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+1
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3319731" target="_self">Using Automated Prompts for Student Reflection on Computer Security Concepts</a>
+</div>
+<div class="authors">
+Hui Chen, Agnieszka Ciborowska, Kostadin Damevski
+</div>
+<div class="source">
+<span class="publicationDate">July 2019</span>
+<span style="padding-left:10px">ITiCSE '19: Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;9</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;9</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;9</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3319731&ftid=2070423&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Reflection is known to be an effective means to improve students' learning. In this paper, we aim to foster meaningful reflection via prompts in computer science courses with a significant practical, software development component. To this end we develop an instructional strategy and system that automatically delivers prompts to students ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+automated reflection, reflection, reflection prompt
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3319731');">result highlights</a>]</div>
+<div class="highlights" id="high3319731" style="display:none">
+<strong>Full Text</strong>:<br />
+... psychology: General 118, 3 (1989), 219.[17] Gary Rolfe. 1997. Beyond <em>expertise</em>: : <em>theory</em>, , practice and the reflexive practitioner.Journal of clinical nursing 6, ... <br />
+<br />
+<strong>References</strong>:<br />
+Gary Rolfe. 1997. Beyond <em>expertise</em>: <em>theory</em>, practice and the reflexive practitioner. Journal of clinical nursing , Vol. 6, 2 (1997), 93--97. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+2
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1599859" target="_self">In the eyes of experts: teaching dynamic features in biology by modeling experts' eye movement strategies to novices</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81430592297">Halszka Jarodzka</a>,
+<a href="author_page.cfm?id=81316490653">Katharina Scheiter</a>,
+<a href="author_page.cfm?id=81316488634">Peter Gerjets</a>,
+<a href="author_page.cfm?id=81442613341">Sven Gemballa</a>
+</div>
+<div class="source">
+<span class="publicationDate">June 2008</span>
+<span style="padding-left:10px">ICLS'08: Proceedings of the 8th international conference on International conference for the learning sciences - Volume 1</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;International Society of the Learning Sciences
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;0</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;101</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1599859&ftid=670424&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+In biology education, it is crucial to be able to classify objects based on complex visual information (e.g., shapes and locomotion patterns of fish). Usually, this ability is trained with books displaying static features and only explaining dynamic features. However, for many classification tasks the dynamic features are very important. ...
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1599859');">result highlights</a>]</div>
+<div class="highlights" id="high1599859" style="display:none">
+<strong>Full Text</strong>:<br />
+... G.R., &amp; Boshuizen, H.P.A. (1990). A cognitive perspective on medical <em>expertise</em>: : <em>theory</em> and implications. Academic Medicine, 65, 611-621. Sweller, J., Van Merrienboer, ... <br />
+<br />
+<strong>References</strong>:<br />
+Schmidt, H.G., Norman, G.R., & Boshuizen, H.P.A. (1990). A cognitive perspective on medical <em>expertise</em>: <em>theory</em> and implications. <i>Academic Medicine, 65</i>, 611-621. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+3
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1149329" target="_self">The evolution of the intellectual partnership with a cognitive tool in inquiry-based astronomy laboratory</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81436597907">Beaumie Kim</a>,
+<a href="author_page.cfm?id=81100443486">Kenneth E. Hay</a>
+</div>
+<div class="source">
+<span class="publicationDate">May 2005</span>
+<span style="padding-left:10px">CSCL '05: Proceedings of th 2005 conference on Computer support for collaborative learning: learning 2005: the next 10 years!</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;International Society of the Learning Sciences
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;4</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;187</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1149329&ftid=370020&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This paper describes a study focused on the longitudinal application of a cognitive tool by observing a pair of learners' interaction with it over a semester. This study intended to develop a deeper understanding of the process whereby learners become more capable of engaging in scientific inquiry with the tool ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+distributed cognition, inquiry-based learning, cognitive tool, expertise, modeling
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1149329');">result highlights</a>]</div>
+<div class="highlights" id="high1149329" style="display:none">
+<strong>Full Text</strong>:<br />
+... and mental models about the solar system.From the perspective of <em>expertise</em> <em>theory</em>, , Betty and Allen showed their progress in their knowledge ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+4
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3236061" target="_self">Towards a theory of software development expertise</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=88158852257">Sebastian Baltes</a>,
+<a href="author_page.cfm?id=81100020010">Stephan Diehl</a>
+</div>
+<div class="source">
+<span class="publicationDate">October 2018</span>
+<span style="padding-left:10px">ESEC/FSE 2018: Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;13</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;130</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;130</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3236061&ftid=2012457&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="ft">
+<a href="javascript:ColdFusion.Window.show('theexplaination');ColdFusion.navigate('explain.cfm?expid=13','theexplaination');" title="Artifact Review and Badging: explained">Artifacts</a>:&nbsp;&nbsp;<img src=images/artifacts_evaluated_functional_dl.jpg alt=null style="vertical-align: middle">&nbsp;Artifacts Evaluated - Functional&nbsp;&nbsp;<img src=images/artifacts_evaluated_reusable_dl.jpg alt=null style="vertical-align: middle">&nbsp;Artifacts Evaluated - Reusable&nbsp;&nbsp;<img src=images/artifacts_available_dl.jpg alt=null style="vertical-align: middle">&nbsp;Artifacts Available&nbsp;&nbsp;
+</div>
+<div class="abstract">
+Software development includes diverse tasks such as implementing new features, analyzing requirements, and fixing bugs. Being an expert in those tasks requires a certain set of skills, knowledge, and experience. Several studies investigated individual aspects of software development expertise, but what is missing is a comprehensive theory. We present a ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+expertise, psychology, software engineering, theory
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3236061');">result highlights</a>]</div>
+<div class="highlights" id="high3236061" style="display:none">
+<strong>Full Text</strong>:<br />
+... necessarily related to expertise.CCS CONCEPTS Software and its engineering;KEYWORDSsoftware engineering, <em>expertise</em>, , <em>theory</em>, , psychologyACM Reference Format:Sebastian Baltes and Stephan Diehl. 2018. Towards ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+5
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2829945" target="_self">Understanding Programming Expertise: An Empirical Study of Phasic Brain Wave Changes</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81367590977">Igor Crk</a>,
+<a href="author_page.cfm?id=99658967594">Timothy Kluthe</a>,
+<a href="author_page.cfm?id=81314486348">Andreas Stefik</a>
+</div>
+<div class="source">
+<span class="publicationDate">December 2015</span>
+<span style="padding-left:10px">ACM Transactions on Computer-Human Interaction (TOCHI): Volume 23 Issue 1, February 2016</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 4</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;9</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;89</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;684</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2829945&ftid=1657255&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Recent decades have seen a resurgence of interest in electroencephalography (EEG), as neuroscience develops new models of cognition and refines old ones, associating them with detectable indicators of brain activity. This article presents a more direct measure of programmer expertise, derived from noninvasive observation of the brain&rsquo;s electrical activity. This ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+BCI, HCI, brain-computer interface, empirical studies, human factors, program comprehension
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2829945');">result highlights</a>]</div>
+<div class="highlights" id="high2829945" style="display:none">
+<strong>Full Text</strong>:<br />
+... random configurations. See Gobet’s [1998] paper for a comprehensivereview of <em>expertise</em> <em>theories</em> based on studies of chess player memory.ACM Transactions on Computer-Human ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="pagerange">
+Result 1 &ndash; 5 of 5
+</div>
+</div>
+<br clear="all" />
 </div>
 <br clear="all" />
 <div class="footerbody" align="center">
@@ -792,10 +1240,10 @@ window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/23
 /*]]>{/literal}*/</script>
 
 </div>
-<div id="cf_window4099868229996658" class="x-hidden">
+<div id="cf_window20741144296398213" class="x-hidden">
 <div id="theexplaination-body" class="" style="text-align:left;height:100%;">
 </div>
-</div> <div id="cf_window4099868229996660" class="x-hidden">
+</div> <div id="cf_window20741144296398215" class="x-hidden">
 <div id="theformats-body" class="" style="text-align:left;height:100%;">
 </div>
 </div>

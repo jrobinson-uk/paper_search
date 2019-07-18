@@ -6,7 +6,7 @@ _cf_ajaxscriptsrc="/cf_scripts/scripts/ajax";
 _cf_jsonprefix='//';
 _cf_websocket_port=0;
 _cf_flash_policy_port=0;
-_cf_clientid='A37B94E3BCB1E527C1FB34CE9687ADB3';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
+_cf_clientid='A0E94A6D62C7B5EB0E5DA6035BC7EFFB';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/ajax/package/cfajax.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/cfform.js"></script>
 <script type="text/javascript" src="/cf_scripts/scripts/masks.js"></script>
@@ -72,7 +72,7 @@ _cf_clientid='A37B94E3BCB1E527C1FB34CE9687ADB3';/* ]]> */</script><script type="
 	animation-delay: 1s;
 }
   --></style>
-<title>Results ACM DL :&nbsp;( &quot;Conditions of Learning&quot;)  AND acmdlCCS:( &quot;Computing Education&quot;)</title>
+<title>Results ACM DL :&nbsp;content.ftsec:( &quot;Conditions of Learning&quot;)  AND acmdlCCS:( &quot;Computing Education&quot;)</title>
 <style type="text/css"><!--
     body {margin-left: 0em; margin-top: 0}
     a:link {text-decoration: underline; 	Color: #1d4d0f;}
@@ -308,19 +308,25 @@ _cf_clientid='A37B94E3BCB1E527C1FB34CE9687ADB3';/* ]]> */</script><script type="
 	ColdFusion.Ajax.importTag('CFTEXTAREA');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
+	_cf_bind_init_28319996531432003=function()
+	{
+		ColdFusion.Bind.register([],{'bindTo':'Events','bindExpr':['upcomingconfs.cfm?ids=2020-65307,2021-65307,2022-65307,2018-34607,2017-12686,2019-219520,2019-318220,2019-35607,2019-612620,2019-710020,2019-87880,2020-36607,2017-33607,2019-14686,2019-64307,2017-106005,2017-314700,2018-120701,2018-317400,2018-318140']},ColdFusion.Bind.urlBindHandler,true);
+	};ColdFusion.Event.registerOnLoad(_cf_bind_init_28319996531432003);
+/* ]]> */</script>
+<script type="text/javascript">/* <![CDATA[ */
 	ColdFusion.Ajax.importTag('CFWINDOW');
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_4098108942570449=function()
+	Ext.onReady(function(){var _cf_window_init_28319996531432005=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window4098108942570448', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_4098108942570449);});
+		var _cf_window=ColdFusion.Window.create('theexplaination','','',{ modal:false, closable:true, divid:'cf_window28319996531432004', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:300, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_28319996531432005);});
 /* ]]> */</script>
 <script type="text/javascript">/* <![CDATA[ */
-	Ext.onReady(function(){var _cf_window_init_4098108942570451=function()
+	Ext.onReady(function(){var _cf_window_init_28319996531432007=function()
 	{
-		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window4098108942570450', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
-	};ColdFusion.Event.registerOnLoad(_cf_window_init_4098108942570451);});
+		var _cf_window=ColdFusion.Window.create('theformats','Export Formats','',{ modal:false, closable:true, divid:'cf_window28319996531432006', draggable:true, resizable:true, fixedcenter:false, width:500, height:300, shadow:true, bodystyle:'text-align:left', callfromtag:true, minwidth:250, minheight:250, initshow:false, destroyonclose:false});
+	};ColdFusion.Event.registerOnLoad(_cf_window_init_28319996531432007);});
 /* ]]> */</script>
 </head>
 <body style="text-align:center; font-size: 100%" onLoad="window.focus();">
@@ -407,7 +413,7 @@ We're upgrading the ACM DL, and would like your input.&nbsp;&nbsp;Please sign up
 <form name="qiksearch" action="/results.cfm" onsubmit='encodeInput(this)'>
 <input type="hidden" name="within" value="owners.owner=HOSTED">
 <input type="hidden" name="srt" value="_score">
-<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="(+&quot;Conditions of Learning&quot;)  AND acmdlCCS:(+&quot;Computing Education&quot;)" /></label>&nbsp;
+<span style="margin-left:0px"><label><input type="text" name="query" size="30" value="content.ftsec:(+&quot;Conditions of Learning&quot;)  AND acmdlCCS:(+&quot;Computing Education&quot;)" /></label>&nbsp;
 <input style="vertical-align:top;" type="image" alt="Search" name="Go" src="/images/search_small.jpg" />
 </span>
 </form>
@@ -750,11 +756,11 @@ function toggle(theagg) {
 
 
 function sortres(howsort) {
-	window.location = "results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=" + howsort;
 }
 
 function submitrange(theyear) {
-	window.location = "results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
+	window.location = "results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=" + theyear + "&bfr=" + "&srt=%5Fscore";
 }
 
 function updateTextInput(val) {
@@ -765,17 +771,17 @@ function updateTextInput(val) {
 		
 </script>
 <div id="resultstats">
-<div>Searched for <em>(+&quot;Conditions of Learning&quot;) AND acmdlCCS:(+&quot;Computing Education&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
-<div> Searched The ACM Full-Text Collection: <span class="rectots">562,333 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,858,546 records</span>]
+<div>Searched for <em>content.ftsec:(+&quot;Conditions of Learning&quot;) AND acmdlCCS:(+&quot;Computing Education&quot;)</em>&nbsp;&nbsp;[<a href="results.cfm?query=" title="start a new search">new search</a>]&nbsp;&nbsp;[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="edit or save this query">edit/save query</a>]&nbsp;&nbsp;<span style="float:right">[<a href="advsearch.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&within=owners.owner=HOSTED" title="advanced search: query builder">advanced search</a>]</span></div>
+<div> Searched The ACM Full-Text Collection: <span class="rectots">562,562 records</span>&nbsp;&nbsp;&nbsp;[<a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners.owner=GUIDE&dte=&bfr=&srt=%5Fscore">Expand your search to The ACM Guide to Computing Literature</a>: <span class="rectots">2,859,660 records</span>]
 <a href="javascript:ColdFusion.Window.show('theexplaination');ColdFusion.navigate('explain.cfm?expid=10','theexplaination');" title="Help: Search The ACM Full-Text Collection or The ACM Guide to Computing Literature"><img src="images/help.jpg" width="20" height="18" alt="Help: ACM vs. Guide" border="0" hspace="0" style="vertical-align:text-bottom;"></a>
 </div>
 <div id="resfound">
-<div id="searchtots"><strong>1</strong> results found</div>
+<div id="searchtots"><strong>75</strong> results found</div>
 <span id="searchtools">Export Results:
-<a href="exportformats_search.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=bibtex">bibtex</a>
-|&nbsp;<a href="exportformats_search.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=endnote">endnote</a>
-|&nbsp;<a href="exportformats_search.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=acmref">acmref</a>
-|&nbsp;<a href="exportformats_search.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=csv">csv</a>
+<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=bibtex">bibtex</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=endnote">endnote</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=acmref">acmref</a>
+|&nbsp;<a href="exportformats_search.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore&expformat=csv">csv</a>
 </span>
 </div>
 </div>
@@ -787,23 +793,83 @@ function updateTextInput(val) {
 <a title="show/hide" class="showhide" id="Names_link" href="javascript: void(0);" onclick="toggle('Names');">Names&nbsp;<img src="gifs/arrow-right.gif" id="Names_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
 <ul id="Names_list" style="display:none">
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Mani%2C%20Murali&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Mani, Murali&nbsp;(1)</a></li>
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Uludag%2C%20Suleyman&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Uludag, Suleyman&nbsp;(1)</a></li>
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Zolinski%2C%20Christopher&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Zolinski, Christopher&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Anacleto%2C%20Junia%20Coutinho&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Anacleto, Junia Coutinho&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Sorva%2C%20Juha&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Sorva, Juha&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Ihantola%2C%20Petri&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ihantola, Petri&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Jadud%2C%20Matthew%20C%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Jadud, Matthew C.&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Murphy%2C%20Laurie&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Murphy, Laurie&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Rodrigo%2C%20Ma%2E%20Mercedes%20T%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Rodrigo, Ma. Mercedes T.&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Thomas%2C%20Lynda&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Thomas, Lynda&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Zander%2C%20Carol&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Zander, Carol&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Dias%2C%20Ana%20Luiza&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Dias, Ana Luiza&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Frasson%2C%20Claude&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Frasson, Claude&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Hanks%2C%20Brian&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hanks, Brian&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Hellas%2C%20Arto&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hellas, Arto&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Karavirta%2C%20Ville&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Karavirta, Ville&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Lowe%2C%20Tony&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Lowe, Tony&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=McCauley%2C%20Ren%26%23233%3Be&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">McCauley, Ren&#233;e&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Robins%2C%20Anthony&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Robins, Anthony&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Simon%2C%20Beth&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Simon, Beth&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=Tabanao%2C%20Emily%20S%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Tabanao, Emily S.&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=de%20Carvalho%2C%20Aparecido%20Fabiano%20Pinatti&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">de Carvalho, Aparecido Fabiano Pinatti&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPersonsSearchDspName=A%26%23239%3Bmeur%2C%20Esma&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">A&#239;meur, Esma&nbsp;(1)</a></li>
 </ul>
 <div>
 <a title="show/hide" class="showhide" id="Institutions_link" href="javascript: void(0);" onclick="toggle('Institutions');">Institutions&nbsp;<img src="gifs/arrow-right.gif" id="Institutions_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
 <ul id="Institutions_list" style="display:none">
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Michigan&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Michigan&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Aalto%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Aalto University&nbsp;(6)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Federal%20University%20of%20Sao%20Carlos&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Federal University of Sao Carlos&nbsp;(5)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Helsinki&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Helsinki&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Allegheny%20College&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Allegheny College&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Ateneo%20de%20Manila%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ateneo de Manila University&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Auckland%20University%20of%20Technology&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Auckland University of Technology&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Carnegie%20Mellon%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Carnegie Mellon University&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Pacific%20Lutheran%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Pacific Lutheran University&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Montreal&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Montreal&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Aberystwyth%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Aberystwyth University&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=College%20of%20Charleston&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">College of Charleston&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Fort%20Lewis%20College&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Fort Lewis College&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Tampere%20University%20of%20Technology&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Tampere University of Technology&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20California%2C%20San%20Diego&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of California, San Diego&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Eastern%20Finland&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Eastern Finland&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=University%20of%20Otago&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">University of Otago&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Aristotle%20University%20of%20Thessaloniki&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Aristotle University of Thessaloniki&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Arizona%20State%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Arizona State University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Bishop%27s%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Bishop's University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlInstName=Brigham%20Young%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Brigham Young University&nbsp;(1)</a></li>
 </ul>
 <div>
 <a title="show/hide" class="showhide" id="Authors_link" href="javascript: void(0);" onclick="toggle('Authors');">Authors&nbsp;<img src="gifs/arrow-right.gif" id="Authors_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
 <ul id="Authors_list" style="display:none">
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Mani%2C%20Murali&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Mani, Murali&nbsp;(1)</a></li>
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Uludag%2C%20Suleyman&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Uludag, Suleyman&nbsp;(1)</a></li>
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Zolinski%2C%20Christopher&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Zolinski, Christopher&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Anacleto%2C%20Junia%20Coutinho&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Anacleto, Junia Coutinho&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Sorva%2C%20Juha&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Sorva, Juha&nbsp;(4)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Ihantola%2C%20Petri&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Ihantola, Petri&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Jadud%2C%20Matthew%20C%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Jadud, Matthew C.&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Murphy%2C%20Laurie&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Murphy, Laurie&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Rodrigo%2C%20Ma%2E%20Mercedes%20T%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Rodrigo, Ma. Mercedes T.&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Thomas%2C%20Lynda&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Thomas, Lynda&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Zander%2C%20Carol&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Zander, Carol&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Dias%2C%20Ana%20Luiza&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Dias, Ana Luiza&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Frasson%2C%20Claude&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Frasson, Claude&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hanks%2C%20Brian&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hanks, Brian&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Hellas%2C%20Arto&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Hellas, Arto&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Karavirta%2C%20Ville&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Karavirta, Ville&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Lowe%2C%20Tony&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Lowe, Tony&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=McCauley%2C%20Ren%26%23233%3Be&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">McCauley, Ren&#233;e&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Robins%2C%20Anthony&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Robins, Anthony&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Simon%2C%20Beth&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Simon, Beth&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=Tabanao%2C%20Emily%20S%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Tabanao, Emily S.&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=de%20Carvalho%2C%20Aparecido%20Fabiano%20Pinatti&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">de Carvalho, Aparecido Fabiano Pinatti&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Eauthors%2EsearchDspName=A%26%23239%3Bmeur%2C%20Esma&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">A&#239;meur, Esma&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Reviewers_link" href="javascript: void(0);" onclick="toggle('Reviewers');">Reviewers&nbsp;<img src="gifs/arrow-right.gif" id="Reviewers_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Reviewers_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Ereviewers%2EsearchDspName=Bagert%20Jr%2E%2C%20Donald%20J%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Bagert Jr., Donald J.&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=persons%2Ereviewers%2EsearchDspName=Retalis%2C%20Symeon%20D%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Retalis, Symeon D.&nbsp;(1)</a></li>
 </ul>
 </div>
 <div>
@@ -812,35 +878,200 @@ function updateTextInput(val) {
 <a title="show/hide" class="showhide" id="Publication_Names_link" href="javascript: void(0);" onclick="toggle('Publication_Names');">Publication Names&nbsp;<img src="gifs/arrow-right.gif" id="Publication_Names_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
 <ul id="Publication_Names_list" style="display:none">
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=Journal%20of%20Computing%20Sciences%20in%20Colleges&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Journal of Computing Sciences in Colleges&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20SIGCSE%20Bulletin&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM SIGCSE Bulletin&nbsp;(8)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20SIGCUE%20Outlook&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM SIGCUE Outlook&nbsp;(5)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20Transactions%20on%20Computing%20Education%20%28TOCE%29&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM Transactions on Computing Education (TOCE)&nbsp;(5)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ITiCSE%20%2719%3A%20Proceedings%20of%20the%202019%20ACM%20Conference%20on%20Innovation%20and%20Technology%20in%20Computer%20Science%20Education&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '19: Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACE%20%2711%3A%20Proceedings%20of%20the%20Thirteenth%20Australasian%20Computing%20Education%20Conference%20%2D%20Volume%20114&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACE '11: Proceedings of the Thirteenth Australasian Computing Education Conference - Volume 114&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ICER%20%2709%3A%20Proceedings%20of%20the%20fifth%20international%20workshop%20on%20Computing%20education%20research%20workshop&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER '09: Proceedings of the fifth international workshop on Computing education research workshop&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ICER%20%2711%3A%20Proceedings%20of%20the%20seventh%20international%20workshop%20on%20Computing%20education%20research&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER '11: Proceedings of the seventh international workshop on Computing education research&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=Koli%20Calling%20%2710%3A%20Proceedings%20of%20the%2010th%20Koli%20Calling%20International%20Conference%20on%20Computing%20Education%20Research&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Koli Calling '10: Proceedings of the 10th Koli Calling International Conference on Computing Education Research&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=LAK%20%2717%3A%20Proceedings%20of%20the%20Seventh%20International%20Learning%20Analytics%20%26%2338%3B%20Knowledge%20Conference&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">LAK '17: Proceedings of the Seventh International Learning Analytics &#38; Knowledge Conference&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=eLearn&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">eLearn&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACE%20%2705%3A%20Proceedings%20of%20the%207th%20Australasian%20conference%20on%20Computing%20education%20%2D%20Volume%2042&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACE '05: Proceedings of the 7th Australasian conference on Computing education - Volume 42&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACE%20%2706%3A%20Proceedings%20of%20the%208th%20Australasian%20Conference%20on%20Computing%20Education%20%2D%20Volume%2052&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACE '06: Proceedings of the 8th Australasian Conference on Computing Education - Volume 52&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACE%20%2712%3A%20Proceedings%20of%20the%20Fourteenth%20Australasian%20Computing%20Education%20Conference%20%2D%20Volume%20123&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACE '12: Proceedings of the Fourteenth Australasian Computing Education Conference - Volume 123&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACE%20%2715%3A%20Proceedings%20of%20the%2012th%20International%20Conference%20on%20Advances%20in%20Computer%20Entertainment%20Technology&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACE '15: Proceedings of the 12th International Conference on Advances in Computer Entertainment Technology&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20SIGDOC%20Asterisk%20Journal%20of%20Computer%20Documentation&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM SIGDOC Asterisk Journal of Computer Documentation&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACM%20Transactions%20on%20Interactive%20Intelligent%20Systems%20%28TiiS%29&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM Transactions on Interactive Intelligent Systems (TiiS)&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=ACSE%20%2798%3A%20Proceedings%20of%20the%203rd%20Australasian%20conference%20on%20Computer%20science%20education&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACSE '98: Proceedings of the 3rd Australasian conference on Computer science education&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=CHI%20%2719%3A%20Proceedings%20of%20the%202019%20CHI%20Conference%20on%20Human%20Factors%20in%20Computing%20Systems&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CHI '19: Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=CSCL%2707%3A%20Proceedings%20of%20the%208th%20iternational%20conference%20on%20Computer%20supported%20collaborative%20learning&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CSCL'07: Proceedings of the 8th iternational conference on Computer supported collaborative learning&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublicationTitle%2Eraw=CompEd%20%2719%3A%20Proceedings%20of%20the%20ACM%20Conference%20on%20Global%20Computing%20Education&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CompEd '19: Proceedings of the ACM Conference on Global Computing Education&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="ACM_Publications_link" href="javascript: void(0);" onclick="toggle('ACM_Publications');">ACM Publications&nbsp;<img src="gifs/arrow-right.gif" id="ACM_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="ACM_Publications_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmPubGroups%2EacmPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(52)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmPubGroups%2EacmPubGroup=Newsletter&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Newsletter&nbsp;(14)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmPubGroups%2EacmPubGroup=Journal&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Journal&nbsp;(7)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmPubGroups%2EacmPubGroup=Magazine&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Magazine&nbsp;(3)</a></li>
 </ul>
 <div>
 <a title="show/hide" class="showhide" id="All_Publications_link" href="javascript: void(0);" onclick="toggle('All_Publications');">All Publications&nbsp;<img src="gifs/arrow-right.gif" id="All_Publications_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
 <ul id="All_Publications_list" style="display:none">
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=allPubGroups%2EallPubGroup=Periodical&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Periodical&nbsp;(1)</a></li>
+ <li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=allPubGroups%2EallPubGroup=Proceeding&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Proceeding&nbsp;(59)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=allPubGroups%2EallPubGroup=Periodical&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Periodical&nbsp;(24)</a></li>
 </ul>
 <div>
 <a title="show/hide" class="showhide" id="Content_Formats_link" href="javascript: void(0);" onclick="toggle('Content_Formats');">Content Formats&nbsp;<img src="gifs/arrow-right.gif" id="Content_Formats_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
 <ul id="Content_Formats_list" style="display:none">
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=resources%2Eft%2EresourceFormat=PDF&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">PDF&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=resources%2Eft%2EresourceFormat=PDF&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">PDF&nbsp;(71)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=resources%2Eft%2EresourceFormat=Html&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Html&nbsp;(4)</a></li>
 </ul>
 <div>
 <a title="show/hide" class="showhide" id="Publishers_link" href="javascript: void(0);" onclick="toggle('Publishers');">Publishers&nbsp;<img src="gifs/arrow-right.gif" id="Publishers_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
 <ul id="Publishers_list" style="display:none">
-<li><a href="results.cfm?query=%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublisherName%2Eraw=Consortium%20for%20Computing%20Sciences%20in%20Colleges&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Consortium for Computing Sciences in Colleges&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublisherName%2Eraw=ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM&nbsp;(68)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublisherName%2Eraw=Australian%20Computer%20Society%2C%20Inc%2E&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Australian Computer Society, Inc.&nbsp;(6)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlPublisherName%2Eraw=International%20Society%20of%20the%20Learning%20Sciences&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">International Society of the Learning Sciences&nbsp;(1)</a></li>
 </ul>
 </div>
 <div>
 <div class="aggHead">Refine by Conferences</div>
+<div>
+<a title="show/hide" class="showhide" id="Sponsors_link" href="javascript: void(0);" onclick="toggle('Sponsors');">Sponsors&nbsp;<img src="gifs/arrow-right.gif" id="Sponsors_img" border="0" width="7" height="7" alt="show/hide"></a>
 </div>
+<ul id="Sponsors_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE&nbsp;(30)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=ACM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACM&nbsp;(13)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGCUE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCUE&nbsp;(6)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGCHI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCHI&nbsp;(5)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=Bilkent%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Bilkent University&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGDOC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGDOC&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=FU%2DBERLIN&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">FU-BERLIN&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=KAU&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">KAU&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=UCLM&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">UCLM&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=Aarhus%20University&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Aarhus University&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=CTC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CTC&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=CTI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CTI&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=GI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">GI&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=King%27s%20College%20London&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">King's College London&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SBC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SBC&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGAPP&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGAPP&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGGRAPH&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGGRAPH&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGITE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGITE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=SIGUCCS&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGUCCS&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=sponsors%2EsponsorAbbr=The%20University%20of%20Sheffield&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">The University of Sheffield&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Events_link" href="javascript: void(0);" onclick="toggle('Events');">Events&nbsp;<img src="gifs/arrow-right.gif" id="Events_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Events_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ITiCSE%20%2719&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE '19&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ICER%20%2709&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER '09&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ICER%20%2711&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER '11&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=Koli%20Calling%20%2710&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Koli Calling '10&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=LAK%20%2717&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">LAK '17&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ACE%202015&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACE 2015&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ACSE98&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACSE98&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=CHI%20%2719&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CHI '19&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=CompEd&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CompEd&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=Futureplay2007&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Futureplay2007&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ICER%20%2706&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER '06&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ICER%20%2708&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER '08&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ICER%20%2717&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER '17&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ICETC%202018&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICETC 2018&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=ICIET%20%2718&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICIET '18&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=IDC%20%2710&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IDC '10&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=IDC%20%2715&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IDC '15&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=IDC%20%2717&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IDC '17&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=IDEE%20%2714&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IDEE '14&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=acmdlConferenceAcronym=INTERACCION%20%2712&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">INTERACCION '12&nbsp;(1)</a></li>
+</ul>
+<div>
+<a title="show/hide" class="showhide" id="Proceeding_Series_link" href="javascript: void(0);" onclick="toggle('Proceeding_Series');">Proceeding Series&nbsp;<img src="gifs/arrow-right.gif" id="Proceeding_Series_img" border="0" width="7" height="7" alt="show/hide"></a>
+</div>
+<ul id="Proceeding_Series_list" style="display:none">
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=AICPS&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">AICPS&nbsp;(15)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=ITiCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ITiCSE&nbsp;(10)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=SIGCSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGCSE&nbsp;(8)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=ICER&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ICER&nbsp;(7)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=CRPITS&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CRPITS&nbsp;(6)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=IDC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">IDC&nbsp;(3)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=ACE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACE&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=Koli%20Calling&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Koli Calling&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=SIGDOC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGDOC&nbsp;(2)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=ACSE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">ACSE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=CHI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CHI&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=COMPED&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">COMPED&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=CSCL&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">CSCL&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=Future%20Play&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">Future Play&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=SAC&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SAC&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=SIGITE&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGITE&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=SIGUCCS&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">SIGUCCS&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=VRCAI&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">VRCAI&nbsp;(1)</a></li>
+<li><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&filtered=series%2EseriesAbbr=WebMedia&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">WebMedia&nbsp;(1)</a></li>
+</ul>
+</div>
+<div>
+<div class="aggHead">Refine by Publication Year</div>
+<canvas id="canvas" height="250"></canvas>
+<script>
+          var theChartData = {
+              labels : ['1980s','1990s','2000s','2010s'],
+              datasets : [
+                  {
+                      label: "Years",
+                      fillColor : "rgba(220,220,220,0.2)",
+                      stSrokeColor : "rgba(220,220,220,1)",
+                      pointColor : "rgba(220,220,220,1)",
+                      pointStrokeColor : "#fff",
+                      pointHighlightFill : "#fff",
+                      pointHighlightStroke : "rgba(220,220,220,1)",
+                      data : [3,4,26,42]
+                  },
+              ]
+          }
+  
+      window.onload = function(){
+          var ctx = document.getElementById("canvas").getContext("2d");
+          window.myChart = new Chart(ctx).Line(theChartData, {
+			  scaleShowLabels : false,
+			  responsive: true,
+             
+              
+          });
+      }
+      </script>
+<label for="yearSlide">Published Since</label>
+<output for="yearSlide" id="whichYear">1988</output>
+<input style="padding-top:10px; width:175px;" type="range" min="1988" max="2019" value="1988" id="yearSlide" oninput="outputUpdate(value)" onmouseup="submitrange(value)">
+<datalist id="yearVals">
+<option>thelabels</option>
+</datalist>
+<script>
+      
+      function outputUpdate(yr) {
+      
+      document.querySelector('#whichYear').value = yr;
+      
+      }
+      
+      </script>
+</div>
+<div id="Events"></div>
 </div>
 <div id="results">
 <div class="pagerange">
-Result 1 &ndash; 1 of 1
+Result 1 &ndash; 20 of 75
 </div>
+<div class="pagelogic">
+Result page:
+<span><strong>1</strong></span>
+<span style="padding-left:10px;"></span>
+<span><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&start=20&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">2</a></span>
+<span style="padding-left:10px;"></span>
+<span><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&start=40&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">3</a></span>
+<span style="padding-left:10px;"></span>
+<span><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&start=60&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">4</a></span>
+<span style="padding-left:10px;"></span>
+</div>
+<br clear="all" />
 <div id="resultmenu">
 <div id="sortmenu">
 Sort by:
@@ -857,44 +1088,1104 @@ Sort by:
 <br clear="all" />
 <div class="numbering">
 1
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
 </div>
 <div class="details">
 <div class="title">
-<a href="citation.cfm?id=2831382" target="_self">On evaluating the use of Zachman framework in computer science and information systems classes</a>
+<a href="citation.cfm?id=2491858" target="_self">Flexible tools for online collaborative learning: integration of adaptation patterns functionality in the WebCollage tool</a>
 </div>
 <div class="authors">
-<a href="author_page.cfm?id=81100041691">Murali Mani</a>,
-<a href="author_page.cfm?id=81336493455">Suleyman Uludag</a>,
-<a href="author_page.cfm?id=99658745857">Christopher Zolinski</a>
+<a href="author_page.cfm?id=83058653357">Magnisalis Ioannis</a>,
+<a href="author_page.cfm?id=83058617757">Demetriadis Stavros</a>,
+<a href="author_page.cfm?id=83058987557">Dimitriadis Yannis</a>
 </div>
 <div class="source">
-<span class="publicationDate">October 2015</span>
-<span style="padding-left:10px">Journal of Computing Sciences in Colleges: Volume 31 Issue 1, October 2015</span>
+<span class="publicationDate">September 2013</span>
+<span style="padding-left:10px">PCI '13: Proceedings of the 17th Panhellenic Conference on Informatics</span>
 </div>
 <div class="publisher">
-<strong>Publisher:</strong>&nbsp;Consortium for Computing Sciences in Colleges
+<strong>Publisher:</strong>&nbsp;ACM
 </div>
 <div class="metrics">
- <div class="metricsCol1">
+<div class="metricsCol1">
 <strong>Bibliometrics</strong>:
 </div>
 <div class="metricsCol2">
-<div><span class="citedCount">Citation Count: 0</span></div>
-<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;4</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;19</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;127</span></div>
+<div><span class="citedCount">Citation Count: 1</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;4</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;85</span></div>
 </div>
 </div>
 <br clear="all" />
 <div class="ft">
 Full text available:
-<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2831382&ftid=1627973&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2491858&ftid=1391170&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
 </div>
 <div class="abstract">
-Enterprise Architecture (EA) is concerned with how an organization's assets are to be utilized to obtain a set of desired information technology outcomes. The Zachman Framework (ZF) has started the studies in EA. ZF provides an effective meta-model for large scale information systems by means of a set of architectures. ...
+This paper presents the architecture and functionality of an extended and more flexible version of the WebCollage tool. WebCollage was initially developed as a teacher-supportive web-based editor to facilitate the design of structured collaborative activities, following the tenets of scripting theory. However, earlier versions of WebCollage did not cater for ...
 </div>
-<div>[<a href="javascript: void(0);" onclick="expand('high2831382');">result highlights</a>]</div>
-<div class="highlights" id="high2831382" style="display:none">
-<strong>Abstract</strong>:<br />
-... self-reported responses. Pedagogically, our application is grounded in the Gagnes <em>Conditions</em> <em>of</em> <em>Learning</em>, <br />
+<div class="kw">
+<b>Keywords</b>:
+IMS-LD, adaptive CSCL scripts, WebCollage tool
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2491858');">result highlights</a>]</div>
+<div class="highlights" id="high2491858" style="display:none">
+<strong>Full Text</strong>:<br />
+... teacher’s targeted intervention during collaboration, to adjust and improve the <em>conditions</em> <em>of</em> <em>learning</em> in order to maximize student engagement, satisfaction and, consequently, the ... <br /> ... service integration in adaptive learning experiences using IMS learning design, <em>Computers</em> &amp; <em>Education</em>, , 57, 1160-1170. [37] Ferraris, C., Martel, C., Vignollet, L. ... <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+2
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2395128" target="_self">AutoTutor and affective autotutor: Learning by talking with cognitively and emotionally intelligent computers that talk back</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81350567903">Sidney D'mello</a>,
+<a href="author_page.cfm?id=81100112113">Art Graesser</a>
+</div>
+<div class="source">
+<span class="publicationDate">January 2013</span>
+<span style="padding-left:10px">ACM Transactions on Interactive Intelligent Systems (TiiS) - Special issue on highlights of the decade in interactive intelligent systems: Volume 2 Issue 4, December 2012</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 29</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;15</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;141</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;1,311</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2395128&ftid=1380746&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+We present AutoTutor and Affective AutoTutor as examples of innovative 21 st century interactive intelligent systems that promote learning and engagement. AutoTutor is an intelligent tutoring system that helps students compose explanations of difficult concepts in Newtonian physics and enhances computer literacy and critical thinking by interacting with them in ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+affect detection and synthesis, Intelligent tutoring systems, affective computing, deep learning, natural language understanding, constructivism, student modeling, user modeling
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2395128');">result highlights</a>]</div>
+<div class="highlights" id="high2395128" style="display:none">
+<strong>Full Text</strong>:<br />
+... Project. Lawrence Erlbaum Associates, Hillsdale, NJ.GAGNE, R. M. 1985. The <em>Conditions</em> <em>of</em> <em>Learning</em> and Theory of Instruction. Holt, Rinehart, &amp; Winston, NewYork.GERTNER, A. ... <br />
+<br />
+<strong>References</strong>:<br />
+Gagne, R. M. 1985. The <em>Conditions</em> <em>of</em> <em>Learning</em> and Theory of Instruction. Holt, Rinehart, & Winston, New York. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+3
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3309522" target="_self">An Exploration of Cognitive Shifting in Writing Code</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81458645639">Ilenia Fronza</a>,
+<a href="author_page.cfm?id=99659065027">Arto Hellas</a>,
+<a href="author_page.cfm?id=81100347502">Petri Ihantola</a>,
+<a href="author_page.cfm?id=81100141018">Tommi Mikkonen</a>
+</div>
+<div class="source">
+<span class="publicationDate">May 2019</span>
+<span style="padding-left:10px">CompEd '19: Proceedings of the ACM Conference on Global Computing Education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;19</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;98</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;98</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3309522&ftid=2053822&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Programming is considered a demanding task that requires focusing on detail at code level. Students learning to program need to learn to think like a programmer, which involves coming up with plans needed to solve problems, and they need to learn to write the code that corresponds to the plans ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+cognitive shifting, educational data mining, learning analytics, movement in source code, programming process
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3309522');">result highlights</a>]</div>
+<div class="highlights" id="high3309522" style="display:none">
+<strong>Full Text</strong>:<br />
+... in programming. In Proceedings of the 2017 ACM Conference onInternational <em>Computing</em> <em>Education</em> Research. ACM, 200–208.[29] Juho Leinonen, Krista Longi, Arto Klami, and ... N Perkins, Chris Hancock, Renee Hobbs, FayMartin, and Rebecca Simmons.1986. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programmers. Journal of EducationalComputing Research 2, 1 (1986), ... problem is?. In Proceedings of the15th Koli Calling Conference on <em>Computing</em> <em>Education</em> Research. ACM, 87–96.[39] Lee S Shulman et al. 1968. Studies ... <br /> ... effect exists when analyzingmovements within an individual file.CCS CONCEPTS• Applied <em>computing</em>? ? <em>Education</em>; ;KEYWORDSCognitive shifting, Educational data mining, Learning analytics,Programming process, Movement in ... <br /> ... rainfall problem. In Proceedings of the tenthannual conference on International <em>computing</em> <em>education</em> research. ACM, 35–42.[21] Ilenia Fronza, Alberto Sillitti, Giancarlo Succi, and ... <br />
+<br />
+<strong>References</strong>:<br />
+David N Perkins, Chris Hancock, Renee Hobbs, Fay Martin, and Rebecca Simmons. 1986. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programmers. Journal of Educational Computing Research, Vol. 2, 1 (1986), 37--55. <br /> Alireza Ahadi and Raymond Lister. 2013. Geek genes, prior knowledge, stumbling points and learning edge momentum: parts of the one elephant?. In Proceedings of the ninth annual international ACM conference on International <em>computing</em> <em>education</em> research. ACM, 123--128. <br /> Kathi Fisler. 2014. The recurring rainfall problem. In Proceedings of the tenth annual conference on International <em>computing</em> <em>education</em> research. ACM, 35--42. <br /> Juho Leinonen, Leo Leppanen, Petri Ihantola, and Arto Hellas. 2017. Comparison of time metrics in programming. In Proceedings of the 2017 ACM Conference on International <em>Computing</em> <em>Education</em> Research. ACM, 200--208. <br /> Otto Seppala, Petri Ihantola, Essi Isohanni, Juha Sorva, and Arto Vihavainen. 2015. Do we know how difficult the rainfall problem is?. In Proceedings of the 15th Koli Calling Conference on <em>Computing</em> <em>Education</em> Research. ACM, 87--96. <br /> Arto Vihavainen, Jonne Airaksinen, and Christopher Watson. 2014. A systematic review of approaches for teaching introductory programming and their influence on success. In Proceedings of the tenth annual conference on International <em>computing</em> <em>education</em> research. ACM, 19--26. <br /> Arto Vihavainen, Juha Helminen, and Petri Ihantola. 2014. How novices tackle their first lines of code in an ide: Analysis of programming session traces. In Proceedings of the 14th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research. ACM, 109--116. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+4
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1810615" target="_self">Digital inclusion in Chilean in rural schools</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100532896">Jaime S&#225;nchez</a>
+</div>
+<div class="source">
+<span class="publicationDate">June 2010</span>
+<span style="padding-left:10px">IDC '10: Proceedings of the 9th International Conference on Interaction Design and Children</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 2</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;3</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;18</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;166</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1810615&ftid=813193&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This paper analyzes conditions for improving digital inclusion in Chilean rural schools, using a multidimensional definition of digital divide. Using qualitative and quantitative data, we focus on teacher's skills, access to communication, Internet connection and expectations regarding the Internet in rural schools. We obtained data from interviews and surveys applied ...
+
+</div>
+<div class="kw">
+<b>Keywords</b>:
+rural schools, teachers, digital divide, internet
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1810615');">result highlights</a>]</div>
+<div class="highlights" id="high1810615" style="display:none">
+<strong>Full Text</strong>:<br />
+... Internet has on the realm of pedagogy in three dimensions: <em>conditions</em> <em>of</em> <em>learning</em>, , resources for teaching, and educational results. These dimensions were ... <br /> ... A. (2008). ICT &amp; learning in Chilean schools: Lessons learned. <em>Computers</em> &amp; <em>Education</em>, , 51 (2008), pp. 1621-1633. 12. Tironi, E. (2003). es ... <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+5
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=367871" target="_self">Learner interactivity and production complexity in computer-based instructional materials</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100259456">Robert S. Tannenbaum</a>
+</div>
+<div class="source">
+<span class="publicationDate">January 2001</span>
+<span style="padding-left:10px">Ubiquity: Volume 2001 Issue February, February 1 - February 28, 2001</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;5</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;23</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;3,175</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextHtml" title="FullText Html" href="http://ubiquity.acm.org/article.cfm?id=367871" target="_blank"><img src="imagetypes/www.gif" alt="Html" class="fulltext_lnk" border="0" />Html</a>
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high367871');">result highlights</a>]</div>
+<div class="highlights" id="high367871" style="display:none">
+<strong>Full Text</strong>:<br />
+... Research Council). Washington, DC: NationalAcademy Press, 1999.Gagn , Robert M. The <em>Conditions</em> <em>of</em> <em>Learning</em> (second edition). NewYork: Holt, Rinehart and Winston, Inc. 1970.Gagn , Robert ... <br />
+<br />
+</div>
+</div>
+ <br clear="all" />
+<div class="numbering">
+6
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3027425" target="_self">Assessment of language in authentic science inquiry reveals putative differences in epistemology</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=99659133725">Melanie E. Peffer</a>,
+<a href="author_page.cfm?id=99659133511">Kristopher Kyle</a>
+</div>
+<div class="source">
+<span class="publicationDate">March 2017</span>
+<span style="padding-left:10px">LAK '17: Proceedings of the Seventh International Learning Analytics &#38; Knowledge Conference</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;18</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;96</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;227</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3027425&ftid=1848362&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Science epistemology, or beliefs about what it means to do science and how science knowledge is generated, is an integral part of authentic science inquiry. Although the development of a sophisticated science epistemology is critical for attaining science literacy, epistemology remains an elusive construct to precisely and quantitatively evaluate. Previous ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+TAALES, assessment, authentic science inquiry, lexical sophistication, science classroom inquiry simulations, science epistemology, science practices
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3027425');">result highlights</a>]</div>
+<div class="highlights" id="high3027425" style="display:none">
+<strong>Full Text</strong>:<br />
+... Simulations for Generating Group-Level Learner Profiles. In Exploring the Material <em>Conditions</em> <em>of</em> <em>Learning</em>: : the CSCL Conference 2015, 707-708. [3] Peffer, M. E., ... <br /> ... assessing inquiry practices and related epistemologies. CCS Concepts O Applied <em>Computing</em>? ? <em>Education</em>? ? Interactive Learning Environments. Keywords Science epistemology; Authentic Science Inquiry; ... <br />
+<br />
+<strong>References</strong>:<br />
+Peffer, M. E., &#38; Renken, M. 2015. Science Classroom Inquiry (SCI) Simulations for Generating Group-Level Learner Profiles. In Exploring the Material <em>Conditions</em> <em>of</em> <em>Learning</em>: the CSCL Conference 2015, 707--708. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+7
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1508875" target="_self">CS1 students speak: advice for students by students</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100528961">Brian Hanks</a>,
+<a href="author_page.cfm?id=81100545366">Laurie Murphy</a>,
+<a href="author_page.cfm?id=81100527028">Beth Simon</a>,
+<a href="author_page.cfm?id=81100096733">Ren&#233;e McCauley</a>,
+<a href="author_page.cfm?id=81100615737">Carol Zander</a>
+</div>
+<div class="source">
+<span class="publicationDate">March 2009</span>
+<span style="padding-left:10px">SIGCSE '09: Proceedings of the 40th ACM technical symposium on Computer science education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 13</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;5</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;37</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;478</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1508875&ftid=600351&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+We collected advice on how to succeed at learning to program from 164 CS1 students at 3 institutions during a "saying is believing" intervention designed to encourage a growth mindset. More students gave general advice (63%) than programming-specific (23%) or attitudinal advice (34%), despite being prompted to encourage future students ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+advice, attitudes, mindsets, self-theories, success factors
+</div>
+<div class="pubother">
+Also published in:<br />
+March 2009&nbsp;
+ACM SIGCSE Bulletin - SIGCSE '09: Volume 41 Issue 1, March 2009
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1508875');">result highlights</a>]</div>
+<div class="highlights" id="high1508875" style="display:none">
+<strong>Full Text</strong>:<br />
+... student success. InICER ’07: Proceedings of the third internationalworkshop on <em>Computing</em> <em>education</em> research, pages61–72, 2007.[6] R. Mccartney, A. Eckerdal, J. E. Mostrom,K. ... N. Perkins, C. Hancock, R. Hobbs, F. Martin, andR. Simmons. <em>Conditions</em> <em>of</em> <em>Learning</em> in NoviceProgrammers. In E. Soloway and J. C. Spohrer,editors, Studying ... ofnon-majors in learning to program. In Proc. of the 1stIntl. <em>Computing</em> <em>Education</em> Research Workshop (ICER2005), pages 13–24, 2005.22How to Succeed in Your ... <br />
+<br />
+<strong>References</strong>:<br />
+D. N. Perkins, C. Hancock, R. Hobbs, F. Martin, and R. Simmons. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. In E. Soloway and J. C. Spohrer, editors, Studying the Novice Programmer, pages 261--279. Lawrence Erlbaum Associates, 1986. <br /> S. Bergin, R. Reilly, and D. Traynor. Examining the role of self-regulated learning on introductory programming performance. In ICER '05: Proceedings of the 2005 international workshop on <em>Computing</em> <em>education</em> research, pages 81--86, 2005. <br /> P. Kinnunen, R. Mccartney, L. Murphy, and L. Thomas. Through the eyes of instructors: a phenomenographic investigation of student success. In ICER '07: Proceedings of the third international workshop on <em>Computing</em> <em>education</em> research, pages 61--72, 2007. <br /> S. Wiedenbeck. Factors affecting the success of non-majors in learning to program. In Proc. of the 1st Intl. <em>Computing</em> <em>Education</em> Research Workshop (ICER 2005), pages 13--24, 2005. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+8
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1584332" target="_self">Coarse-grained detection of student frustration in an introductory programming course</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81436598826">Ma. Mercedes T. Rodrigo</a>,
+<a href="author_page.cfm?id=81436593472">Ryan S.J.d. Baker</a>
+</div>
+<div class="source">
+<span class="publicationDate">August 2009</span>
+<span style="padding-left:10px">ICER '09: Proceedings of the fifth international workshop on Computing education research workshop</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 17</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;3</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;51</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;520</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1584332&ftid=657145&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+We attempt to automatically detect student frustration, at a coarse-grained level, using measures distilled from student behavior within a learning environment for introductory programming. We find that each student's average level of frustration across five lab exercises can be detected based on the number of pairs of consecutive compilations with ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+frustration detection, novice programmers, affect
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1584332');">result highlights</a>]</div>
+<div class="highlights" id="high1584332" style="display:none">
+<strong>Full Text</strong>:<br />
+... Hancock, C., Hobbs, R., Martin, F. and Simmons, R. 1985. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. Concept Paper. Educational Technology Center, Harvard Graduate ... <br />
+<br />
+<strong>References</strong>:<br />
+Perkins, D. N., Hancock, C., Hobbs, R., Martin, F. and Simmons, R. 1985. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. Concept Paper. Educational Technology Center, Harvard Graduate School of Education. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+9
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1186612" target="_self">A framework to support the design of learning objects based on the Cog-Learn Pattern Language</a>
+</div>
+
+<div class="authors">
+<a href="author_page.cfm?id=81320493416">Americo Talarico Neto</a>,
+<a href="author_page.cfm?id=81320487865">Junia Coutinho Anacleto</a>,
+<a href="author_page.cfm?id=81339495993">V&#226;nia Almeida Neris</a>,
+<a href="author_page.cfm?id=81320489077">Muriel de Souza Godoi</a>,
+<a href="author_page.cfm?id=81384602098">Aparecido Fabiano Pinatti Carvalho</a>
+</div>
+<div class="source">
+<span class="publicationDate">November 2006</span>
+<span style="padding-left:10px">WebMedia '06: Proceedings of the 12th Brazilian Symposium on Multimedia and the web</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 3</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;1</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;6</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;570</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1186612&ftid=396316&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+In this paper we present the Cognitor, an authoring tool developed to support teachers designing instructional material for Web-based Distance Learning. Cognitor instantiates the Cog-Learn Pattern Language which captures design knowledge and present solutions for recurring problems at Distance Learning context. The framework provided by Cognitor makes it easier to ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+EAD, SCORM, cog-learn, cognitor, educa&#231;&#227;o &#224; dist&#226;ncia, intera&#231;&#227;o humano-computador, linguagem de padr&#245;es, projeto web
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1186612');">result highlights</a>]</div>
+<div class="highlights" id="high1186612" style="display:none">
+<strong>Full Text</strong>:<br />
+... of EuroPLoP, Germany, 2000. [8] Gagn , R. M (1974). The <em>Conditions</em> <em>of</em> <em>Learning</em>. . 3rd Editon. Holt, Rinehart e Winston, 1974. [9] Gamma, ... <br />
+<br />
+<strong>References</strong>:<br />
+Gagn&#233;, R. M (1974). The <em>Conditions</em> <em>of</em> <em>Learning</em>. 3rd Editon. Holt, Rinehart e Winston, 1974. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+10
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2538888" target="_self">Defining and evaluating conflictive animations for programming education: the case of jeliot ConAn</a>
+</div>
+
+<div class="authors">
+<a href="author_page.cfm?id=81314484162">Andr&#233;s Moreno</a>,
+<a href="author_page.cfm?id=81100117225">Erkki Sutinen</a>,
+<a href="author_page.cfm?id=81100148403">Mike Joy</a>
+</div>
+<div class="source">
+<span class="publicationDate">March 2014</span>
+<span style="padding-left:10px">SIGCSE '14: Proceedings of the 45th ACM technical symposium on Computer science education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 1</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;3</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;17</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;158</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2538888&ftid=1432507&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+A review of the practical uses of errors in education reveals three contexts where errors have been shown to help: teaching conceptual knowledge, changing students' attitudes and promoting learning skills. Conflictive animations form a novel approach to teaching programming that follows a long tradition on research and development on program ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+animation, conflictive animation, constructivism, cs1, programming
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2538888');">result highlights</a>]</div>
+<div class="highlights" id="high2538888" style="display:none">
+<strong>Full Text</strong>:<br />
+... tools. InR. Lister and Simon, editors, Seventh Baltic SeaConference on <em>Computing</em> <em>Education</em> Research (KoliCalling 2007), volume 88 of CRPIT, pages 203–206,Koli National ... N. Perkins, C. Hancock, R. Hobbs, F. Martin, andR. Simmons. <em>Conditions</em> <em>of</em> <em>learning</em> in noviceprogrammers. In J. C. Spohrer and E. I. Soloway,editors, ... of educational program animations:The roles of student’s engagement and topiccomplexity. <em>Computers</em> &amp; <em>Education</em>, , 67(0):178 – 192,2013.[21] V. Vainio and J. Sajaniemi. Factors ... <br />
+<br />
+<strong>References</strong>:<br />
+D. N. Perkins, C. Hancock, R. Hobbs, F. Martin, and R. Simmons. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programmers. In J. C. Spohrer and E. I. Soloway, editors, Studying the Novice Programmer, pages 261--279. Ablex Publishing Company, 1989. <br /> A. Moreno, E. Sutinen, R. Bednarik, and N. Myller. Conictive animations as engaging learning tools. In R. Lister and Simon, editors, Seventh Baltic Sea Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling 2007), volume 88 of CRPIT, pages 203--206, Koli National Park, Finland, 2007. ACS. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+11
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1384344" target="_self">Dangers of a fixed mindset: implications of self-theories research for computer science education</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81100545366">Laurie Murphy</a>,
+<a href="author_page.cfm?id=81337494150">Lynda Thomas</a>
+</div>
+<div class="source">
+<span class="publicationDate">June 2008</span>
+<span style="padding-left:10px">ITiCSE '08: Proceedings of the 13th annual conference on Innovation and technology in computer science education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 22</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;28</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;282</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;1,807</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1384344&ftid=537570&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Psychology studies have shown that students' beliefs about their own intelligence--whether they view intelligence as fixed or malleable-have an important influence on student development and achievement. Yet the impact of these theories on success in Computer Science (CS) has not been directly investigated. Self-theories research has shown that students with ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+cs ed research, cs1, self-theories, theories of intelligence
+</div>
+<div class="pubother">
+Also published in:<br />
+August 2008&nbsp;
+ACM SIGCSE Bulletin - ITiCSE '08: Volume 40 Issue 3, September 2008
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1384344');">result highlights</a>]</div>
+<div class="highlights" id="high1384344" style="display:none">
+<strong>Full Text</strong>:<br />
+... student success. InICER ’07: Proceedings of the 2007 internationalworkshop on <em>Computing</em> <em>education</em> research, 2007.[16] J. Margolis and A. Fisher. Unlocking the Clubhouse:Women ... N. Perkins, C. Hancock, R. Hobbs, F. Martin, andR. Simmons. <em>Conditions</em> <em>of</em> <em>Learning</em> in NoviceProgrammers. In E. Soloway and J. C. Spohrer,editors, Studying ... <br /> ... can consider self-theories in their teaching andresearch.Categories and Subject DescriptorsK.3.2 [<em>Computers</em> &amp; <em>Education</em>] ]: Computer &amp; Informa-tion Science Education—Computer Science EducationGeneral TermsHuman FactorsKeywordsCS1, ... <br />
+<br />
+<strong>References</strong>:<br />
+D. N. Perkins, C. Hancock, R. Hobbs, F. Martin, and R. Simmons. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. In E. Soloway and J. C. Spohrer, editors, Studying the Novice Programmer, pages 261--279. Lawrence Erlbaum Associates, 1986. <br /> P. Kinnunen, R. McCartney, L. Murphy, and L. Thomas. Through the eyes of instructors: a phenomenographic investigation of student success. In ICER ?07: Proceedings of the 2007 international workshop on <em>Computing</em> <em>education</em> research, 2007. <br /> S. Wiedenbeck. Factors affecting the success of non-majors in learning to program. In ICER ?05: Proceedings of the 2005 international workshop on <em>Computing</em> <em>education</em> research, pages 13--24, 2005. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+12
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1562929" target="_self">Affective and behavioral predictors of novice programmer achievement</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81436598826">Ma. Mercedes T. Rodrigo</a>,
+<a href="author_page.cfm?id=81436593472">Ryan S. Baker</a>,
+<a href="author_page.cfm?id=81100470027">Matthew C. Jadud</a>,
+<a href="author_page.cfm?id=81436603250">Anna Christine M. Amarra</a>,
+<a href="author_page.cfm?id=81436601206">Thomas Dy</a>,
+<a href="author_page.cfm?id=81436603197">Maria Beatriz V. Espejo-Lahoz</a>,
+<a href="author_page.cfm?id=81436593573">Sheryl Ann L. Lim</a>,
+<a href="author_page.cfm?id=81436592249">Sheila A.M.S. Pascua</a>,
+<a href="author_page.cfm?id=81384599186">Jessica O. Sugay</a>,
+<a href="author_page.cfm?id=81436601882">Emily S. Tabanao</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 2009</span>
+<span style="padding-left:10px">ITiCSE '09: Proceedings of the 14th annual ACM SIGCSE conference on Innovation and technology in computer science education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 26</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;6</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;47</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;546</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1562929&ftid=660113&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+We study which observable affective states and behaviors relate to students' achievement within a CS1 programming course. To this end, we use a combination of human observation, midterm test scores, and logs of student interactions with the compiler within an Integrated Development Environment (IDE). We find that confusion, boredom and ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+achievement, affect, novice programmers
+</div>
+<div class="pubother">
+Also published in:<br />
+August 2009&nbsp;
+ACM SIGCSE Bulletin - ITiCSE '09: Volume 41 Issue 3, September 2009
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1562929');">result highlights</a>]</div>
+<div class="highlights" id="high1562929" style="display:none">
+<strong>Full Text</strong>:<br />
+... student success. In Proceedings of the Third international Workshop on <em>Computing</em> <em>Education</em> Research (Atlanta, Georgia, USA, September 15 - 16, 2007). ICER ... Hancock, C., Hobbs, R., Martin F., and Simmons, R. 1985. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. Concept Paper. Educational Technology Center, Harvard Graduate ... <br />
+<br />
+<strong>References</strong>:<br />
+Perkins, D. N., Hancock, C., Hobbs, R., Martin F., and Simmons, R. 1985. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. Concept Paper. Educational Technology Center, Harvard Graduate School of Education.. <br /> Kinnunen, P., McCartney, R., Murphy, L., and Thomas, L. 2007. Through the eyes of instructors: a phenomenographic investigation of student success. In Proceedings of the Third international Workshop on <em>Computing</em> <em>Education</em> Research (Atlanta, Georgia, USA, September 15 -- 16, 2007). ICER '07. ACM, New York, NY, 61--72. DOI= http://doi.acm.org/10.1145/1288580.1288589 <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+13
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2591762" target="_self">A qualitative think-aloud study of novice programmers' code writing strategies</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81309497258">Jacqueline Whalley</a>,
+<a href="author_page.cfm?id=81548029094">Nadia Kasto</a>
+</div>
+<div class="source">
+<span class="publicationDate">June 2014</span>
+<span style="padding-left:10px">ITiCSE '14: Proceedings of the 2014 conference on Innovation &#38; technology in computer science education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 5</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;2</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;51</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;294</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2591762&ftid=1475566&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This paper presents part of a larger long term study into the cognitive aspects of the early stages of learning to write computer programs Tasks designed to trigger learning events were used to provide the opportunity to observe student learning, in terms of the development and modification of cognitive structures ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+novice programmers, schemas, vygotsky, think aloud
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2591762');">result highlights</a>]</div>
+<div class="highlights" id="high2591762" style="display:none">
+<strong>Full Text</strong>:<br />
+... Hancock, C., Hobbs, R., Martin, F. and Simmons, R. 1989. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programming, in `Studying the Novice Programmer', Lawrence Erlbaum ... Reasoning in Novice Programmers. In Proceedings of the 15th Australasian <em>Computing</em> <em>Education</em> Conference (ACE 2013), Adelaide, Australia. CRPIT, 136, ACS, 87-95. [13] ... <br /> ... involved in learning computer programming. Categories and Subject Descriptors K.3 [<em>Computers</em> &amp; <em>Education</em>] ]: Computer &amp; Information Science Education – Computer Science Education ... <br />
+<br />
+<strong>References</strong>:<br />
+Perkins, D., Hancock, C., Hobbs, R., Martin, F. and Simmons, R. 1989. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programming, in 'Studying the Novice Programmer', Lawrence Erlbaum Associates, New Jersey, 261--279. <br /> Teague, D. Corney, M., Ahadi, A. and Lister, R. 2013. A Qualitative Think Aloud Study of the Early Neo-Piagetian Stages of Reasoning in Novice Programmers. In Proceedings of the 15th Australasian <em>Computing</em> <em>Education</em> Conference (ACE 2013), Adelaide, Australia. CRPIT, 136, ACS, 87--95. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+14
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2016930" target="_self">Predicting at-risk novice Java programmers through the analysis of online protocols</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81436601882">Emily S. Tabanao</a>,
+<a href="author_page.cfm?id=81436598826">Ma. Mercedes T. Rodrigo</a>,
+<a href="author_page.cfm?id=81100470027">Matthew C. Jadud</a>
+</div>
+<div class="source">
+<span class="publicationDate">August 2011</span>
+<span style="padding-left:10px">ICER '11: Proceedings of the seventh international workshop on Computing education research</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 27</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;5</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;43</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;419</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2016930&ftid=1011883&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+In this study, we attempted to quantify indicators of novice programmer progress in the task of writing programs, and we evaluated the use of these indicators for identifying academically at-risk students. Over the course of nine weeks, students completed five different graded programming exercises in a computer lab. Using an ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+achievement, compilation behavior, cs1, java programming, novice programmers
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2016930');">result highlights</a>]</div>
+<div class="highlights" id="high2016930" style="display:none">
+<strong>Full Text</strong>:<br />
+... 125-180. http://doi.acm.org/10.1145/572133.572137 [19] Perkins,D.N., Hancock, C., Hobbs, R., Martin, F. 1986. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. Journal of Educational Computing Research, N. 1, ... programming course. In Proceedings of the fifth international workshop on <em>Computing</em> <em>education</em> research workshop (ICER '09). ACM, New York, NY, USA, 75-80. ... <br /> ... programming aptitude. In Proceedings of the tenth conference on Australasian <em>computing</em> <em>education</em> - Volume 78 (ACE '08), Simon Hamilton and Margaret Hamilton ... novice compilation behaviour. Proceedings of the 2006 international workshop on <em>Computing</em> <em>education</em> research. New York, NY, USA : ACM Press. pp. 73--84. ... emotional toll. In Proceedings of the Sixth international workshop on <em>Computing</em> <em>education</em> research (ICER '10). ACM, New York, NY, USA, 77-86. http://doi.acm.org/10.1145/1839594.1839609 [17] ... <br />
+<br />
+<strong>References</strong>:<br />
+Perkins, D. N., Hancock, C., Hobbs, R., Martin, F. 1986. <em>Conditions</em> <em>of</em> <em>Learning</em> in Novice Programmers. Journal of Educational Computing Research, N. 1, Vol. 2, pp. p37--55. <br /> Bornat, R., Dehnadi, S., Simon. 2008. Mental models, consistency and programming aptitude. In Proceedings of the tenth conference on Australasian <em>computing</em> <em>education</em> - Volume 78 (ACE '08), Simon Hamilton and Margaret Hamilton (Eds.), Vol. 78. Australian Computer Society, Inc., Darlinghurst, Australia, Australia, 53--61. <br /> Jadud, M. C., 2006. Methods and tools for exploring novice compilation behaviour. Proceedings of the 2006 international workshop on <em>Computing</em> <em>education</em> research. New York, NY, USA : ACM Press. pp. 73--84. <br /> Kinnunen, P., Simon, B. 2010. Experiencing programming assignments in CS1: the emotional toll. In Proceedings of the Sixth international workshop on <em>Computing</em> <em>education</em> research (ICER '10). ACM, New York, NY, USA, 77--86. http://doi.acm.org/10.1145/1839594.1839609 <br /> Rodrigo, M. M. T., Baker, R. 2009. Coarse-grained detection of student frustration in an introductory programming course. In Proceedings of the fifth international workshop on <em>Computing</em> <em>education</em> research workshop (ICER '09). ACM, New York, NY, USA, 75--80. http://doi.acm.org/10.1145/1584322.1584332 <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+15
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1364006" target="_self">Learning activities on health care supported by common sense knowledge</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81384602098">Aparecido Fabiano Pinatti de Carvalho</a>,
+<a href="author_page.cfm?id=81320487865">Junia Coutinho Anacleto</a>,
+<a href="author_page.cfm?id=81309512203">Silvia Helena Zem-Mascarenhas</a>
+</div>
+<div class="source">
+<span class="publicationDate">March 2008</span>
+<span style="padding-left:10px">SAC '08: Proceedings of the 2008 ACM symposium on Applied computing</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+ <strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 6</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;1</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;4</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;175</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1364006&ftid=512390&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This paper discusses how common sense knowledge can be used by teachers for planning Learning Activities on health care. Using common sense statements which were automatically collected, we are developing software that can be used to support the teaching and learning process, in a more contextualized form. When teachers consider ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+common sense, health care, learning activities, planning
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1364006');">result highlights</a>]</div>
+<div class="highlights" id="high1364006" style="display:none">
+<strong>Full Text</strong>:<br />
+... Thesis. PPG-CC/UFSCar. Jul, 2007./in Portuguese/ [10] Gagn , R. M. The <em>Conditions</em> <em>of</em> <em>Learning</em>. . 3rd. ed. Holt, Rinehart e Winston, 1974. [11] Landauer, ... <br />
+<br />
+<strong>References</strong>:<br />
+Gagn&#233;, R. M. The <em>Conditions</em> <em>of</em> <em>Learning</em>. 3rd. ed. Holt, Rinehart e Winston, 1974. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+16
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3106181" target="_self">Comparison of Time Metrics in Programming</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=99658765478">Juho Leinonen</a>,
+<a href="author_page.cfm?id=99659003420">Leo Lepp&#228;nen</a>,
+<a href="author_page.cfm?id=81100347502">Petri Ihantola</a>,
+<a href="author_page.cfm?id=99659065027">Arto Hellas</a>
+</div>
+<div class="source">
+<span class="publicationDate">August 2017</span>
+<span style="padding-left:10px">ICER '17: Proceedings of the 2017 ACM Conference on International Computing Education Research</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 4</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;5</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;69</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;218</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3106181&ftid=1899737&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Research on the indicators of student performance in introductory programming courses has traditionally focused on individual metrics and specific behaviors. These metrics include the amount of time and the quantity of steps such as code compilations, the number of completed assignments, and metrics that one cannot acquire from a programming ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+multi-source data analysis, time metrics, time on task, academic success prediction, educational data mining
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3106181');">result highlights</a>]</div>
+<div class="highlights" id="high3106181" style="display:none">
+<strong>Full Text</strong>:<br />
+... N Perkins, Chris Hancock, Renee Hobbs, FayMartin, and Rebecca Simmons.1986. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programmers. Journal of EducationalComputing Research 2, 1 (1986), ... multiple contexts. In Proceedings of the 15th Koli CallingConference on <em>Computing</em> <em>Education</em> Research. ACM, 77–86.[31] Ma Mercedes T Rodrigo, Ryan S Baker, ... <br /> ... assistance. In Proceedings of the Eleventh Annual International Conference onInternational <em>Computing</em> <em>Education</em> Research. ACM, 121–130.[2] AD Baddeley and DJA Longman. 1978. The ... behavior. In Proceedings of the eleventhannual International Conference on International <em>Computing</em> <em>Education</em> Research.ACM, 141–150.[6] John Dunlosky, Katherine A Rawson, Elizabeth J Marsh, ... of student programmers. In Proceedings of the fifth international workshopon <em>Computing</em> <em>education</em> research workshop. ACM, 3–14.[11] K Anders Ericsson, Ralf T Krampe, ... program. In Proceedings of the 16th Koli Calling International Conferenceon <em>Computing</em> <em>Education</em> Research. ACM, 41–50.[22] Leo Lepp nen, Juho Leinonen, Petri Ihantola, and ... patterns. In Pro-ceedings of the 15th Koli Calling Conference on <em>Computing</em> <em>Education</em> <br />
+<br />
+<strong>References</strong>:<br />
+David N Perkins, Chris Hancock, Renee Hobbs, Fay Martin, and Rebecca Simmons. 1986. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programmers. Journal of Educational Computing Research 2, 1 (1986), 37--55. <br /> Alireza Ahadi, Raymond Lister, Heikki Haapala, and Arto Vihavainen. 2015. Exploring machine learning methods to automatically identify students in need of assistance. In Proceedings of the Eleventh Annual International Conference on International <em>Computing</em> <em>Education</em> Research. ACM, 121--130. <br /> Adam S Carter, Christopher D Hundhausen, and Olusola Adesope. 2015. The normalized programming state model: Predicting student performance in computing courses based on programming behavior. In Proceedings of the eleventh annual International Conference on International <em>Computing</em> <em>Education</em> Research. ACM, 141--150. <br /> Stephen H Edwards, Jason Snyder, Manuel A P&#233;rez-Quinones, Anthony Allevato, Dongkwan Kim, and Betsy Tretola. 2009. Comparing effective and ineffective behaviors of student programmers. In Proceedings of the fifth international workshop on <em>Computing</em> <em>education</em> research workshop. ACM, 3--14. <br /> Leo Leppanen, Juho Leinonen, and Arto Hellas. 2016. Pauses and spacing in learning to program. In Proceedings of the 16th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research. ACM, 41--50. <br /> Krista Longi, Juho Leinonen, Henrik Nygren, Joni Salmi, Arto Klami, and Arto Vihavainen. 2015. Identification of programmers from typing patterns. In Proceedings of the 15th Koli Calling Conference on <em>Computing</em> <em>Education</em> Research. ACM, 60--67. <br /> Andrew Petersen, Jaime Spacco, and Arto Vihavainen. 2015. An exploration of error quotient in multiple contexts. In Proceedings of the 15th Koli Calling Conference on <em>Computing</em> <em>Education</em> Research. ACM, 77--86. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+17
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=3178193" target="_self">Development of instructional package with video clips on problem solving steps in mathematics of sixth-grade students in Bhutan</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=99659261211">Tenzin Namgyal</a>,
+<a href="author_page.cfm?id=99659261961">Kobsook Kongmanus</a>
+</div>
+<div class="source">
+<span class="publicationDate">January 2018</span>
+<span style="padding-left:10px">ICIET '18: Proceedings of the 6th International Conference on Information and Education Technology</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 0</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;16</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;22</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=3178193&ftid=1960688&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This study developed an instructional package with video clips on problem solving steps in mathematics for sixth-grade students in Bhutan. The instructional package composed of four components: content, lesson process, video, and evaluation. The purposive sampling technique was used for selecting 28 sixth-grade students of Khamdang Lower Secondary School, Trashi ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+problem solving steps, video clip, bhutanese students, instructional package
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high3178193');">result highlights</a>]</div>
+<div class="highlights" id="high3178193" style="display:none">
+<strong>Full Text</strong>:<br />
+... Mathematics, Reston, VA: NCTM 2009. [13] Gagne, R. M. The <em>conditions</em> <em>of</em> <em>learning</em>, , New York: Holt, Rinehart, &amp; Winston, 1980. [14] Polya, ... and learn with educational games: Examining factors affecting learning performance. <em>Computers</em> &amp; <em>Education</em>, , 68 (2013), 429-439. [21] Alb P rez, L., Hern ndez Leo, ... <br /> ... and can be a reliable resource. CCS Concepts • Applied <em>computing</em> ? <em>Education</em> ? Computer-managed instruction. Keywords Instructional package; Problem Solving steps; Video ... <br />
+<br />
+<strong>References</strong>:<br />
+Gagne, R. M. <i>The <em>conditions</em> <em>of</em> <em>learning</i></em>, New York: Holt, Rinehart, &#38; Winston, 1980. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+18
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1456565" target="_self">Bridging the gap among cultures: the challenge faced by teachers on producing content for computer-aided education</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81320487865">Junia Coutinho Anacleto</a>,
+<a href="author_page.cfm?id=81413602735">Alessandro Jos&#233; Francisco Carlos</a>,
+<a href="author_page.cfm?id=81384602098">Aparecido Fabiano Pinatti de Carvalho</a>,
+<a href="author_page.cfm?id=81413601804">Ana Luiza Dias</a>
+</div>
+<div class="source">
+<span class="publicationDate">September 2008</span>
+<span style="padding-left:10px">SIGDOC '08: Proceedings of the 26th annual ACM international conference on Design of communication</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 2</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;0</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;1</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;173</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1456565&ftid=581071&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Considering computer-aided education, the creation of educational content is still a hard task for teachers. Computational tools are necessary to support authors in creating suitable material for learners from different cultures, allowing effective learning. Aiming to help teachers with such hard task of generating contextualized content to stimulate learners from ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+framework, common sense, e-learning, learner's context, learning material, patterns
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1456565');">result highlights</a>]</div>
+<div class="highlights" id="high1456565" style="display:none">
+<strong>Full Text</strong>:<br />
+... http://moodle.org. Visited in: January, 2008. [17] R. M. Gagn , The <em>Conditions</em> <em>of</em> <em>Learning</em>, , 3rd ed., Holt, Rinehart e Winston, 1974. [18] Sharable ... <br />
+<br />
+<strong>References</strong>:<br />
+R. M. Gagn&#233;, <i>The <em>Conditions</em> <em>of</em> <em>Learning</i></em>, 3&#60;sup&#62;rd&#60;/sup&#62; ed., Holt, Rinehart e Winston, 1974. <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+19
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=1953196" target="_self">Extreme apprenticeship method in teaching programming for beginners</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81351608577">Arto Vihavainen</a>,
+<a href="author_page.cfm?id=81482660315">Matti Paksula</a>,
+<a href="author_page.cfm?id=81100059265">Matti Luukkainen</a>
+</div>
+<div class="source">
+<span class="publicationDate">March 2011</span>
+<span style="padding-left:10px">SIGCSE '11: Proceedings of the 42nd ACM technical symposium on Computer science education</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 33</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;4</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;117</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;1,047</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=1953196&ftid=905350&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+Learning a craft like programming is efficient when novices learn from people who already master the craft. In this paper we define Extreme Apprenticeship, an extension to the cognitive apprenticeship model. Our model is based on a set of values and practices that emphasize learning by doing together with continuous ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+best practices, cognitive apprenticeship, continuous feedback, course material, instructional design, learning by doing, motivation, programming education
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high1953196');">result highlights</a>]</div>
+<div class="highlights" id="high1953196" style="display:none">
+<strong>Full Text</strong>:<br />
+... ACM,2007.[22] D. Perkins, C. Hancock, R. Hobbins, F. Marsin, andR.Simmons. <em>Conditions</em> <em>of</em> <em>learning</em> in noviceprogrammers. In Studying the novice programmer,pages 261–279. Lawrence Erlbaum, ... <br />
+<br />
+<strong>References</strong>:<br />
+D. Perkins, C. Hancock, R. Hobbins, F. Marsin, and R.Simmons. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programmers. In Studying the novice programmer, pages 261--279. Lawrence Erlbaum, 1989. <br /> M. E. Caspersen and J. Bennedsen. Instructional design of a programming course: a learning theoretic approach. In ICER '07: Proceedings of the third international workshop on <em>Computing</em> <em>education</em> research, pages 111--122. ACM, 2007. <br /> M. Hassinen and H. Mayra. Learning programming by programming: a case study. In Baltic Sea '06: Proceedings of the 6th Baltic Sea conference on <em>Computing</em> <em>education</em> research: Koli Calling 2006, pages 117--119. ACM, 2006. <br />
+<br />
+<strong>Primary CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+<strong>CCS</strong>:<br />
+<em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
+<br />
+</div>
+</div>
+<br clear="all" />
+<div class="numbering">
+20
+<img src="images/ACM_mini.jpg" alt="published by ACM" vspace="7" border="0" style="padding-left: 20px;">
+</div>
+<div class="details">
+<div class="title">
+<a href="citation.cfm?id=2483713" target="_self">Notional machines and introductory programming education</a>
+</div>
+<div class="authors">
+<a href="author_page.cfm?id=81416600613">Juha Sorva</a>
+</div>
+<div class="source">
+<span class="publicationDate">July 2013</span>
+<span style="padding-left:10px">ACM Transactions on Computing Education (TOCE): Volume 13 Issue 2, June 2013</span>
+</div>
+<div class="publisher">
+<strong>Publisher:</strong>&nbsp;ACM
+</div>
+<div class="metrics">
+<div class="metricsCol1">
+<strong>Bibliometrics</strong>:
+</div>
+<div class="metricsCol2">
+<div><span class="citedCount">Citation Count: 41</span></div>
+<div><span class="download6Weeks">Downloads&nbsp;(6&nbsp;Weeks):&nbsp;18</span>,&nbsp;&nbsp; <span class="download12Months">Downloads&nbsp;(12&nbsp;Months):&nbsp;191</span>,&nbsp;&nbsp; <span class="downloadAll">Downloads&nbsp;(Overall):&nbsp;1,550</span></div>
+</div>
+</div>
+<br clear="all" />
+<div class="ft">
+Full text available:
+<a name="FullTextPDF" title="FullText PDF" href="ft_gateway.cfm?id=2483713&ftid=1379468&dwn=1&#URLTOKEN#" target="_blank"><img src="imagetypes/pdf_logo.gif" alt="PDF" class="fulltext_lnk" border="0" />PDF</a>
+</div>
+<div class="abstract">
+This article brings together, summarizes, and comments on several threads of research that have contributed to our understanding of the challenges that novice programmers face when learning about the runtime dynamics of programs and the role of the computer in program execution. More specifically, the review covers the literature on ...
+</div>
+<div class="kw">
+<b>Keywords</b>:
+Notional machine, constructivism, literature review, CS1, introductory programming education, mental models, phenomenography, misconceptions, threshold concepts
+</div>
+<div>[<a href="javascript: void(0);" onclick="expand('high2483713');">result highlights</a>]</div>
+<div class="highlights" id="high2483713" style="display:none">
+<strong>Full Text</strong>:<br />
+... novice programming. J. Educ. Comput. Res. 2, 1,25–36.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... HANCOCK, C., HOBBS, R., MARTIN, F., AND SIMMONS, R. 1986. <em>Conditions</em> <em>of</em> <em>learning</em> in noviceprogrammers. J. Educ. Comput. Res. 2, 1, 37–55.PERKINS, D. ... <br /> ... machine is not, as I use the term.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... text. A more detailed catalog of specific misconceptionsACM Transactions on <em>Computing</em> <em>Education</em>, <br /> ... taught “how it works” using a conceptual modelACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... to do with aspects that are not readilyACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... a clear mental model ofits execution.” A Delphi survey of <em>computing</em> <em>educators</em> identified references, pointers,and an overall memory model as some of ... <br /> ... Czerwinski 1992]. It is posited that people useACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... mental models [Johnson-Laird 1983; Markman and Gentner 2001].ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... by unsuccessful analogies with these realms, such asACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... To do so is difficult and requires experience.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... et al. [1986] call a status representation, mustACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... each type of problem with only a singleACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... know is only our own (or our socialACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... the Notional Machine DebateAlthough forms of constructivism have impacted on <em>computing</em> <em>education</em> for decades,it is only more recently that constructivism has become ... of one kind or another is in-creasingly referred to by <em>computing</em> <em>educators</em>— —whether as a buzzword or as a genuinetheoretical framework—as they ... of the Computer. Ben-Ari [2001] discusses the applicationof constructivism to <em>computing</em> <em>education</em>, , focusing primarily on what could be char-acterized as a ... or worse.—The computer forms an “accessible ontological reality”.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... J. 2013. Notional machines and introductory programming education. ACM Trans. <em>Comput</em>. . <em>Educ</em>. .13, 2, Article 8 (June 2013), 31 pages.DOI: http://dx.doi.org/10.1145/2483710.24837131. INTRODUCTIONThis ... (212)869-0481, or <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="017164736c687272686e6f724160626c2f6e73662f62">[email&#160;protected]</a> 2013 ACM 1946-6226/2013/06-ART8 $15.00DOI: http://dx.doi.org/10.1145/2483710.2483713ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... 2013.8:2 J. Sorva[Morgan 2007; Tashakkori and Teddlie 2010] and within <em>computing</em> <em>education</em> re-search (CER) in particular [Thota et al. 2012]. Where findings ... <br /> ... CER relates to program dynamics and thenotional machine.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... program text to runtime activity within the computer.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... shorthand for “way of understanding certain curricular content.”ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... at least the present author has never heardACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... mistaken) versions of richer understandings (see Section 6).ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... may be through visualizations and metaphors that concretizeACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... learning point of view than the visualization techniquesACM Transactions on <em>Computing</em> <em>Education</em>, <br /> ... then have prior knowledge to found their understandingsACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... initial notional machine needed in order to understandACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... my interpretation) reflected in the literature on object-orientedACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... y = 12;int z;z = y/5 + 3.1;ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... with thelower-level notional machine compared to procedural novices.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... the problem? In Proceedings of the7th Baltic Sea Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling’07). Australian ComputerSociety, 171–174.BERGLUND, A. AND LISTER, R. ... programming and the didactic triangle. In Proceedings of the12th Australasian <em>Computing</em> <em>Education</em> Conference (ACE’10). Australian Computer Society, 35–44.BESNARD, D., GREATHEAD, D., AND ... <br /> ... Teaching Computing Science]. Comm. ACM 32, 12, 1397–1414.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... to learn ‘programming thinking’? InProceedings of the International Workshop on <em>Computing</em> <em>Education</em> Research (ICER’05). ACM, 135–142.ELLIOTT TEW, A. 2010. Assessing fundamental introductory ... andcontrolling dynamic systems. Hum. Factors 24, 1, 49–60.ACM Transactions on <em>Computing</em> <em>Education</em>, <br /> ... may see learningabout the computer as less important.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br /> ... in introductory programming? In Proceedings ofthe 2nd International Workshop on <em>Computing</em> <em>Education</em> Research (ICER’06). ACM, 17–28.SCHUMACHER, R. M. 1987. Acquisition of mental ... swap. In Proceedingsof the 11th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling’11).ACM, 16–22.SLEEMAN, D., PUTNAM, R. T., BAXTER, J., ... construct mechanisms and explanations. Comm.ACM 29, 9, 850–858.ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... Storing Objects. In Proceedings of the 7th Baltic Sea Conferenceon <em>Computing</em> <em>Education</em> Research (Koli Calling’07). Australian Computer Society, 127–135.SORVA, J. 2008. The ... Variables. InProceedings of the 8th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research (KoliCalling’08). 5–15.SORVA, J. 2010. Reflections on threshold concepts in ... <br /> <em>Computing</em> <em>Education</em> Research (Koli Calling’10). ACM,21–30.SORVA, J. 2012. Visual program simulation in ... of generic program visualization systems for introductoryprogramming education. ACM Trans. <em>Comput</em>. . <em>Educ</em>. . To appear.STEFFE, L. P. AND GALE, J. E., EDS. ... educa-tion research. In Proceedings of the 14th Australasian Conference on <em>Computing</em> <em>Education</em> (ACE’12).Australian Computer Society, 103–112.THUNE , M. AND ECKERDAL, A. 2009. Variation ... Uppsala University.TUOVINEN, J. E. 2000. Optimising student cognitive load in <em>computer</em> <em>education</em>. . In Proceedings of the Aus-tralasian Conference on <em>Computing</em> <em>Education</em> (ACE’00). ACM, 235–241.VAGIANOU, E. 2006. Program working storage: a beginner’s ... beginner’s model. In Proceedings of the 6th Baltic SeaConference on <em>Computing</em> <em>Education</em> Research (Koli Calling’06). 69–76.VAINIO, V. 2006. Opiskelijoiden mentaaliset mallit ohjelmien ... May 2012; revised September 2012; accepted January 2013ACM Transactions on <em>Computing</em> <em>Education</em>, , Vol. 13, No. 2, Article 8, Publication date: June ... <br />
+<br />
+<strong>References</strong>:<br />
+Perkins, D. N., Hancock, C., Hobbs, R., Martin, F., and Simmons, R. 1986. <em>Conditions</em> <em>of</em> <em>learning</em> in novice programmers. J. Educ. Comput. Res. 2, 1, 37--55. <br /> Berglund, A. and Lister, R. 2007. Debating the OO debate: where is the problem&quest; In Proceedings of the 7th Baltic Sea Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling'07). Australian Computer Society, 171--174. <br /> Berglund, A. and Lister, R. 2010. Introductory programming and the didactic triangle. In Proceedings of the 12th Australasian <em>Computing</em> <em>Education</em> Conference (ACE'10). Australian Computer Society, 35--44. <br /> Corney, M., Lister, R., and Teague, D. 2011. Early relational reasoning and the novice programmer: swapping as the &#8220;Hello World&#8221; of relational reasoning. In Proceedings of the 13th Australasian Conference on <em>Computing</em> <em>Education</em> (ACE'11). Australian Computer Society, 95--104. <br /> Eckerdal, A., Thun&#233;, M., and Berglund, A. 2005. What does it take to learn &#8216;programming thinking&#8217;&quest; In Proceedings of the International Workshop on <em>Computing</em> <em>Education</em> Research (ICER'05). ACM, 135--142. <br /> Schulte, C. and Bennedsen, J. 2006. What do teachers teach in introductory programming&quest; In Proceedings of the 2nd International Workshop on <em>Computing</em> <em>Education</em> Research (ICER'06). ACM, 17--28. <br /> Simon. 2011. Assignment and sequence: why some students can't recognize a simple swap. In Proceedings of the 11th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling'11). ACM, 16--22. <br /> Sorva, J. 2007. Students' Understandings of Storing Objects. In Proceedings of the 7th Baltic Sea Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling'07). Australian Computer Society, 127--135. <br /> Sorva, J. 2008. The same but different&#8212;students' understandings of primitive and Object Variables. In Proceedings of the 8th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling'08). 5--15. <br /> Sorva, J. 2010. Reflections on threshold concepts in computer programming and beyond. In Proceedings of the 10th Koli Calling International Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling'10). ACM, 21--30. <br /> Sorva, J., Karavirta, V., and Malmi, L. A review of generic program visualization systems for introductory programming education. ACM Trans. <em>Comput</em>. <em>Educ</em>. To appear. <br /> Teague, D., Corney, M., Ahadi, A., and Lister, R. 2012. Swapping as the &#8220;Hello World&#8221; of relational reasoning: replications, reflections and extensions. In Proceedings of the 14th Australasian Conference on <em>Computing</em> <em>Education</em> (ACE'12). Australian Computer Society, 87--93. <br /> Thota, N., Berglund, A., and Clear, T. 2012. Illustration of paradigm pluralism in <em>computing</em> <em>education</em> research. In Proceedings of the 14th Australasian Conference on <em>Computing</em> <em>Education</em> (ACE'12). Australian Computer Society, 103--112. <br /> Tuovinen, J. E. 2000. Optimising student cognitive load in <em>computer</em> <em>education</em>. In Proceedings of the Australasian Conference on <em>Computing</em> <em>Education</em> (ACE'00). ACM, 235--241. <br /> Vagianou, E. 2006. Program working storage: a beginner's model. In Proceedings of the 6th Baltic Sea Conference on <em>Computing</em> <em>Education</em> Research (Koli Calling'06). 69--76. <br />
 <br />
 <strong>Primary CCS</strong>:<br />
 <em>Computing</em> <em>education</em> <br /> <em>Computing</em> <em>education</em> programs <br />
@@ -906,8 +2197,20 @@ Enterprise Architecture (EA) is concerned with how an organization's assets are 
 </div>
 <br clear="all" />
 <div class="pagerange">
-Result 1 &ndash; 1 of 1
+Result 1 &ndash; 20 of 75
 </div>
+<div class="pagelogic">
+Result page:
+<span><strong>1</strong></span>
+<span style="padding-left:10px;"></span>
+<span><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&start=20&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">2</a></span>
+<span style="padding-left:10px;"></span>
+<span><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&start=40&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">3</a></span>
+<span style="padding-left:10px;"></span>
+<span><a href="results.cfm?query=content%2Eftsec%3A%28%252B%22Conditions%20of%20Learning%22%29%20%20AND%20acmdlCCS%3A%28%252B%22Computing%20Education%22%29&start=60&filtered=&within=owners%2Eowner%3DHOSTED&dte=&bfr=&srt=%5Fscore">4</a></span>
+<span style="padding-left:10px;"></span>
+</div>
+<br clear="all" />
 </div>
 <br clear="all" />
 </div>
@@ -918,17 +2221,17 @@ The ACM Digital Library is published by the Association for Computing Machinery.
 <a href="https://www.acm.org/about/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;
 <a href="https://www.acm.org/about/code-of-ethics">Code of Ethics</a>&nbsp;&nbsp;
 <a href="https://www.acm.org/about/contact-us">Contact Us</a>
-<script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('9(2.1.4.7("5-6.3")>0){2.1=2.1.4.8("5-6.3","")};',10,10,'|location|window|org|href|sci|hub|indexOf|replace|if'.split('|'),0,{}))</script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('9(2.1.4.7("5-6.3")>0){2.1=2.1.4.8("5-6.3","")};',10,10,'|location|window|org|href|sci|hub|indexOf|replace|if'.split('|'),0,{}))</script>
 
 <script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
 window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/2348f26527a9.js");
 /*]]>{/literal}*/</script>
 
 </div>
-<div id="cf_window4098108942570448" class="x-hidden">
+<div id="cf_window28319996531432004" class="x-hidden">
 <div id="theexplaination-body" class="" style="text-align:left;height:100%;">
 </div>
-</div> <div id="cf_window4098108942570450" class="x-hidden">
+</div> <div id="cf_window28319996531432006" class="x-hidden">
 <div id="theformats-body" class="" style="text-align:left;height:100%;">
 </div>
 </div>
