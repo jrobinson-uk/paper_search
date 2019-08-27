@@ -16,6 +16,7 @@ CSE/Interference Theory (Bergström),"Interference Theory".bib
 CSE/model of programming errors,"model of programming errors".bib
 CSE/Learner-Centered Design,"Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay").bib
 CSE/Sensory Theory,"Sensory theory".bib
+CSE/Learning Styles,"Learning Styles".bib
 CSE/Metacognition,"Metacognition".bib
 CSE/Chunking - Working Memory,"Chunking" AND "memory".bib
 CSE/innovation diffusion,"innovation diffusion".bib
@@ -46,6 +47,7 @@ CSE/Split Attention Effect,"split attention effect".bib
 CSE/learning edge momentum,"learning edge momentum".bib
 CSE/Connectivism,"connnectivist".bib
 CSE/identity formation,"identity formation".bib
+CSE/Syntax and Programming Behavior (EQ),"error quotient".bib
 CSE/Instructivism,"Instructivism".bib
 CSE/Psychological Behaviorism,"Psychological Behaviourism".bib
 CSE/Zone of Proximal Development,"Zone of Proximal Development".bib
@@ -89,6 +91,7 @@ CSE/grit theory,"grit".bib
 CSE/Problem-Based Learning (PBL),"Problem-Based Learning".bib
 CSE/Associative learning (Hebb),"Associative learning".bib
 CSE/programming plans,"programming plans".bib
+CSE/Communities of Practice,"Communities of Practice".bib
 CSE/Self-Determination Theory,"Self-Determination Theory".bib
 CSE/Stage Theory of Cognitive Development,"piagetian".bib
 CSE/Instructivism,"Instructionism".bib
@@ -154,6 +157,7 @@ FULL-ALL/Split Attention Effect,"split attention effect".bib
 FULL-ALL/learning edge momentum,"learning edge momentum".bib
 FULL-ALL/Connectivism,"connnectivist".bib
 FULL-ALL/identity formation,"identity formation".bib
+FULL-ALL/Syntax and Programming Behavior (EQ),"error quotient".bib
 FULL-ALL/Instructivism,"Instructivism".bib
 FULL-ALL/Psychological Behaviorism,"Psychological Behaviourism".bib
 FULL-ALL/Zone of Proximal Development,"Zone of Proximal Development".bib
@@ -171,7 +175,6 @@ FULL-ALL/threshold skills,"threshold skills".bib
 FULL-ALL/Operant Conditioning,"Operant Conditioning".bib
 FULL-ALL/Situated Learning,"Situated Learning".bib
 FULL-ALL/proximal flow,"proximal flow".bib
-FULL-ALL/Learning Styles,"Learning styles".bib
 FULL-ALL/attitudes,"attitudes".bib
 FULL-ALL/Expertise Theory,"Expertise theory".bib
 FULL-ALL/Social Learning Theory,"social learning theory".bib
@@ -232,6 +235,7 @@ ALL/Interference Theory (Bergström),"Interference Theory".bib
 ALL/model of programming errors,"model of programming errors".bib
 ALL/Learner-Centered Design,"Learner-centered" AND ("Soloway" OR "Guzdial" OR "Hay").bib
 ALL/Sensory Theory,"Sensory theory".bib
+ALL/Learning Styles,"Learning Styles".bib
 ALL/Metacognition,"Metacognition".bib
 ALL/Chunking - Working Memory,"Chunking" AND "memory".bib
 ALL/innovation diffusion,"innovation diffusion".bib
@@ -262,6 +266,7 @@ ALL/Split Attention Effect,"split attention effect".bib
 ALL/learning edge momentum,"learning edge momentum".bib
 ALL/Connectivism,"connnectivist".bib
 ALL/identity formation,"identity formation".bib
+ALL/Syntax and Programming Behavior (EQ),"error quotient".bib
 ALL/Instructivism,"Instructivism".bib
 ALL/Psychological Behaviorism,"Psychological Behaviourism".bib
 ALL/Zone of Proximal Development,"Zone of Proximal Development".bib
@@ -305,6 +310,7 @@ ALL/grit theory,"grit".bib
 ALL/Problem-Based Learning (PBL),"Problem-Based Learning".bib
 ALL/Associative learning (Hebb),"Associative learning".bib
 ALL/programming plans,"programming plans".bib
+ALL/Communities of Practice,"Communities of Practice".bib
 ALL/Self-Determination Theory,"Self-Determination Theory".bib
 ALL/Stage Theory of Cognitive Development,"piagetian".bib
 ALL/Instructivism,"Instructionism".bib
@@ -369,6 +375,7 @@ FULL-CSE/Split Attention Effect,"split attention effect".bib
 FULL-CSE/learning edge momentum,"learning edge momentum".bib
 FULL-CSE/Connectivism,"connnectivist".bib
 FULL-CSE/identity formation,"identity formation".bib
+FULL-CSE/Syntax and Programming Behavior (EQ),"error quotient".bib
 FULL-CSE/Instructivism,"Instructivism".bib
 FULL-CSE/Psychological Behaviorism,"Psychological Behaviourism".bib
 FULL-CSE/Zone of Proximal Development,"Zone of Proximal Development".bib
@@ -386,7 +393,6 @@ FULL-CSE/threshold skills,"threshold skills".bib
 FULL-CSE/Operant Conditioning,"Operant Conditioning".bib
 FULL-CSE/Situated Learning,"Situated Learning".bib
 FULL-CSE/proximal flow,"proximal flow".bib
-FULL-CSE/Learning Styles,"Learning styles".bib
 FULL-CSE/attitudes,"attitudes".bib
 FULL-CSE/Expertise Theory,"Expertise theory".bib
 FULL-CSE/Social Learning Theory,"social learning theory".bib
